@@ -7,6 +7,7 @@ This course is meant to help you cut your teeth in video game development using 
 2. [The Pico-8 Cheatsheet!](https://imgur.com/iGrP5bK) - This will help you after you get started.
 3. [The Fantasy Console Discord Server](https://discordapp.com/invite/sFeDxWK) - This is a space to talk about and to folks doing work on the various fantasy consoles out there!
 4. [Felipe Bueno's Awesome Pico-8 Collection](https://github.com/felipebueno/awesome-PICO-8) - This is a Github repository of all sorts of resources about PICO-8. 
+5. [Krystian Majewski's PICO-8 Hero](https://www.youtube.com/playlist?list=PLYND9uft5u_1YCkmXiMrPU7tiBG3hIKAZ) - This is a series of videos from my favorite tutorial maker. He'll bring you through PICO-8 quickly if you want to accelerate yourself!
 
 Over the course of the semester, we will be learning what PICO-8 actually is and how you can make your own game on this console for you, your friends, and your family to play. 
 
