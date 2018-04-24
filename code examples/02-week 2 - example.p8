@@ -1,10 +1,10 @@
 pico-8 cartridge // http://www.pico-8.com
 version 14
 __lua__
-ball_x = 38
-x_speed = 10
+ball_x = 3
+x_speed = 1
 ball_y = 15
-y_speed = 10
+y_speed = 1
 ball_round = 3
 col = 0
 
