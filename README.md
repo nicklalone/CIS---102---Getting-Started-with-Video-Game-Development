@@ -18,7 +18,7 @@ For the sake of all of our sanity, we will be using the PICO-8 Fantasy Console a
 **Tutorials**
 1. [Krystian Majewski's PICO-8 Hero](https://www.youtube.com/playlist?list=PLYND9uft5u_1YCkmXiMrPU7tiBG3hIKAZ) - This is a series of videos from my favorite tutorial maker. He'll bring you through PICO-8 quickly if you want to accelerate yourself!
 1. [Gruber's Sound Tutorials](https://www.youtube.com/watch?v=Pzt0h0ErNAM&list=PLur95ujyAigsqZR1aNTrVGAvXD7EqywdS) - These get super into details about the possibilities of what PICO-8's sound engine can do. 
-1. [Brigds PICO-8 Tutorials](https://www.youtube.com/watch?v=NOcZonu65hE&list=PLB_hJy2NGP0JsFFpEJpe2Wb-k7QShZkGX)
+1. [Brigds PICO-8 Tutorials](https://www.youtube.com/watch?v=NOcZonu65hE&list=PLB_hJy2NGP0JsFFpEJpe2Wb-k7QShZkGX) - Another great beginners tutorial that covers a lot of content slowly and with great detail.
 
 **Resources**
 1. [Felipe Bueno's Awesome Pico-8 Collection](https://github.com/felipebueno/awesome-PICO-8) - This is a Github repository of all sorts of resources about PICO-8. 
