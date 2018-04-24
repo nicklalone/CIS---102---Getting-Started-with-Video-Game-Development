@@ -11,6 +11,7 @@ For the sake of all of our sanity, we will be using the PICO-8 Fantasy Console a
 
 **Community Links**
 1. [The Fantasy Console Discord Server](https://discordapp.com/invite/sFeDxWK) - This is a space to talk about and to folks doing work on the various fantasy consoles out there!
+1. [The Pico-8 Zine](https://sectordub.itch.io/pico-8-fanzine-1) - This is a fantastic zine about the PICO-8. They are available at the price you want. Check them out!
 
 **Tutorials**
 1. [Krystian Majewski's PICO-8 Hero](https://www.youtube.com/playlist?list=PLYND9uft5u_1YCkmXiMrPU7tiBG3hIKAZ) - This is a series of videos from my favorite tutorial maker. He'll bring you through PICO-8 quickly if you want to accelerate yourself!
