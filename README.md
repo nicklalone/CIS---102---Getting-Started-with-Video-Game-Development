@@ -8,7 +8,8 @@ For the sake of all of our sanity, we will be using the PICO-8 Fantasy Console a
 
 **Technical Links**
 1. [Pico-8](https://www.lexaloffle.com/pico-8.php) - Pick up the Program here (~$15.00)
-2. [The Pico-8 Cheatsheet!](https://imgur.com/iGrP5bK) - This will help you after you get started.
+1. [PICO-8 Wikia](http://pico-8.wikia.com/wiki/Pico-8_Wikia?utm_medium=referral&utm_campaign=ZEEF&utm_source=https%3A%2F%2Fpico-8-resources.zeef.com%2Fmarco.secchi) - The PICO-8 Wikia knowledgebase
+1. [The Pico-8 Cheatsheet!](https://imgur.com/iGrP5bK) - This will help you after you get started.
 
 **Community Links**
 1. [The Fantasy Console Discord Server](https://discordapp.com/invite/sFeDxWK) - This is a space to talk about and to folks doing work on the various fantasy consoles out there!
