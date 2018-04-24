@@ -21,7 +21,7 @@ For the sake of all of our sanity, we will be using the PICO-8 Fantasy Console a
 
 **Resources**
 1. [Felipe Bueno's Awesome Pico-8 Collection](https://github.com/felipebueno/awesome-PICO-8) - This is a Github repository of all sorts of resources about PICO-8. 
-1. [PICO-8 Resources](https://pico-8-resources.zeef.com/marco.secchi)
+1. [PICO-8 Resources by Marco Secchi](https://pico-8-resources.zeef.com/marco.secchi) - Collection of resources for PICO-8 of a different kind that Felipe Bueno's.
 
 Over the course of the semester, we will be learning what PICO-8 actually is and how you can make your own game on this console for you, your friends, and your family to play. 
 
