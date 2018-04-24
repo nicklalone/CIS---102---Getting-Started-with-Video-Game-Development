@@ -46,11 +46,11 @@ ________________________________________
 Topic Outline 
 
 1.	Getting Situated
-	a.	What are games?
-	b.	How are video games made?
-	c.	Fantasy Consoles
-	d.	Getting to know PICO-8
-	e.	Getting started with programming
+	1.	What are games?
+	1.	How are video games made?
+	1.	Fantasy Consoles
+	1.	Getting to know PICO-8
+	1.	Getting started with programming
 
 2.	Production – Week 1-2 
 	a.	Functions
