@@ -1,6 +1,8 @@
 # Welcome! 
 
-This course is meant to help you cut your teeth in video game development using the PICO-8 Fantasy Console. 
+This course is meant to help you get started in video game development. 
+
+For the sake of all of our sanity, we will be using the PICO-8 Fantasy Console as I find that it helps bridge the gap between playing games and making games in useful, interesting ways.
 
 **Some useful links:** Will add and organize to these as I find them.
 **Technical Links**
