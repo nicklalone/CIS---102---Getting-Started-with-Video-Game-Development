@@ -45,50 +45,45 @@ ________________________________________
  
 Topic Outline 
 
-1.	Getting Situated
-	1.	What are games?
-	1.	How are video games made?
-	1.	Fantasy Consoles
-	1.	Getting to know PICO-8
-	1.	Getting started with programming
+*	Getting Situated
+	*	What are games?
+	*	How are video games made?
+	*	Fantasy Consoles
+	*	Getting to know PICO-8
+	*	Getting started with programming
 
-2.	Production – Week 1-2 
-	a.	Functions
-	b.	Variables 
-	c.	Design: Central Loops
+*	Production – Week 1-2 
+	*	Functions
+	*	Variables 
+	*	Design: Central Loops
 
-3.	Production – Week 3-4 
-	a.	If-Statements 
-	b.	Collision Detection
-	c.	Design: Prototyping
+*	Production – Week 3-4 
+	*	If-Statements 
+	*	Collision Detection
+	*	Design: Prototyping
 
-4.	Production – Week 5-6
-	a.	Sound Effects
-	b.	Player Input
-	c.	Design: Getting off the beaten path
+*	Production – Week 5-6
+	*	Sound Effects
+	*	Player Input
+	*	Design: Getting off the beaten path
 
-5.	Production – Week 7-8
-	a.	Debugging
-	b.	Juicing in PICO-8
-	c.	Design: Juicing
+*	Production – Week 7-8
+	*	Debugging
+	*	Juicing in PICO-8
+	*	Design: Juicing
 
-6.	Production – Week 9-10
-	a.	Putting it all together.
-	b.	Design: Feedback and Criticism in Game Design
+*	Production – Week 9-10
+	*	Putting it all together.
+	*	Design: Feedback and Criticism in Game Design
 
-7.	Distribution – Final Weeks
-	a.	Deploy
-	b.	Critique
-	c.	Post Mortem
-	d.	What next?
-
-
+*	Distribution – Final Weeks
+	*	Deploy
+	*	Critique
+	*	Post Mortem
+	*	What next?
 
 
-Course Syllabus Part II
-Click here to enter the Course Prefix/Number/Name
-________________________________________
-NOTE: Course Syllabus Part II will be part of every course, located in the Course Master/LCMS/CMS.
+**Course Syllabus Part II**
 
 Course Resources 
 
