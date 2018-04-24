@@ -1,6 +1,6 @@
-##**Course Syllabus Part I
-##CIS 102 – Getting Started with Video Game Development
-##3 Credit Hours**
+**Course Syllabus Part I
+CIS 102 – Getting Started with Video Game Development
+3 Credit Hours**
 ________________________________________
 
 **Course Description**
