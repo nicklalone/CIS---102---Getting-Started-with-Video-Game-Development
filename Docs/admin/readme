@@ -1,33 +1,43 @@
-*Course Syllabus Part I
+**Course Syllabus Part I
 CIS 102 – Getting Started with Video Game Development
-3 Credit Hours*
+3 Credit Hours**
 ________________________________________
 
-*Course Description*
+**Course Description**
 This course introduces video game development to video game fans with no programming experience. Through cheap, easy to learn tools, we will tackle the essence of video game development from prototype to post mortem. By the end of this course, you will have a game you, your friends, and your family can play.
 
-*Course Prerequisites:* None
+**Course Prerequisites:** None
 
 ________________________________________
 
-*Course Objectives*
+**Course Objectives**
 By the end of this course, you will be able to:
 
-1.	Identify the tools of game development.
-2.	Explain the methods of video game development.
-3.	Develop game prototypes for further development.
-4.	Provide critical feedback for game prototypes.
-5.	Apply feedback to game prototypes.
-6.	Document design decisions within design documents and computer code. 
+1. Identify the tools of game development.
+2. Explain the methods of video game development.
+3. Develop game prototypes for further development.
+4. Provide critical feedback for game prototypes.
+5. Apply feedback to game prototypes.
+6. Document design decisions within design documents and computer code. 
 
 ________________________________________
 
 Grading Scale
 
-93 – 100% = A	87 –  89% = B+	77 – 79% = C+	67 – 69% = D+
-90 –  92% = A-	83 –  86% = B	73 – 76% = C	63 – 66% = D
-	80 – 82% = B-	70 – 72% = C-	60 – 62% = D-
-			  0 – 59% = F
+Grade | Percentage
+----- | ------------
+93 – 100% | A	
+90 –  92% | A-
+87 –  89% | B+	
+83 –  86% | B
+80 – 82% | B-
+77 – 79% | C+
+73 – 76% | C
+70 – 72% | C-
+67 – 69% | D+
+63 – 66% | D
+60 – 62% | D-
+0 – 59% | F
 
 ________________________________________
 
@@ -36,76 +46,45 @@ ________________________________________
 Topic Outline 
 
 1.	Getting Situated
-a.	What are games?
-b.	How are video games made?
-c.	Fantasy Consoles
-d.	Getting to know PICO-8
-e.	Getting started with programming
+	a.	What are games?
+	b.	How are video games made?
+	c.	Fantasy Consoles
+	d.	Getting to know PICO-8
+	e.	Getting started with programming
 
 2.	Production – Week 1-2 
-a.	Functions
-b.	Variables 
-c.	Design: Central Loops
+	a.	Functions
+	b.	Variables 
+	c.	Design: Central Loops
 
 3.	Production – Week 3-4 
-a.	If-Statements 
-b.	Collision Detection
-c.	Design: Prototyping
+	a.	If-Statements 
+	b.	Collision Detection
+	c.	Design: Prototyping
 
 4.	Production – Week 5-6
-a.	Sound Effects
-b.	Player Input
-c.	Design: Getting off the beaten path
+	a.	Sound Effects
+	b.	Player Input
+	c.	Design: Getting off the beaten path
 
 5.	Production – Week 7-8
-a.	Debugging
-b.	Juicing in PICO-8
-c.	Design: Juicing
+	a.	Debugging
+	b.	Juicing in PICO-8
+	c.	Design: Juicing
 
 6.	Production – Week 9-10
-a.	Putting it all together.
-b.	Design: Feedback and Criticism in Game Design
+	a.	Putting it all together.
+	b.	Design: Feedback and Criticism in Game Design
 
 7.	Distribution – Final Weeks
-a.	Deploy
-b.	Critique
-c.	Post Mortem
-d.	What next?
+	a.	Deploy
+	b.	Critique
+	c.	Post Mortem
+	d.	What next?
 
 
 
 
-
-
-
-
-
-
-
-REVIEWED BY  
-
-
-______________________________________________________________________
-Originator									Date
-
-
-______________________________________________________________________
-Program Director								Date
-
-
-______________________________________________________________________
-Faculty Curriculum Review Committee or Course Design Manager   	Date
-
-
-
-APPROVED BY
-
-
-______________________________________________________________________
-Dean										Date
-
-
- 
 Course Syllabus Part II
 Click here to enter the Course Prefix/Number/Name
 ________________________________________
