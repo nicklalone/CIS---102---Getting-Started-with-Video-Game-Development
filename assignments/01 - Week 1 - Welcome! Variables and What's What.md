@@ -16,10 +16,10 @@ The nice part about the fantasy console world is that they are:
 During this course, you will be working on making your own game for people to play. While finishing the game depends on you, the class will help you along with grades and milestones.
 
 ##Table of Contents
-1. [PICO-8](#PICO-8)
-1. [File Structures and Locations](#File-Structures-and-Locations)
-1. [SPLORE](#SPLORE)
-1. [Other Games](#Other-Games)
+1. [PICO-8](#pico-8)
+1. [File Structures and Locations](#file-structures-and-locations)
+1. [SPLORE](#splore)
+1. [Other Games](#other-games)
 1. [A Cheat Sheet of Sorts](#A-Cheat-Sheet-of-Sorts)
 1. [User-Interface](#User-Interface)
 
