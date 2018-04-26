@@ -23,20 +23,20 @@ During this course, you will be working on making your own game for people to pl
 1. [A Cheat Sheet of Sorts](#a-cheat-sheet-of-sorts)
 1. [User-Interface](#user-interface)
 
-# PICO-8
+## PICO-8
 
 
-# File Structures and Locations
+## File Structures and Locations
 
 
-# SPLORE
+## SPLORE
 
 
-# Other Games
+## Other Games
 
 
-# A Cheat Sheet of Sorts
+## A Cheat Sheet of Sorts
 
 
-# User-Interface
+## User-Interface
 
