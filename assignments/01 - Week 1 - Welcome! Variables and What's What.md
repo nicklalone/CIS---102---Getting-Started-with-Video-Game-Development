@@ -9,6 +9,6 @@ One of the best descriptions I found for what a fantasy console is comes from [t
 ```The PICO-8 seeks to emulate the aesthetics and community of 1980s home computing for a modern audience. Folks who grew up with these early home computers, such as the BBC Micro, Commodore 64 & ZX Spectrum, often programmed software for them via a built-in BASIC interpreter, creating games and apps that were shared through cassette tapes and floppy disks.```
 
 The nice part about the fantasy console world is that they are: 
-A. Easy to use.
-A. Easy to learn.
-A. Provide endless possibility.
+1. Easy to use.
+1. Easy to learn.
+1. Provide endless possibility.
