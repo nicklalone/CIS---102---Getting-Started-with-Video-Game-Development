@@ -12,3 +12,5 @@ The nice part about the fantasy console world is that they are:
 1. Easy to use.
 1. Easy to learn.
 1. Provide endless possibility.
+
+During this course, you will be working on making your own game for people to play. While finishing the game depends on you, the class will help you along with grades and milestones.
