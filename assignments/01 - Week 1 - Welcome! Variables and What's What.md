@@ -14,3 +14,11 @@ The nice part about the fantasy console world is that they are:
 1. Provide endless possibility.
 
 During this course, you will be working on making your own game for people to play. While finishing the game depends on you, the class will help you along with grades and milestones.
+
+##Table of Contents
+1. [PICO-8](#anchors-in-markdown)
+1. [File Structures and Locations](#anchors-in-markdown)
+1. [SPLORE](#anchors-in-markdown)
+1. [Other Games](#anchors-in-markdown)
+1. [A Cheat Sheet of Sorts](#anchors-in-markdown)
+1. [User-Interface](#anchors-in-markdown)
