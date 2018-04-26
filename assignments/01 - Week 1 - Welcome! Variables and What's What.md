@@ -35,8 +35,8 @@ During this course, you will be working on making your own game for people to pl
 ## Other Games
 
 
-## A Cheat Sheet of Sorts
-
+## A Cheat Sheet
+![Image of PICO-8 Cheat Sheet](https://github.com/nicklalone/CIS---102---Getting-Started-with-Video-Game-Development/blob/master/course%20documents/pics/cheat-sheet.png?raw=true)
 
 ## User-Interface
 
