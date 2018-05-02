@@ -88,4 +88,4 @@ If you head to [The PICO-8 Carts Page](https://www.lexaloffle.com/bbs/?cat=7#sub
 
 
 ## A Cheat Sheet
-![Image of PICO-8 Cheat Sheet](/course documents/pics/general/cheat-sheet.png)
+![Image of PICO-8 Cheat Sheet](/course%20documents/pics/general/cheat-sheet.png)
