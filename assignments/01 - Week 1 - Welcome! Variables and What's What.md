@@ -1,9 +1,9 @@
 **By the end of this week you should be able to:**
-* 1. Identify Fantasy Consoles and what they are for.
-* 1. Install PICO-8 and find the folders associated with it.
-* 1. Understand what each part of PICO-8 is for.
-* 1. Install PICO-8 games and import them.
-* 1. Find the PICO-8 Manual, Resources, and Community
+1. *Identify Fantasy Consoles and what they are for.
+1. *Install PICO-8 and find the folders associated with it.
+1. *Understand what each part of PICO-8 is for.
+1. *Install PICO-8 games and import them.
+1. *Find the PICO-8 Manual, Resources, and Community
 
 # Welcome to your first day with PICO-8! 
 
