@@ -5,7 +5,7 @@ This first homework assignment is about getting familiar with the various aspect
  ![Example](/pics/hw1/loadclip.gif)
 
 2. Create a GIF of you pasting code from a PICO-8 game into the programming interface and running it.
-    1. Note that this will require you to find a game that runs without using graphics. 
+    1. Note that this will require you to find a game that runs without using sprites (This means it does not have anything in the sprite screen but what is there by default. See below.). 
 
  ![Example](/pics/hw1/ctrlv.gif)
 
