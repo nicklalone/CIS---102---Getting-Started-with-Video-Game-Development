@@ -77,6 +77,14 @@ During this course, you will be working on making your own game for people to pl
   * shutdown
 
 ## Other Games
+If you head to [The PICO-8 Carts Page](https://www.lexaloffle.com/bbs/?cat=7#sub=2&mode=carts), you'll see a bunch of games you can play. Click on the picture and the game will load. Click on the name and you'll go to a page that has the game to play plus a number of other commands. Under the game you should see: 
+
+``` Cart [the cart number] | Copy | Code | The Date of upload | Link ```
+
+### Installing games via Copy
+
+
+### Dealing with the game's code
 
 
 ## A Cheat Sheet
