@@ -17,8 +17,8 @@ With these three things, you can build an endless array of procedures, arguments
 
 ## Getting Over the AAA experience
 
-1. [Variables](#Variables)
-1. [Functions](#Functions)
+1. [Variables](#variables)
+1. [Functions](#functions)
 1. [IF Statements](#if-statements)
 
 ## Variables
