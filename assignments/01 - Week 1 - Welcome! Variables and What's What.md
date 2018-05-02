@@ -19,6 +19,6 @@ This first homework assignment is about getting familiar with the various aspect
 
 5. Take a screenshot of the PICO-8 folder that contains your .p8 files.
 
- ![Example](/pics/hw1/folder.png)
+ ![Example](/pics/hw1/folder.PNG)
 
 6. Place all of these photos in a compressed folder and submit it via Blackboard.
