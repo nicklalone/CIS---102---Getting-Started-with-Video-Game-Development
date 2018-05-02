@@ -22,21 +22,23 @@ During this course, you will be working on making your own game for people to pl
 
 ##Table of Contents
 1. [PICO-8](#pico-8)
-1. [File Structures and Locations](#file-structures-and-locations)
 1. [SPLORE](#splore)
-1. [Other Games](#other-games)
-1. [A Cheat Sheet of Sorts](#a-cheat-sheet-of-sorts)
 1. [User-Interface](#user-interface)
+1. [File Structures and Locations](#file-structures-and-locations)
+1. [Useful Text Commands](#useful-text-commands)
+1. [Other Games](#other-games)
+1. [A Cheat Sheet](#a-cheat-sheet)
 
 ## PICO-8
 [PICO-9 Manual](https://www.lexaloffle.com/pico-8.php?page=manual)
 
 ## SPLORE
 
+
 ## User-Interface
 
 
-### #Command Line
+### Command Line
 
 
 ### Programming Environment
@@ -48,13 +50,13 @@ During this course, you will be working on making your own game for people to pl
 ### Sprites
 
 
-## Useful Text Commands
-
-
 ## File Structures and Locations
 
 
-## SPLORE
+## Useful Text Commands
+
+
+## Other Games
 
 
 ## A Cheat Sheet
