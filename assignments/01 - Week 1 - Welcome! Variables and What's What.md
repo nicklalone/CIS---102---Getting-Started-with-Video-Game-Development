@@ -31,10 +31,12 @@ During this course, you will be working on making your own game for people to pl
 ## PICO-8
 [PICO-9 Manual](https://www.lexaloffle.com/pico-8.php?page=manual)
 
+## SPLORE
+
 ## User-Interface
 
 
-### Command Line
+### #Command Line
 
 
 ### Programming Environment
@@ -53,9 +55,6 @@ During this course, you will be working on making your own game for people to pl
 
 
 ## SPLORE
-
-
-## Other Games
 
 
 ## A Cheat Sheet
