@@ -54,7 +54,27 @@ During this course, you will be working on making your own game for people to pl
 
 
 ## Useful Text Commands
-
+(a lot of this is from the [wiki](http://pico-8.wikia.com/wiki/CommandReference))
+* Help and information
+  * help
+  * info
+  * install_demos
+  * keyconfig
+  * splore
+* Files and folders
+  * cd [dirpath]
+  * export filename
+  * folder
+  * import filename
+  * load filename
+  * ls
+  * mkdir dirname
+  * save [filename]
+* Running and quitting Edit
+  * reboot
+  * resume
+  * run
+  * shutdown
 
 ## Other Games
 
