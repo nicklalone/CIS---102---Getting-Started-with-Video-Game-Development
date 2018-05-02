@@ -41,6 +41,8 @@ If you're interested, these books really get in to that space of creation:
 1. [Functions](#functions)
 1. [IF Statements](#if-statements)
 
+A lot of what we'll go over here today is also captured on [this wiki page](http://pico-8.wikia.com/wiki/Lua). If you'd like to try and jump ahead you can, but just know that you'll be expected to meet the requirements of your homework each week. This means you'll have to point out things in your code via comments and line numbers.
+
 ## Variables
 
 
