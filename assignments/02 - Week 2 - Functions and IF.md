@@ -15,8 +15,9 @@ There are three concepts that every programming environment needs to deal with:
 
 With these three things, you can build an endless array of procedures, arguments, and conditional statements that (when combined) create reactive and interactive environments that we call games, software, or tools. This week, we will be starting our process of creating a game. 
 
-## Getting Over the AAA experience
+## Getting Over the AAA Experience
 
+# Table of Contents
 1. [Variables](#variables)
 1. [Functions](#functions)
 1. [IF Statements](#if-statements)
