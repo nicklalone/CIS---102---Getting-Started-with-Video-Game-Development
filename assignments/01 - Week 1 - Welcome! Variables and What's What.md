@@ -11,11 +11,14 @@ This first homework assignment is about getting familiar with the various aspect
 
 3. Create a GIF of you typing the code, "print('hello world')" and running it. 
 
- ![Example](/pics/hw1/hello.gif)
+ ![Example](/pics/hw1/helloworld.gif)
 
 4. Create a GIF of you navigating the SPLORE menu.
 
  ![Example](/pics/hw1/splore.gif)
 
 5. Take a screenshot of the PICO-8 folder that contains your .p8 files.
+
+ ![Example](/pics/hw1/folder.png)
+
 6. Place all of these photos in a compressed folder and submit it via Blackboard.
