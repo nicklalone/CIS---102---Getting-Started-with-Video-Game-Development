@@ -1,5 +1,6 @@
 **By the end of this week you should be able to:**
 1. Create variables and begin your own PICO-8 Game.
+1. Write comments in the coding environment.
 1. Describe different kinds of variables.
 1. Create rectangles and circles of different colors.
 1. Name, Save, and Load your PICO-8 files.
