@@ -52,12 +52,12 @@ PICO-8, like video games, are limited in their capacity in interesting ways. We'
 In the next section, i'll go over many of the interfaces in brief.
 
 ## Command Line
-![The Command Line](/course%20documents/pics/lecture/command.png)
+![The Command Line](/course%20documents/pics/lecture/week1/command.png)
 
 This is the command line as it looks after booting up the console (clicking on the PICO-8 icon to start it). Here, you can enter commands like "cls" to clear the screen or "install_demos" to install demonstration files. You could also type "splore" to get to the exploration menus. For now, just type in "splore" - NOTE: *for commands, for all typing, you will be typing only in lower case letters.*
 
 ## SPLORE
-![The Command Line](/course%20documents/pics/lecture/splore.png)
+![The Command Line](/course%20documents/pics/lecture/week1/splore.png)
 
 The SPLORE menu is a tiny graphic interface that let's you look at various *cartridges* for PICO-8. In this case, a *cartridge* is a tiny text file with the file extension ".p8". 
 
