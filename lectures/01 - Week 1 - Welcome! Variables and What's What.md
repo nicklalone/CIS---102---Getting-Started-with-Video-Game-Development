@@ -34,6 +34,7 @@ During this course, you will be working on making your own game for people to pl
 This is your programming environment for the class and nearly all of your content is going to be run from this little program. According to the manual, which you can find here: [PICO-9 Manual](https://www.lexaloffle.com/pico-8.php?page=manual), PICO-8 is:
 
 ```PICO-8 is a fantasy console for making, sharing and playing tiny games and other computer programs. When you turn it on, the machine greets you with a shell for typing in Lua programs and provides simple built-in tools for creating sprites, maps and sound.```
+
 ```The harsh limitations of PICO-8 are carefully chosen to be fun to work with, encourage small but expressive designs and hopefully to give PICO-8 cartridges their own particular look and feel.```
 
 Let's unpack this a little. First, PICO-8 is a console much like the *Nintendo Switch*, *Playstation 4*, or *Xbox One*. This means that PICO-8 is primarily a tool for video game playing. This also means that PICO-8, much like the mentioned systems, can only run games that are made for it. We call this proprietary format. Also much like the other video game consoles, PICO-8 has competitors. 
