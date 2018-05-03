@@ -33,9 +33,8 @@ During this course, you will be working on making your own game for people to pl
 ## PICO-8
 This is your programming environment for the class and nearly all of your content is going to be run from this little program. According to the manual, which you can find here: [PICO-9 Manual](https://www.lexaloffle.com/pico-8.php?page=manual), PICO-8 is:
 
-```PICO-8 is a fantasy console for making, sharing and playing tiny games and other computer programs. When you turn it on, the machine greets you with a shell for typing in Lua programs and provides simple built-in tools for creating sprites, maps and sound.
-
-The harsh limitations of PICO-8 are carefully chosen to be fun to work with, encourage small but expressive designs and hopefully to give PICO-8 cartridges their own particular look and feel.```
+```PICO-8 is a fantasy console for making, sharing and playing tiny games and other computer programs. When you turn it on, the machine greets you with a shell for typing in Lua programs and provides simple built-in tools for creating sprites, maps and sound.```
+```The harsh limitations of PICO-8 are carefully chosen to be fun to work with, encourage small but expressive designs and hopefully to give PICO-8 cartridges their own particular look and feel.```
 
 Let's unpack this a little. First, PICO-8 is a console much like the *Nintendo Switch*, *Playstation 4*, or *Xbox One*. This means that PICO-8 is primarily a tool for video game playing. This also means that PICO-8, much like the mentioned systems, can only run games that are made for it. We call this proprietary format. Also much like the other video game consoles, PICO-8 has competitors. 
 
@@ -43,7 +42,7 @@ Next, the term, *"harsh limitations* should stand out and also the word lua as t
 
 Limitations are one of the first things we need to think about in video games as they are the reason games are fun. I like this quote from the philosopher Ian Bogost:
 
-```play is what happens when we accept limitations, narrow our focus, and—consequently—have fun. ``` From the book [Play Anything](http://bogost.com/books/play-anything/)
+```play is what happens when we accept limitations, narrow our focus, andâ€”consequentlyâ€”have fun. ``` From the book [Play Anything](http://bogost.com/books/play-anything/)
 
 When we start a video game, we know that we'll be using a device to input commands through an interface of some kind. That interface is not natural. It relies on signals going from our eyes to our brain to our fingers and through reasoning centers, through various aspects of our physiology. Mentally, when we're new to a game - much like we might be new to programming - things can be unfun for a while. Remember this as we begin.
 
