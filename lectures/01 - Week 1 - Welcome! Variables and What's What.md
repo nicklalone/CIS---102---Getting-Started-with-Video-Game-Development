@@ -20,7 +20,7 @@ The nice part about the fantasy console world is that they are:
 
 During this course, you will be working on making your own game for people to play. While finishing the game depends on you, the class will help you along with grades and milestones.
 
-##Table of Contents
+## Table of Contents
 1. [PICO-8](#pico-8)
 1. [Command Line](#command-line)
 1. [SPLORE](#splore)
