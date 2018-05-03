@@ -1,4 +1,4 @@
-This first homework assignment is about getting familiar with the various aspects of PICO-8. The goal then is for you to show me that you understand how to use PICO-8's interface in order to show, rather than tell what you are doing. 
+This first homework assignment is about getting familiar with the various aspects of PICO-8. The goal then is for you to show me that you understand how to use PICO-8's interface in order to show, rather than tell what you are doing. Remember to name each of your files what they are. You can look at the filenames I used for the gifs here to get a sense of what i'm looking for.
 
 1. Create a GIF of you loading a game from PICO-8 from the clipboard. 
  
