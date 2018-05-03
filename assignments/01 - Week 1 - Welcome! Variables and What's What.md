@@ -2,7 +2,7 @@ This first homework assignment is about getting familiar with the various aspect
 
 1. Create a GIF of you loading a game from PICO-8 from the clipboard. 
  
- <img alight = "right" src = "/course%20documents/pics/hw/hw1/loadclip.gif">
+ <img align = "right" src = "/course%20documents/pics/hw/hw1/loadclip.gif">
  ![Example](/course%20documents/pics/hw/hw1/loadclip.gif)
 
 2. Create a GIF of you pasting code from a PICO-8 game into the programming interface and running it.
