@@ -15,9 +15,9 @@ Submit a .p8 file for this.
 Submit a .p8 file for this.
 
 ## Part 3 - If Then and You
-5. Write an if statement in the proper function that detects when the circle reaches the edge of the PICO-8 Screen.
-5. Write an if statement that changes the color of the ball when it hits the edge of the PICO-8 Screen.
-5. Upload one .p8 file to blackboard with comments showing where each item is met.
+7. Write an if statement in the proper function that detects when the circle reaches the edge of the PICO-8 Screen.
+7. Write an if statement that changes the color of the ball when it hits the edge of the PICO-8 Screen.
+7. Upload one .p8 file to blackboard with comments showing where each item is met.
 
 Submit a .p8 file for this. 
 
