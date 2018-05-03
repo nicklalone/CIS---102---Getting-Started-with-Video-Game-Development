@@ -7,7 +7,7 @@
 1. Create rectangles and circles of different colors.
 1. Understand the 3 specific functions PICO-8 uses.
 1. Use IF statements to make objects react to the edges of the screen.
-1. Describe and Create a Game Loop
+1. Describe and Create a Game Loop.
 
 # Week 2 - IF, Functions and Variables!
 There are three concepts that every programming environment needs to deal with: 
