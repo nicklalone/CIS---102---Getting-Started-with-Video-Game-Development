@@ -10,6 +10,8 @@ The videoes can be found on Youtube at: TBD
 
 I will leave this up here for you to work on by yourselves but this course will also be offered at [Bellevue University](http://www.bellevue.edu/) as a general education course. 
 
+[You can find the syllabus here.](course%20documents/syllabus/readme.md) in word and in markdown. I'll also be creating a list of readings that could help inspire you and give you some history about what PICO-8 is for.
+
 ## So where will we be working?
 
 For the sake of all of our sanity, we will be using the [PICO-8 Fantasy Console](https://www.lexaloffle.com/pico-8.php) as I find that it helps bridge the gap between playing games and making games in useful, interesting ways.
