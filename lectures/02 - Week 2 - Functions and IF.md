@@ -1,12 +1,13 @@
 **By the end of this week you should be able to:**
-1. Create variables and begin your own PICO-8 Game.
-1. Write comments in the coding environment.
-1. Describe different kinds of variables.
-1. Create rectangles and circles of different colors.
 1. Name, Save, and Load your PICO-8 files.
 1. Install Notepad++ and use it in conjunction with PICO-8.
+1. Write comments in the coding environment.
+1. Create variables and begin your own PICO-8 Game.
+1. Describe different kinds of variables.
+1. Create rectangles and circles of different colors.
 1. Understand the 3 specific functions PICO-8 uses.
 1. Use IF statements to make objects react to the edges of the screen.
+1. Describe and Create a Game Loop
 
 # Week 2 - IF, Functions and Variables!
 There are three concepts that every programming environment needs to deal with: 
@@ -36,13 +37,16 @@ If you're interested, these books really get in to that space of creation:
 * [The Friendly Orange Glow: The Untold Story of the PLATO System and the Dawn of Cyberculture](https://www.amazon.com/Friendly-Orange-Glow-Untold-Cyberculture/dp/1101871555/ref=sr_1_1?ie=UTF8&qid=1525273782&sr=8-1&keywords=the+friendly+orange+glow)
 
 
-
 # Table of Contents
+1. [Game Loops](#game-loops)
 1. [Variables](#variables)
 1. [Functions](#functions)
 1. [IF Statements](#if-statements)
 
 A lot of what we'll go over here today is also captured on [this wiki page](http://pico-8.wikia.com/wiki/Lua). If you'd like to try and jump ahead you can, but just know that you'll be expected to meet the requirements of your homework each week. This means you'll have to point out things in your code via comments and line numbers.
+
+## Game Loops
+
 
 ## Variables
 
