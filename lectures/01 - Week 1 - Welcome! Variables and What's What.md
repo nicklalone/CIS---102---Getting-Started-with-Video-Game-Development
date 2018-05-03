@@ -41,9 +41,9 @@ Let's unpack this a little. First, PICO-8 is a console much like the *Nintendo S
 
 Next, the term, *"harsh limitations* should stand out and also the word lua as these two things are related. Lua is a programming language that you might have already encountered in video games. For example, addons for games like *World of Warcraft*, *Gary's Mod*, or even some forms of Minecraft are made using Lua. At its core, Lua is a programming language that is "lightweight" yet very powerful. PICO-8 uses Lua but restricts many of its abilities in order to foster creative problem solving. 
 
-Limitations are one of the first things we need to think about in video games as they are the reason games are fun. I like this quote from the philosopher Ian Bogost:
+Limitations are one of the first things we need to think about in video games as they are the reason games are fun. I like this quote from the philosopher Ian Bogost From his book [Play Anything](http://bogost.com/books/play-anything/):
 
-```play is what happens when we accept limitations, narrow our focus, and—consequently—have fun. ``` From the book [Play Anything](http://bogost.com/books/play-anything/)
+```play is what happens when we accept limitations, narrow our focus, and—consequently—have fun.``` 
 
 When we start a video game, we know that we'll be using a device to input commands through an interface of some kind. That interface is not natural. It relies on signals going from our eyes to our brain to our fingers and through reasoning centers, through various aspects of our physiology. Mentally, when we're new to a game - much like we might be new to programming - things can be unfun for a while. Remember this as we begin.
 
