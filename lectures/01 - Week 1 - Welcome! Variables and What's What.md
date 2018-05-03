@@ -95,19 +95,19 @@ The user interface for PICO-8 is where all of the design occurs. Not only can yo
 So the user interface contains the following screens:
 
 ### Code Editor
-![The Command Line](/course%20documents/pics/lecture/code.png)
+![The Command Line](/course%20documents/pics/lecture/week1/code.png)
 
 ### Sprite Editor
-![The Command Line](/course%20documents/pics/lecture/sprite.png)
+![The Sprite Editor](/course%20documents/pics/lecture/week1/sprite.png)
 
 ### Map Editor
-![The Command Line](/course%20documents/pics/lecture/map.png)
+![The Command Line](/course%20documents/pics/lecture/week1/map.png)
 
 ### Sound Effects Editor
-![The Command Line](/course%20documents/pics/lecture/sound.png)
+![The Command Line](/course%20documents/pics/lecture/week1/sound.png)
 
 ### Music Editor
-![The Command Line](/course%20documents/pics/lecture/music.png)
+![The Command Line](/course%20documents/pics/lecture/week1/music.png)
 
 ## File Structures and Locations
 
