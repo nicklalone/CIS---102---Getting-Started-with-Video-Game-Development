@@ -70,12 +70,36 @@ All of the "making" in the phrase "making a game" goes into game loop. This is p
 
 In PICO-8, the game loop boils down to 3 key items: initialization, drawing, and updating. 
 
-PICO-8 runs normally at 30 frames per second. That means that 30 times per second, the game state is getting updated. But what does that mean? Let's take a little bit of a tour. 
+By default PICO-8 runs at 30 frames per second. This means that that 30 times each second, the game is updated. 
 
-## The _INIT() Function
+*But what does that mean?* 
+
+That is what this week is about - making sense of the game loop. Let's take a little bit of a tour. We'll borrow this bit of code from the [PICO-8 WIKI](http://pico-8.wikia.com/wiki/GameLoop)
+
+```-- initialize the position to be the center of the screen
+function _init()
+  xpos = 64
+  ypos = 64
+end
+ 
+-- update the position based on the player pressing buttons
+function _update()
+  if (btn(0) and xpos > 0) xpos -= 1
+  if (btn(1) and xpos < 127) xpos += 1
+  if (btn(2) and ypos > 0) ypos -= 1
+  if (btn(3) and ypos < 127) ypos += 1
+end
+ 
+-- clear the screen, then draw a circle at the current position
+function _draw()
+  cls()
+  circfill(xpos, ypos, 10, 8)
+end```
+
+## Function _INIT()
 This function fires when the game begins 
 
-## The _DRAW() Function
+## Function _DRAW()
 
-## The _UPDATE() Function
+## Function _UPDATE()
 
