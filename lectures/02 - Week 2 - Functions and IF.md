@@ -101,7 +101,7 @@ This code should be pretty straight forward. Copy it and paste it into your Code
 
 ![The Game Loop](/course%20documents/pics/lecture/week2/func.gif)
 
-## Function _INIT()
+## FUNCTION _INIT()
 This function runs as the game begins. It is doing stuff to initialize your game. In this case, notice the code: 
 
 ```
@@ -115,8 +115,37 @@ The first part of that code, ``` function _init()``` is us creating that functio
   xpos = 64
   ypos = 64
 ```
-These two lines of code declare that something is going to go on the X-Axis at pixel 64 and the Y-Axis at pixel 64. What does that mean/ Well, the PICO-8 Screen is 127 pixels tall and 127 pixels wide. *This is important to remember.* By declaring 
+These two lines of code declare that something is going to go on the X-Axis at pixel 64 and the Y-Axis at pixel 64. What does that mean/ Well, the PICO-8 Screen is 127 pixels tall and 127 pixels wide. *This is important to remember.*  
 ## Function _DRAW()
 
-## Function _UPDATE()
+```
+function _draw()
+  cls()
+  circfill(xpos, ypos, 10, 8)
+end
+```
+
+But what happens if we take out the clear screen?
+```
+function _draw()
+  circfill(xpos, ypos, 10, 8)
+end
+```
+
+## FUNCTION _UPDATE() AND FUNCTION UPDATE60()
+```posx = 0
+posy = 0
+col = 0
+
+function _update()
+	rectfill(posx,posy,posx,posy,col)
+	posx+=1
+	col+=1
+	if posx >= 127 
+	then posy+=1 end
+	if posx >=127
+	then posx = 0 end
+end```
+
+![The Game Loop](/course%20documents/pics/lecture/week2/screenfill.gif)
 
