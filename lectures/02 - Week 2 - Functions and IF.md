@@ -74,9 +74,10 @@ By default PICO-8 runs at 30 frames per second. This means that that 30 times ea
 
 *But what does that mean?* 
 
-That is what this week is about - making sense of the game loop. Let's take a little bit of a tour. We'll borrow this bit of code from the [PICO-8 WIKI](http://pico-8.wikia.com/wiki/GameLoop)
+That is what this week is about - making sense of the game loop. Let's take a little bit of a tour. We'll borrow this bit of code from the [PICO-8 WIKI](http://pico-8.wikia.com/wiki/GameLoop).
 
-```-- initialize the position to be the center of the screen
+```
+-- initialize the position to be the center of the screen
 function _init()
   xpos = 64
   ypos = 64
@@ -94,7 +95,11 @@ end
 function _draw()
   cls()
   circfill(xpos, ypos, 10, 8)
-end```
+end
+```
+This code should be pretty straight forward, it looks a bit like this: 
+
+
 
 ## Function _INIT()
 This function fires when the game begins 
