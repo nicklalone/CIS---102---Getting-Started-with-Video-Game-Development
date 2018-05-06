@@ -1,24 +1,28 @@
 **By the end of this week you should be able to:**
 1. Name, Save, and Load your PICO-8 files.
 1. Write comments in the coding environment.
-1. Create variables and begin your own PICO-8 Game.
-1. Describe different kinds of variables.
+1. Create and Describe variables 
 1. Create rectangles and circles of different colors.
-1. Understand the 3 specific functions PICO-8 uses.
+1. Understand the 3 functions of PICO-8's Game Loop.
 1. Use IF statements to make objects react to the edges of the screen.
-1. Describe and Create a Game Loop.
 
 **Optionally, you could also learn to:**
 1. Install Notepad++ and use it in conjunction with PICO-8.
 1. Install Sublime Text to use in conjunction with PICO-8
 
 # Week 2 - IF, Functions and Variables!
-There are three concepts that every programming environment needs to deal with: 
-1. Defining Variables.
-1. Doing Stuff with those variables.
-1. Creating canned functions to do stuff with variables.
+There are 3 central concepts this week that will form the basis of the rest of the class: 
+1. Create objects.
+1. Do stuff with those objects.
+1. Do stuff to those objects.
 
-With these three things, you can build an endless array of procedures, arguments, and conditional statements that (when combined) create reactive and interactive environments that we call games, software, or tools. This week, we will be starting our process of creating a game. 
+Sounds goofy, right? But think about it for a second. If we're getting started with a game of breakout, then we need to: 
+
+A. Create a ball and paddle.
+A. Do stuff with that ball and paddle.
+A. Do something to the ball and paddle.
+
+
 
 ## Getting Over the AAA Experience
 As a gamer, I have been inside the world of video games since the Magnavox Odyssey was new. I've been inside of the creation of video games since around the late 1990s when I started making Quake levels and dealing with the remnants of shareware games. For many of you who are undergrads now, that space was around before you were even born and so when I say video game, you might conjure up Playstation 3 or XBox 360 as "old." My job as the insructor for this course is to deal with two sepcific things: 
