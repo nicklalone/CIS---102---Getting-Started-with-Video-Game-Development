@@ -103,27 +103,36 @@ This code should be pretty straight forward. Copy it and paste it into your Code
 
 ## FUNCTION _INIT()
 This function runs as the game begins. It is doing stuff to initialize your game. In this case, notice the code: 
-
 ```
 function _init()
   xpos = 64
   ypos = 64
 end
 ```
-The first part of that code, ``` function _init()``` is us creating that function. We are definine that the function called _init begins there. The () means that it does not take any parameters. It is just a function that runs on its own. Next, we see: 
+The first part of that code, ``` function _init()``` is us creating that function. We are definine that a function called _init. Everything after the () is what that function contains. For now, we won't say more about the () except for the fact that you need them in order for it to work. 
+
+The next part is: 
 ```
   xpos = 64
   ypos = 64
 ```
-These two lines of code declare that something is going to go on the X-Axis at pixel 64 and the Y-Axis at pixel 64. What does that mean/ Well, the PICO-8 Screen is 127 pixels tall and 127 pixels wide. *This is important to remember.*  
-## Function _DRAW()
+We call these two lines of code variables. The first is the variable ```xpos``` and the second is the variable ```ypos```. Each of these exist *only* inside the _INIT() function right now. There are other types of variables that we will get to soon. 
 
+But what does that mean? 2 variables declared for 64 and 64 what? 
+
+Well, the PICO-8 Screen is 127 pixels tall and 127 pixels wide. *This is important to remember* and it means that right in the middle of the screen are where these two variables are pointing at, pixel 64 on the X-Axis and pixel 64 on the Y-Axis. 
+
+But what? All you really know is that "Something" has been declared for these two points. In the case of the _INIT() Function, it just means that this is where something will be drawn by the draw function.
+
+## Function _DRAW()
+The Draw function is the second part of the PICO-8 Loop. It is responsible for what it seems like it would be responsible for - drawing things. Take the example we've been working with. Let's take it apart a little. 
 ```
 function _draw()
   cls()
   circfill(xpos, ypos, 10, 8)
 end
 ```
+What this seems to be doing is ```cls``` which is clearing the screen and then ```circlfil``` which is drawing a circle that begins at those variables that were delcared earlier. The whole line is ```circfill(xpos, ypos, 10, 8)``` but what does that mean?
 
 But what happens if we take out the clear screen?
 ```
