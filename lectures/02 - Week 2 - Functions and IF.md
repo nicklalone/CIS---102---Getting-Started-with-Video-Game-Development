@@ -70,10 +70,9 @@ There is a TON that goes in to a game loop. This is part of the thing that makes
 
 In PICO-8, the game loop boils down to 3 key items: initialization, drawing, and updating. 
 
-## Variables
+## The _INIT() Function
 
+## The _DRAW() Function
 
-## Functions
+## The _UPDATE() Function
 
-
-## IF Statements
