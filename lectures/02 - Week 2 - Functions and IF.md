@@ -145,7 +145,12 @@ function _update()
 	then posy+=1 end
 	if posx >=127
 	then posx = 0 end
-end```
+end
+```
 
 ![The Game Loop](/course%20documents/pics/lecture/week2/screenfill.gif)
+
+But what happens if we instead use the 60 updates per second FUNCTION _UPDATE60()? 
+
+![The Game Loop](/course%20documents/pics/lecture/week2/screenfill60.gif)
 
