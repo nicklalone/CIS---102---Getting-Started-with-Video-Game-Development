@@ -18,22 +18,26 @@ There are 3 central concepts this week that will form the basis of the rest of t
 
 Sounds goofy, right? But think about it for a second. If we're getting started with a game of breakout, then we need to: 
 
-A. Create a ball and paddle.
-A. Do stuff with that ball and paddle.
-A. Do something to the ball and paddle.
+1. Create a ball and paddle.
+1. Do stuff with that ball and paddle.
+1. Do something to the ball and paddle.
 
-
+And so this week, that's what we'll be doing. As an aside, you can read about other development environments, but for now, we'll be talking about PICO-8. This console was created to emulate the early days of video games. This means that there are no canned physics engines, there are no packages for you to install. There is just you, your code, and what you see in the game. This is important to do as I think for most of us, video games are these multi-million dollar spectacles that require hundreds of thousands of human hours to complete. This reminds me.
 
 ## Getting Over the AAA Experience
-As a gamer, I have been inside the world of video games since the Magnavox Odyssey was new. I've been inside of the creation of video games since around the late 1990s when I started making Quake levels and dealing with the remnants of shareware games. For many of you who are undergrads now, that space was around before you were even born and so when I say video game, you might conjure up Playstation 3 or XBox 360 as "old." My job as the insructor for this course is to deal with two sepcific things: 
+As a gamer, I have been inside the world of video games (and board games) since the [Magnavox Odyssey](https://gamehistory.org/first-video-game-commercial/) was new. I've been inside of the creation of video games since around the late 1990s when I started making Quake levels and helping friends make their own little games to send to shareware sites. For many of you who are undergrads now, that space was around before you were even born. So when I say video game, you might conjure up Playstation 3 or XBox 360 as "old." But in order to make games, that history needs to be considered as a starting point. 
+
+With that in mind, my job as the insructor for this course is to deal with two sepcific things: 
 
 1. Get you to turn that thing you consume into that thing you are capable of producing.
 1. Dispell the expectation that you can re-create the games you've been playing since you were young.
 
-It's the second item that makes my job hard. We all want to re-create games we've played before. I can't even tell you how often I hear folks say, "I just want to remake Call of Duty: Modern Warfare." Or, "I loved Grand Theft Auto IV and want to make a new one." These things aren't possible. To make those games, you had tens of thousands of hours distributed among hundreds of workers across the fields that comprise or engage computation, marketing, social science, graphic design, and game design. 
+### item 2: dispelling expectations
+It's the second item that makes my job hard. We all want to re-create games we've played before. I can't even tell you how often I hear folks say, "I just want to remake Call of Duty: Modern Warfare." Or, "I loved Grand Theft Auto V and want to make a new one." These are fantastic goals! However, they are also impossible ones. Those games had tens of thousands of hours distributed among hundreds of workers across the fields that comprise or engage computation, marketing, social science, graphic design, and game design.
 
-You're just you and you don't have a few hundred million dollars to spend. So, what I can offer is to get you started on the path so you can join those teams. If I get you on that path, i'm super excited. 
+After all, you're just you and you don't have a few hundred million dollars to spend. So, what I can offer is to get you started on the path so you can join those teams. If I get you on that path, i'm super excited. 
 
+### item 1: flipping the switch to production
 To answer number one, i've decided to give the fantasy console the chance it needs - as a space where you can move your consumptive behaviors to production. This is a horribly difficult task for anyone. I was once told that education is the disenchant of the wonder of our childhood. I think this is unfair as for a lot of us, learning how to build the stuff we loved as kids is amazing. What's more adult than making something for others to experience? 
 
 I'm excited because the Fantasy Consoles were created to capture that spirit of creation and discovery that was present before there was a video game industry. 
@@ -43,7 +47,7 @@ If you're interested, these books really get in to that space of creation:
 * [Masters of Doom: How Two Guys Created an Empire and Transformed Pop Culture](https://www.amazon.com/Masters-Doom-Created-Transformed-Culture/dp/0812972155/ref=sr_1_1?ie=UTF8&qid=1525273157&sr=8-1&keywords=masters+of+doom)
 * [The Friendly Orange Glow: The Untold Story of the PLATO System and the Dawn of Cyberculture](https://www.amazon.com/Friendly-Orange-Glow-Untold-Cyberculture/dp/1101871555/ref=sr_1_1?ie=UTF8&qid=1525273782&sr=8-1&keywords=the+friendly+orange+glow)
 
-
+***
 # Table of Contents
 1. [Game Loops](#game-loops)
 1. [Variables](#variables)
