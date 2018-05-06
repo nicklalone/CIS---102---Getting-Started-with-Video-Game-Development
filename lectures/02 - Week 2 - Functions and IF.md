@@ -99,7 +99,7 @@ end
 ```
 This code should be pretty straight forward, it looks a bit like this: 
 
-
+![The Game Loop](\course%20documents\pics\lecture\week2\func.gif)
 
 ## Function _INIT()
 This function fires when the game begins 
