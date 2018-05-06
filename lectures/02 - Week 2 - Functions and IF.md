@@ -8,9 +8,9 @@
 1. Use IF statements to make objects react to the edges of the screen.
 1. Describe and Create a Game Loop.
 
-**Optionally, you could if you wanted also learn to:**
+**Optionally, you could also learn to:**
 1. Install Notepad++ and use it in conjunction with PICO-8.
-1. Install Sublime Text to use for the PICO-8
+1. Install Sublime Text to use in conjunction with PICO-8
 
 # Week 2 - IF, Functions and Variables!
 There are three concepts that every programming environment needs to deal with: 
