@@ -1,6 +1,5 @@
 **By the end of this week you should be able to:**
 1. Name, Save, and Load your PICO-8 files.
-1. Install Notepad++ and use it in conjunction with PICO-8.
 1. Write comments in the coding environment.
 1. Create variables and begin your own PICO-8 Game.
 1. Describe different kinds of variables.
@@ -8,6 +7,10 @@
 1. Understand the 3 specific functions PICO-8 uses.
 1. Use IF statements to make objects react to the edges of the screen.
 1. Describe and Create a Game Loop.
+
+**Optionally, you could if you wanted also learn to:**
+1. Install Notepad++ and use it in conjunction with PICO-8.
+1. Install Sublime Text to use for the PICO-8
 
 # Week 2 - IF, Functions and Variables!
 There are three concepts that every programming environment needs to deal with: 
