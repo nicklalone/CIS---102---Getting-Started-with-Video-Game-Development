@@ -66,11 +66,14 @@ The game loop is the central space of interaction of play. For FPS, this is shoo
 * Those same objects need to move according to their AI or physics.
 * If online play is happening, the two or more versions of the game must negotiate bandwidth, latency, and discrepancies.
 
-There is a TON that goes in to a game loop. This is part of the thing that makes video games feel like games AND makes the idea of creating games hard. 
+All of the "making" in the phrase "making a game" goes into game loop. This is part of the thing that makes video games feel like games AND makes the idea of creating games hard. Arguably, graphics, narrative, and everything related to that comes second but that is a long discussion that can be read about in this aside. 
 
 In PICO-8, the game loop boils down to 3 key items: initialization, drawing, and updating. 
 
+PICO-8 runs normally at 30 frames per second. That means that 30 times per second, the game state is getting updated. But what does that mean? Let's take a little bit of a tour. 
+
 ## The _INIT() Function
+This function fires when the game begins 
 
 ## The _DRAW() Function
 
