@@ -97,13 +97,25 @@ function _draw()
   circfill(xpos, ypos, 10, 8)
 end
 ```
-This code should be pretty straight forward, it looks a bit like this: 
+This code should be pretty straight forward. Copy it and paste it into your Code Editor. When you click run, it should look like this: 
 
 ![The Game Loop](/course%20documents/pics/lecture/week2/func.gif)
 
 ## Function _INIT()
-This function fires when the game begins 
+This function runs as the game begins. It is doing stuff to initialize your game. In this case, notice the code: 
 
+```
+function _init()
+  xpos = 64
+  ypos = 64
+end
+```
+The first part of that code, ``` function _init()``` is us creating that function. We are definine that the function called _init begins there. The () means that it does not take any parameters. It is just a function that runs on its own. Next, we see: 
+```
+  xpos = 64
+  ypos = 64
+```
+These two lines of code declare that something is going to go on the X-Axis at pixel 64 and the Y-Axis at pixel 64. What does that mean/ Well, the PICO-8 Screen is 127 pixels tall and 127 pixels wide. *This is important to remember.* By declaring 
 ## Function _DRAW()
 
 ## Function _UPDATE()
