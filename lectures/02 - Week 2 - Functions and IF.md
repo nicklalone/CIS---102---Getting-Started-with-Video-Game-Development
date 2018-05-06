@@ -57,7 +57,18 @@ If you're interested, these books really get in to that space of creation:
 A lot of what we'll go over here today is also captured on [this wiki page](http://pico-8.wikia.com/wiki/Lua). If you'd like to try and jump ahead you can, but just know that you'll be expected to meet the requirements of your homework each week. This means you'll have to point out things in your code via comments and line numbers.
 
 ## Game Loops
+The game loop is the central space of interaction of play. For FPS, this is shooting and being shot at. For platformers, this is jumping and landing. Basically, if I as a gamer push a button, then it's important for you to as a gamer to see something happen. There are endless things that are happening in the background for this to occur: 
+* The game world has to be rendered (drawn).
+* The player must be constantly drawn as they move about the screen.
+* The player must be able to press buttons and see a reaction.
+* Buttons must be mapped to actions for an input device.
+* Enemies, balls, and other obstacles for the player have to be drawn.
+* Those same objects need to move according to their AI or physics.
+* If online play is happening, the two or more versions of the game must negotiate bandwidth, latency, and discrepancies.
 
+There is a TON that goes in to a game loop. This is part of the thing that makes video games feel like games AND makes the idea of creating games hard. 
+
+In PICO-8, the game loop boils down to 3 key items: initialization, drawing, and updating. 
 
 ## Variables
 
