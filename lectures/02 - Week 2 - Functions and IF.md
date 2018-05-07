@@ -10,6 +10,14 @@
 1. Install Notepad++ and use it in conjunction with PICO-8.
 1. Install Sublime Text to use in conjunction with PICO-8
 
+***
+# Table of Contents
+1. [AAA and You](#getting-over-the-aaa-experience]
+1. [Game Loops](#game-loops)
+1. [Variables](#variables)
+1. [Functions](#functions)
+1. [IF Statements](#if-statements)
+
 # Week 2 - IF, Functions and Variables!
 There are 3 central concepts this week that will form the basis of the rest of the class: 
 1. Create objects.
@@ -46,13 +54,6 @@ If you're interested, these books really get in to that space of creation:
 * [Dungeon Hacks: How NetHack, Angband, and Other Roguelikes Changed the Course of Video Games](https://www.amazon.com/Dungeon-Hacks-NetHack-Angband-Roguelikes-ebook/dp/B012QP0Z7O/ref=sr_1_4?ie=UTF8&qid=1525273115&sr=8-4&keywords=roguelike)
 * [Masters of Doom: How Two Guys Created an Empire and Transformed Pop Culture](https://www.amazon.com/Masters-Doom-Created-Transformed-Culture/dp/0812972155/ref=sr_1_1?ie=UTF8&qid=1525273157&sr=8-1&keywords=masters+of+doom)
 * [The Friendly Orange Glow: The Untold Story of the PLATO System and the Dawn of Cyberculture](https://www.amazon.com/Friendly-Orange-Glow-Untold-Cyberculture/dp/1101871555/ref=sr_1_1?ie=UTF8&qid=1525273782&sr=8-1&keywords=the+friendly+orange+glow)
-
-***
-# Table of Contents
-1. [Game Loops](#game-loops)
-1. [Variables](#variables)
-1. [Functions](#functions)
-1. [IF Statements](#if-statements)
 
 A lot of what we'll go over here today is also captured on [this wiki page](http://pico-8.wikia.com/wiki/Lua). If you'd like to try and jump ahead you can, but just know that you'll be expected to meet the requirements of your homework each week. This means you'll have to point out things in your code via comments and line numbers.
 
@@ -109,22 +110,22 @@ function _init()
   ypos = 64
 end
 ```
-The first part of that code, ``` function _init()``` is us creating that function. We are definine that a function called _init. Everything after the () is what that function contains. For now, we won't say more about the () except for the fact that you need them in order for it to work. 
+The first part of that code, function _init() is us creating that function. We are definine that a function called _init. Everything after the () is what that function contains. For now, we won't say more about the () except for the fact that you need them in order for it to work. 
 
 The next part is: 
 ```
   xpos = 64
   ypos = 64
 ```
-We call these two lines of code variables. The first is the variable ```xpos``` and the second is the variable ```ypos```. Each of these exist *only* inside the _INIT() function right now. There are other types of variables that we will get to soon. 
+We call these two lines of code variables. The first is the variable *xpos* and the second is the variable *ypos*. Each of these exist *only* inside the _INIT() function right now. There are other types of variables that we will get to soon. 
 
 But what does that mean? 2 variables declared for 64 and 64 what? 
 
-Well, the PICO-8 Screen is 127 pixels tall and 127 pixels wide. *This is important to remember* and it means that right in the middle of the screen are where these two variables are pointing at, pixel 64 on the X-Axis and pixel 64 on the Y-Axis. 
+Well, the PICO-8 Screen is 128 pixels tall and 128 pixels wide though only 127 of each of those is visible. *This is important to remember* and it means that right in the middle of the screen are where these two variables are pointing at, pixel 64 on the X-Axis and pixel 64 on the Y-Axis. 
 
 But what? All you really know is that "Something" has been declared for these two points. In the case of the _INIT() Function, it just means that this is where something will be drawn by the draw function.
 
-## Function _DRAW()
+## FUNCTION _DRAW()
 The Draw function is the second part of the PICO-8 Loop. It is responsible for what it seems like it would be responsible for - drawing things. Take the example we've been working with. Let's take it apart a little. 
 ```
 function _draw()
@@ -132,16 +133,38 @@ function _draw()
   circfill(xpos, ypos, 10, 8)
 end
 ```
-What this seems to be doing is ```cls``` which is clearing the screen and then ```circlfil``` which is drawing a circle that begins at those variables that were delcared earlier. The whole line is ```circfill(xpos, ypos, 10, 8)``` but what does that mean?
+What this seems to be doing is *cls* which is clearing the screen and then *circlfil* which is drawing a circle that begins at those variables that were delcared earlier. The whole line is *circfill(xpos, ypos, 10, 8)* but what does that mean?
 
-But what happens if we take out the clear screen?
+Check out the [cheet sheet](https://www.lexaloffle.com/bbs/files/16585/PICO-8_CheatSheet_0111Gm_4k.png) for a little bit about this line. Notice that for the *circfill()* it notes that there is an x-coordinate, a y-coordinate, the radius of the circle, and its color. So what that line is stating is that the circle will be located at *xpos, ypos* (remember those variables from the _init()?) and it will be *10 pixels* wide and a color of 8. Note that on the color portion of the cheet that the color 8 is red. 
+
+There are other aspects of the code as well. Specifically that CLS is interesting. What happens if we take out the clear screen?
 ```
 function _draw()
   circfill(xpos, ypos, 10, 8)
 end
 ```
+What happens here is that the screen isn't cleared of the stuff from the other parts of the DRAW() and since it stays there, the circle looks more like a worm than a circle. This is an important lesson! It will come up during your homework. Next, we need to consider the update function. 
 
 ## FUNCTION _UPDATE() AND FUNCTION UPDATE60()
+The *_UPDATE* function is just that, it updates the game each frame based on the code within. In this case, this is not a function for drawing things, but for doing stuff. Notice the code from the cart that started this discussion:
+
+```
+function _update()
+  if (btn(0) and xpos > 0) xpos -= 1
+  if (btn(1) and xpos < 127) xpos += 1
+  if (btn(2) and ypos > 0) ypos -= 1
+  if (btn(3) and ypos < 127) ypos += 1
+end
+```
+What is happening here is that the UPDATE() function is that each frame the program checks if a button has been pressed. If it has, it adds or subtracts 1 from the xpos/ypos variables. Notice that in this case, the circle itself is not moving but the space where it is initialized is. The circle just happens to be assigned those two variables. 
+
+Note the 127 there. If a specific button is pressed, then something is being done. 
+
+This is our first pattern: variables and the statement IF. 
+
+### FUNCTION _UPDATE60()
+Here's a program I wrote to hopefully make a bit more sense. There's something  
+
 ```posx = 0
 posy = 0
 col = 0
