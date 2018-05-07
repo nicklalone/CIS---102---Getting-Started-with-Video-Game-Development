@@ -8,7 +8,7 @@
 1. Place the score the current player has somewhere on the screen.
 1. Build a system that indicates how many chances players have to reach a maximum score. 
 
-## Part 2 - Game Over
+## Part 3 - Game Over
 1. Indicate victory when the current player reaches a maximum score.
 1. Indicate a game over When the current player loses their last chance to play.
 1. After the game is over, give the player a way to return to the title screen.
