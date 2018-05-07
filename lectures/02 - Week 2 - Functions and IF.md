@@ -12,7 +12,7 @@
 
 ***
 # Table of Contents
-1. [AAA and You](#getting-over-the-aaa-experience]
+1. [AAA and You](#getting-over-the-aaa-experience)
 1. [Game Loops](#game-loops)
 1. [Variables](#variables)
 1. [Functions](#functions)
