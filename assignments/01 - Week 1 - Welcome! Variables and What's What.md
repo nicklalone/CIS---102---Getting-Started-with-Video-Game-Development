@@ -21,4 +21,8 @@ This first homework assignment is about getting familiar with the various aspect
 
     ![Example](/course%20documents//pics/hw/hw1/folder.PNG)
 
-6. Place all of these photos in a compressed folder and submit it via Blackboard.
+## Submission
+
+1. Create a .p8 file for this week's work.
+1. Write a 500-750 narrative about this weeks' work. 
+1. Add the files to a compressed folder and submit. 

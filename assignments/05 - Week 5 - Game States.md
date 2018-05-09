@@ -12,3 +12,9 @@
 1. Indicate victory when the current player reaches a maximum score.
 1. Indicate a game over When the current player loses their last chance to play.
 1. After the game is over, give the player a way to return to the title screen.
+
+## Part 4 - Submission
+
+1. Create a .p8 file for this week's work.
+1. Write a 500-750 narrative about this weeks' work. 
+1. Add the files to a compressed folder and submit. 
