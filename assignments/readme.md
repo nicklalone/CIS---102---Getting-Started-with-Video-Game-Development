@@ -4,7 +4,7 @@ For the next 12 weeks, you will be working with the fantasy console *PICO-8* and
 
 If you need help, please ask! 
 
-### The 1-Hour Rule
+## The 1-Hour Rule
 We will be programming and working with technology. This is a strange space to work in that consists of trying to convince a computer to do certain things in a certain amount of time with certain goals in mind. 
 
 *If at any time you have worked for more than an hour without actually solving a problem, get up and leave the computer for a while. Take a walk, take a nap, watch an episode of a tv show, watch a movie. Do something that gets you away from that space.*
