@@ -165,18 +165,28 @@ This is our first pattern: variables and the statement IF.
 ### FUNCTION _UPDATE60()
 Here's a program I wrote to hopefully make a bit more sense. There's something  
 
-```posx = 0
+```
+posx = 0
 posy = 0
 col = 0
 
+function _init()
+cls()
+end
+
 function _update()
+-- print('hello, i am an update function')
 	rectfill(posx,posy,posx,posy,col)
-	posx+=1
-	col+=1
+	posx = posx+1
+	col = col+1
 	if posx >= 127 
-	then posy+=1 end
+	then posy = posy+1 end
 	if posx >=127
 	then posx = 0 end
+end
+
+function _draw()
+-- Will leave this here for later / fiddling.
 end
 ```
 
