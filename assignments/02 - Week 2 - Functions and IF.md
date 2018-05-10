@@ -1,9 +1,9 @@
-## Part 1 - The Three Functions
+## Part 1 - The Three Functions also Known as the Game Loop
 1. Write an initialization function that clears the screen. 
 2. Write a draw function that creates a circle on the screen that is Red.
 3. Create an update function for a 60 frame per second game.
 
-## Part 2 - Doing Stuff with those functions
+## Part 2 - Doing the Game Loop
 4. Write variables that dictate where that circle will appear on screen.
 4. Write an update function that moves the circle in a line. 
 4. Create a variable that indicates the size of the circle.
