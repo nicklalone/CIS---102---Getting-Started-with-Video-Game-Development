@@ -18,7 +18,7 @@ end
 ```
 where x and y are the top left corner of the sprite 
 the same coordinates you use to `spr()` it)  and w and h are its width and height 
-if those are always 8 you can hardcode it :slightly_smiling_face:
+if those are always 8 you can hardcode it
 
 ```
 function colliding(a, b)
