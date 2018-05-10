@@ -1,0 +1,14 @@
+1. Background
+The architect has been fiddling with programming for a number of years off and on. They are taking courses now as they have reached a point where they need a bachelors to continue growing in their current position. The architect is not really much of a game player insomuch as they are systems builders. 
+
+2. What they already know.
+The architect might be familiar with one of the C languages at an intermediate or advanced level. They are familiar with most of the aspects needed to program as well as the structure of programming. This means they can organize files, deal with file extensions, and generally have an easier time in the course.
+
+3. What they think they need to do.
+The architect wants to get through their bachelors program so they can get a raise at work. They think they already know most of what the course is meant to teach. 
+
+4. How the course will help them.
+The course will help them get closer to the end of their degree using the skills they already have. However, the course can also present a number of novel aspects of design thinking in addition to a little bit of documentation writing.
+
+5. Needs
+Not many needs for the architect aside from a need to show the learner that they have more to learn.

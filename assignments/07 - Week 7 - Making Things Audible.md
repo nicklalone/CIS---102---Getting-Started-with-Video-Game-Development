@@ -9,8 +9,15 @@
 1. Add a melody for the title screen.
 1. Add a melody for game over.
 
+## Part 3 - Final Proposal
+This document will contain 3 section of 100 words each.
+* Section 1 - Goal
+* Section 2 - How to achieve goal.
+* Section 3 - Barriers
+
 ## Part 3 - Submission
 
 1. Create a .p8 file for this week's work.
-1. Write a 500-750 narrative about this weeks' work. 
+1. Write a 500-750 narrative about this weeks' work.
+1. Create your final proposal.
 1. Add the files to a compressed folder and submit. 

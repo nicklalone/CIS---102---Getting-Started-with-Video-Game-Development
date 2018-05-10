@@ -1,0 +1,14 @@
+1. Background
+The enthusiast has been playing games for many years. They identify themselves as a gamer and have strong opinion about games in general. 
+
+2. What they already know.
+The enthusiast has a lot of knowledge about the thing that is being created in this course. They may or may not be a heavy computer user depending on the type of game they enjoy. 
+
+3. What they think they need to do.
+Because the enthusiast has played so many games, they are at a point now where they want to try and create games themselves. To learn how gam making works, they have enrolled as a computer scientist or mathematics major to learn how game making works. 
+
+4. How the course will help them.
+This is a general education course and so it will introduce a number of possibly different alternatives to the act of game creation. 
+
+5. Needs
+Generally, the enthusiast might have issues with expectations. A discussion of needing practice to match expectations to skills might be needed.
