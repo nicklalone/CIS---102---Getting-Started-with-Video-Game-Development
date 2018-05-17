@@ -25,6 +25,26 @@ end
 --updating stuff is the heart of the game
 --per frame updates
 function _update()
+buttpress = false
+--always resets to false each frame
+if btn(0) then
+--left(can do += instead)
+pad_dx =-5
+--pad_x = pad_x-5
+end
+if btn(1) then
+--right(can do += instead)
+pad_dx+=5
+--pad_x = pad_x+5
+end
+--if at the frame update 
+--a button isn't getting
+--pressed, slow down
+if not (buttpress) then
+pad_dx = pad_dx/1.7 
+end
+pad_x+=pad_dx
+
 	--this is for ball speed
 ball_y = ball_y+ball_dy
 ball_x = ball_x+ball_dx
