@@ -13,6 +13,7 @@
 ***
 # Table of Contents
 1. [AAA and You](#getting-over-the-aaa-experience)
+1. [The PICO-8 Development Area](#the-pico-8-development-area)
 1. [Variables](#variables)
 1. [The Game Loop](#the-game-loop)
 1. [Other Functions](#functions)
@@ -62,6 +63,19 @@ If you're interested, these books really get in to that space of creation:
 
 A lot of what we'll go over here today is also captured on [this wiki page](http://pico-8.wikia.com/wiki/Lua). If you'd like to try and jump ahead you can, but just know that you'll be expected to meet the requirements of your homework each week. This means you'll have to point out things in your code via comments and line numbers.
 
+## The PICO-8 Development Area
+Looking at PICO-8, you can see that there is a square that everything is drawn on to. Last week when you were playing importing, and manipulating games, you should have noticed that almost all of the games have the same sort of space that things get drawn in. That space looks a little like this: 
+
+[PICO-8 Pixels](/course%20documents/pics/lecture/week2/availablespace.PNG)
+
+There's a lot to break down here. See that little square in the upper left of the big box? That is 1 pixel. There are 128 of those across the screen and 128 of those down the screen. The screen is therefore made into a coordinate system of X (left to right) and Y (top to bottom). (0,0) is the left-most, upper-most pixel whereas (127,127) is the lower-most, right-most pixel. 
+
+You might be asking yourself, "But I thought it was 128 across!!!?" and you're right. But remember that we start at 0, not 1. This is important!
+
+Each of these 128 tiny squares can be up to 16 distinct colors. Each of these has a numeric value. You can see them below:
+
+
+
 ## Variables
 In programming nothing is assumed. If you want a ball, you have to write a number of statements in a programming language that dictate the shape, the size, the speed, and the capabilities of the ball. If you want a blade of grass, you have to write a program that creates it. That program must dictate the color, the size, how many blades of grass. Each of these things are constrained by the hardware and memory allocations available. 
 
@@ -69,7 +83,7 @@ What you are doing in this class, is learning the basics of that process and the
 
 Variables can be named anything and form the basis of your own style as a programmer. In PICO-8, there are a lot of different kinds of variables but for now, we can separate these by type. For example, is the variable a number? a collection of characters? a check of true or false? the start of a table? Each of these are possible. 
 
-For now, the types of variables we will concern ourselves with are integers or numbers. But to do that, we need to take a step back and consider what you're looking at. Open up PICO-8
+For now, the types of variables we will concern ourselves with are integers or numbers. Remember the development area?
 
 ### Available Space
 PICO-8 consists 
