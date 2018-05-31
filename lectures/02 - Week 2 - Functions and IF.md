@@ -30,7 +30,9 @@ Sounds goofy, right? But think about it for a second. If we're getting started w
 1. Do stuff with that ball and paddle.
 1. Do something to the ball and paddle.
 
-And so this week, that's what we'll be doing. As an aside, you can read about other development environments, but for now, we'll be talking about PICO-8. This console was created to emulate the early days of video games. This means that there are no canned physics engines, there are no packages for you to install. There is just you, your code, and what you see in the game. This is important to do as I think for most of us, video games are these multi-million dollar spectacles that require hundreds of thousands of human hours to complete. This reminds me.
+And so this week, that's what we'll be doing. 
+
+As an aside, you can read about [other fantasy consoles](/course%20documents/asides/other_readings/Fantasy%20Console%20Wars_%20A%20Guide%20to%20The%20Biggest%20Players%20in%20Retrogaming%E2%80%99s%20Newest%20Trend.pdf), but for now, we'll be talking about PICO-8. This console was created to emulate the early days of video games. This means that there are no canned physics engines, there are no packages for you to install. There is just you, your code, and what you see in the game. This is important to do as I think for most of us, video games are these multi-million dollar spectacles that require hundreds of thousands of human hours to complete. This reminds me.
 
 ## Getting Over the AAA Experience
 As a gamer, I have been inside the world of video games (and board games) since the [Magnavox Odyssey](https://gamehistory.org/first-video-game-commercial/) was new. I've been inside of the creation of video games since around the late 1990s when I started making Quake levels and helping friends make their own little games to send to shareware sites. For many of you who are undergrads now, that space was around before you were even born. So when I say video game, you might conjure up Playstation 3 or XBox 360 as "old." But in order to make games, that history needs to be considered as a starting point. 
