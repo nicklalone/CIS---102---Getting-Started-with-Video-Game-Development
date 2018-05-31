@@ -19,13 +19,14 @@ For the sake of all of our sanity, we will be using the [PICO-8 Fantasy Console]
 ## **Some useful links:** Will add and organize to these as I find them.
 
 ## **Technical Links**
-1. [Pico-8](https://www.lexaloffle.com/pico-8.php) - Pick up the Program here (~$15.00)
+1. [PICO-8](https://www.lexaloffle.com/pico-8.php) - Pick up the Program here (~$15.00)
 1. [PICO-8 Wikia](http://pico-8.wikia.com/wiki/Pico-8_Wikia?utm_medium=referral&utm_campaign=ZEEF&utm_source=https%3A%2F%2Fpico-8-resources.zeef.com%2Fmarco.secchi) - The PICO-8 Wikia knowledgebase
-1. [The Pico-8 Cheatsheet!](https://imgur.com/iGrP5bK) - This will help you after you get started.
+1. [The PICO-8 Cheatsheet!](https://imgur.com/iGrP5bK) - This will help you after you get started.
+1. [The In-Depth PICO-8 Cheatsheet](https://neko250.github.io/pico8-api/)
 
 ## **Community Links**
 1. [The Fantasy Console Discord Server](https://discordapp.com/invite/sFeDxWK) - This is a space to talk about and to folks doing work on the various fantasy consoles out there!
-1. [The Pico-8 Zine](https://sectordub.itch.io/pico-8-fanzine-1) - This is a fantastic zine about the PICO-8. They are available at the price you want. Check them out!
+1. [The PICO-8 Zine](https://sectordub.itch.io/pico-8-fanzine-1) - This is a fantastic zine about the PICO-8. They are available at the price you want. Check them out!
 
 ## **Tutorials**
 1. [Krystian Majewski's PICO-8 Hero](https://www.youtube.com/playlist?list=PLYND9uft5u_1YCkmXiMrPU7tiBG3hIKAZ) - This is a series of videos from my favorite tutorial maker. He'll bring you through PICO-8 quickly if you want to accelerate yourself!
@@ -33,7 +34,7 @@ For the sake of all of our sanity, we will be using the [PICO-8 Fantasy Console]
 1. [Brigds PICO-8 Tutorials](https://www.youtube.com/watch?v=NOcZonu65hE&list=PLB_hJy2NGP0JsFFpEJpe2Wb-k7QShZkGX) - Another great beginners tutorial that covers a lot of content slowly and with great detail.
 
 ## **Resources**
-1. [Felipe Bueno's Awesome Pico-8 Collection](https://github.com/felipebueno/awesome-PICO-8) - This is a Github repository of all sorts of resources about PICO-8. 
+1. [Felipe Bueno's Awesome PICO-8 Collection](https://github.com/felipebueno/awesome-PICO-8) - This is a Github repository of all sorts of resources about PICO-8. 
 1. [PICO-8 Resources by Marco Secchi](https://pico-8-resources.zeef.com/marco.secchi) - Collection of resources for PICO-8 of a different kind that Felipe Bueno's.
 
 Over the course of the semester, we will be learning what PICO-8 actually is and how you can make your own game on this console for you, your friends, and your family to play. 
