@@ -76,17 +76,55 @@ Each of these 128 tiny squares can be up to 16 distinct colors. Each of these ha
 
 ![PICO-8 Colors](/course%20documents/pics/lecture/week2/colors.PNG)
 
+And that's what you're working with. 256 pixels that can all be colored in 16 different ways. But how do we get them to do something? The first step is to start creating objects and to do that, we need variables.
+
 ## Variables
-In programming nothing is assumed. If you want a ball, you have to write a number of statements in a programming language that dictate the shape, the size, the speed, and the capabilities of the ball. If you want a blade of grass, you have to write a program that creates it. That program must dictate the color, the size, how many blades of grass. Each of these things are constrained by the hardware and memory allocations available. 
+In programming nothing is assumed. If you want a ball, you have to write a number of statements in a programming language that dictate the shape, the size, the speed, and the other capabilities of the ball. If you want a blade of grass, you have to write a program that creates it. That program must dictate the color, the size, how many blades of grass. Each of these things are constrained by the hardware and memory allocations available. 
 
 What you are doing in this class, is learning the basics of that process and the place where we can begin is by declaring something exists by creating a variable. Variables are essentially objects that store information. This information is meant to be manipulated later by the computer program. 
 
-Variables can be named anything and form the basis of your own style as a programmer. In PICO-8, there are a lot of different kinds of variables but for now, we can separate these by type. For example, is the variable a number? a collection of characters? a check of true or false? the start of a table? Each of these are possible. 
+Variables can be named anything and form the basis of your own style as a programmer. In PICO-8, there are a lot of different kinds of variables but for now, we can separate these by type. For example, is the variable a number? a collection of characters? a check of true or false? Each of these are possible. 
 
-For now, the types of variables we will concern ourselves with are integers or numbers. Remember the development area?
+But what does that mean? 
 
-### Available Space
-PICO-8 consists 
+### Let's do something fun.
+1. Open up PICO-8
+2. Hit Escape
+3. In the code editor, type:
+
+```
+cls()
+
+x0 = 4
+y0 = 20
+x1 = 40
+y1 = 10
+col = 3
+
+rectfill(x0,y0,x1,y1,col)
+```
+4. Hit Escape again.
+5. Type `run`
+
+So what is it you just did? What just happened? If you encountered an error, what line does it say the error is on? Check that line out, see if it matches *exactly*. 
+
+Let's walk through this line by line. 
+
+`cls()` is a command that clears the screen. This is called a [Function](#functions). We will get to those toward the end of this week's content.
+
+But what is next?
+
+```
+x0 = 4
+y0 = 20
+x1 = 40
+y1 = 10
+col = 3
+```
+
+These are variables! Right now, we have what, 5 variables? `x0, y0, x1, y1, col` are all holding information. But what is the information? Well, at this point they are just numbers. `4, 20, 40, 10, and 3` without anything to attach those values to, the information they hold is just worthless. They are doing nothing and have no meaning. 
+
+To provide meaning for them, the last line of code says, `rectfill(x0,y0,x1,y1,col)`
 
 
 ## The Game Loop
