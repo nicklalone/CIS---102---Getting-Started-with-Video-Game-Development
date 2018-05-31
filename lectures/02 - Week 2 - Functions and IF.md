@@ -13,10 +13,11 @@
 ***
 # Table of Contents
 1. [AAA and You](#getting-over-the-aaa-experience)
-1. [Game Loops](#game-loops)
 1. [Variables](#variables)
-1. [Functions](#functions)
+1. [The Game Loop](#the-game-loop)
+1. [Other Functions](#functions)
 1. [IF Statements](#if-statements)
+
 
 # Week 2 - IF, Functions and Variables!
 There are 3 central concepts this week that will form the basis of the rest of the class: 
@@ -35,19 +36,21 @@ And so this week, that's what we'll be doing.
 As an aside, you can read about [other fantasy consoles](/course%20documents/asides/other_readings/Fantasy%20Console%20Wars_%20A%20Guide%20to%20The%20Biggest%20Players%20in%20Retrogaming%E2%80%99s%20Newest%20Trend.pdf), but for now, we'll be talking about PICO-8. This console was created to emulate the early days of video games. This means that there are no canned physics engines, there are no packages for you to install. There is just you, your code, and what you see in the game. This is important to do as I think for most of us, video games are these multi-million dollar spectacles that require hundreds of thousands of human hours to complete. This reminds me.
 
 ## Getting Over the AAA Experience
-As a gamer, I have been inside the world of video games (and board games) since the [Magnavox Odyssey](https://gamehistory.org/first-video-game-commercial/) was new. I've been inside of the creation of video games since around the late 1990s when I started making Quake levels and helping friends make their own little games to send to shareware sites. For many of you who are undergrads now, that space was around before you were even born. So when I say video game, you might conjure up Playstation 3 or XBox 360 as "old." But in order to make games, that history needs to be considered as a starting point. 
+As a gamer, I have been playing video games (and board games) since the [Magnavox Odyssey](https://gamehistory.org/first-video-game-commercial/). Starting around 1996, my time with games started to get more intimate. I began to try and make my own games, take other games apart. I started doing this by making Quake levels and helping friends make their own little games to send to shareware sites. 
+
+For many of you who are undergrads now, that space was around before you were even born. So when I say video game, you might conjure up Playstation 3 or XBox 360 as "old." But in order to make games, that history needs to be considered as a starting point. 
 
 With that in mind, my job as the insructor for this course is to deal with two sepcific things: 
 
-1. Get you to turn that thing you consume into that thing you are capable of producing.
 1. Dispell the expectation that you can re-create the games you've been playing since you were young.
+1. Get you to turn that thing you consume into that thing you are capable of producing.
 
-### item 2: dispelling expectations
+### item 1: dispelling expectations
 It's the second item that makes my job hard. We all want to re-create games we've played before. I can't even tell you how often I hear folks say, "I just want to remake Call of Duty: Modern Warfare." Or, "I loved Grand Theft Auto V and want to make a new one." These are fantastic goals! However, they are also impossible ones. Those games had tens of thousands of hours distributed among hundreds of workers across the fields that comprise or engage computation, marketing, social science, graphic design, and game design.
 
 After all, you're just you and you don't have a few hundred million dollars to spend. So, what I can offer is to get you started on the path so you can join those teams. If I get you on that path, i'm super excited. 
 
-### item 1: flipping the switch to production
+### item 2: flipping the switch to production
 To answer number one, i've decided to give the fantasy console the chance it needs - as a space where you can move your consumptive behaviors to production. This is a horribly difficult task for anyone. I was once told that education is the disenchant of the wonder of our childhood. I think this is unfair as for a lot of us, learning how to build the stuff we loved as kids is amazing. What's more adult than making something for others to experience? 
 
 I'm excited because the Fantasy Consoles were created to capture that spirit of creation and discovery that was present before there was a video game industry. 
@@ -59,7 +62,20 @@ If you're interested, these books really get in to that space of creation:
 
 A lot of what we'll go over here today is also captured on [this wiki page](http://pico-8.wikia.com/wiki/Lua). If you'd like to try and jump ahead you can, but just know that you'll be expected to meet the requirements of your homework each week. This means you'll have to point out things in your code via comments and line numbers.
 
-## Game Loops
+## Variables
+In programming nothing is assumed. If you want a ball, you have to write a number of statements in a programming language that dictate the shape, the size, the speed, and the capabilities of the ball. If you want a blade of grass, you have to write a program that creates it. That program must dictate the color, the size, how many blades of grass. Each of these things are constrained by the hardware and memory allocations available. 
+
+What you are doing in this class, is learning the basics of that process and the place where we can begin is by declaring something exists by creating a variable. Variables are essentially objects that store information. This information is meant to be manipulated later by the computer program. 
+
+Variables can be named anything and form the basis of your own style as a programmer. In PICO-8, there are a lot of different kinds of variables but for now, we can separate these by type. For example, is the variable a number? a collection of characters? a check of true or false? the start of a table? Each of these are possible. 
+
+For now, the types of variables we will concern ourselves with are integers or numbers. But to do that, we need to take a step back and consider what you're looking at. Open up PICO-8
+
+### Available Space
+PICO-8 consists 
+
+
+## The Game Loop
 The game loop is the central space of interaction of play. For FPS, this is shooting and being shot at. For platformers, this is jumping and landing. Basically, if I as a gamer push a button, then it's important for you to as a gamer to see something happen. There are endless things that are happening in the background for this to occur: 
 * The game world has to be rendered (drawn).
 * The player must be constantly drawn as they move about the screen.
@@ -198,3 +214,7 @@ But what happens if we instead use the 60 updates per second FUNCTION _UPDATE60(
 
 ![The Game Loop](/course%20documents/pics/lecture/week2/screenfill60.gif)
 
+## IF Statements
+
+
+## Functions
