@@ -10,4 +10,17 @@
 1. Use the sound effects editor
 1. Understand game states
 
+From last week, we did something with a ball. It looked a little like this: 
+```
+--ball position
+ball_x = 1
+ball_y = 33
+--ball speed
+ball_dx = 2
+ball_dy = 2
+--ball size
+ball_r = 2
+ball_dr = 0.5
+```
+
 
