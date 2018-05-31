@@ -126,6 +126,23 @@ These are variables! Right now, we have what, 5 variables? `x0, y0, x1, y1, col`
 
 To provide meaning for them, the last line of code says, `rectfill(x0,y0,x1,y1,col)`
 
+What is this doing? The clue should be in `rectfill` or "Rectangle Fill" According to the [The PICO-8 Cheatsheet!](https://imgur.com/iGrP5bK), this command is creating a rectangle. It has 5 possible parameters though they are not explained on the sheet itself. The [PICO-8 Wiki](http://pico-8.wikia.com/wiki/Rectfill) notes that the 5 things in the () are coordinates and a color. Or, you could show them as: 
+
+```
+x0
+The x coordinate of the upper left corner.
+y0
+The y coordinate of the upper left corner.
+x1
+The x coordinate of the lower right corner.
+y1
+The y coordinate of the lower right corner.
+col
+The color of the rectangle and fill. If omitted, the color from the draw state is used.
+```
+Now, there are two different ways to consider these parts of `rectfill`. You can fill them in manually, for example: `rectfill(4,20,40,10,3)`. This will do the same thing as what the code you typed does. However, once those items are coded, that rectangle will always be that way. So, instead of *hard coding* those values, we can instead replace them with variables. This makes us able to manipulate those variables later as they exist independent of the function called `rectfill()`. 
+
+But how do you actually "manipulate those variables later on?" and what does it mean to "exist independent of the function called `rectfill()`?" Well, to understand that, we need to take a step back to understand a very important concept for any game - **The Game Loop**. 
 
 ## The Game Loop
 The game loop is the central space of interaction of play. For FPS, this is shooting and being shot at. For platformers, this is jumping and landing. Basically, if I as a gamer push a button, then it's important for you to as a gamer to see something happen. There are endless things that are happening in the background for this to occur: 
