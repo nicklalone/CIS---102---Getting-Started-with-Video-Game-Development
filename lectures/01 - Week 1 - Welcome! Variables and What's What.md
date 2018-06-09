@@ -111,6 +111,18 @@ So the user interface contains the following screens:
 
 ## File Structures and Locations
 
+One the things that you might know about your computer is that it consists of a large number of files that all have three kinds of information before we even get to the contents.
+
+1. The name of the file (e.g. filename.txt)
+1. An extension that indicates to the operating system what kind of file it is. (The .txt in filename.txt tells your computer it is a txt or text file and to open the appropriate program to open that program.)
+1. A location in the file structure that makes up your computer.
+	* (e.g. C:\Users\nickl\Dropbox\Bellevue Work\GAME\CIS 102\GAME-102---PICO-8-\lectures\filename.txt)
+
+For PICO-8 this is no different. There is a program called PICO-8 that exists inside of your computer's file structure in predictible locations. There is also a folder inside of your computer's file structure that holds all of the cartridges you create, cartridges you download, and other files that are needed to run them. 
+
+You can find this folder most easily by typing, "Folder" in the command line on PICO-8. There are also a bunch of other commands that do things in the command line. Commands like `run` or `help`. Knowing these commands can save you time and effort, can lower your overall frustration with learning this stuff. 
+
+Here is a list of useful commands to consider. What they do should be a little self-evident but I leave it to you to try them out.
 
 ## Useful Text Commands
 (a lot of this is from the [wiki](http://pico-8.wikia.com/wiki/CommandReference))
@@ -139,6 +151,16 @@ So the user interface contains the following screens:
 If you head to [The PICO-8 Carts Page](https://www.lexaloffle.com/bbs/?cat=7#sub=2&mode=carts), you'll see a bunch of games you can play. Click on the picture and the game will load. Click on the name and you'll go to a page that has the game to play plus a number of other commands. Under the game you should see: 
 
 ``` Cart [the cart number] | Copy | Code | The Date of upload | Link ```
+
+The Cart Number is the number assigned to the cart the time it was first uploaded. This number will not change as it is updated. While this number is not exactly the most exciting, knowing the number can help you on occasion. 
+
+`copy` and `code` are the two clickable items that are super important. The first item allows you to import the entirity of the game into PICO-8 whereas the second allows you to import just the code. 
+
+What is the difference between these two? Well: 
+* `Copy` will include things like graphics and sound. This is the complete game.
+* `Code` will just show you the code that makes up the game. 
+
+`Code` is useful for when you are trying to solve coding problems and want to see how a similar game accomplished a particular issues. Copy is useful for that as well but also includes sprites and sounds in case you want to "borrow" them. (*remember to cite where you get stuff from~*)
 
 ### Installing games via Copy
 

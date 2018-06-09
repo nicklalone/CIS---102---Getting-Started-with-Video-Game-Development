@@ -1,3 +1,33 @@
+**By the end of this lesson, you will be able to:**
+1. Create objects that interact.
+1. Use variables and if statements to make two objects that interact.
+1. Use the sprite editor to create objects that interact.
+1. Assign states to sprites. 
+
+**Optionally, you could also learn to:**
+1. Create a rudimentary outline for a platformer
+1. Upload a cart to PICO-8
+1. Send PICO-8 data to Github.
+
+**Table of Contents**
+1. [What does collision mean?](#what-does-collision-mean?)
+1. [Using IF Statements to Make Things Interact](#using-if-statements-to-make-things-interact)
+1. [Using the Sprite System to Make Thing Interact](#using-the-sprite-system-to-make-things-interact)
+1. [Code Beyond Your Computer](#code-beyond-your-computer)
+
+# Week 4 - Making Stuff Collide with Things
+3 items form the basis of this week's lesson. THey all surround the idea of making things hit each other. 
+1. Using IF Statements in more creative ways.
+1. Make pre-defined objects interact with each other in predictible ways.
+1. Optionally Using the Sprite Editor
+
+This week's lesson might be the most difficult of the semester. Do not worry, you will have enough examples to pull from should you need them. There are also numerous code examples to pull ideas from. As always, should you pull from these, remember to mark in comments that you used ideas from the code examples. In particular, note which ones you did use. 
+
+---
+
+# What does it mean 
+
+
 https://developer.mozilla.org/en-US/docs/Games/Techniques/2D_collision_detection
 
 
