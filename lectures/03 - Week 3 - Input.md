@@ -16,6 +16,12 @@
 1. [Smoothing Movement](#smoothing-movement)
 1. [Friction](#friction)
 
+# Week 3 - Making Stuff Move When Players Want It To.
+3 items form the basis of this week's lesson. THey all surround the idea of allowing users to actually interact with your system.
+1. More uses for IF Statements.
+1. Using the pre-defined buttons to allow users to interact with your program.
+1. Friction and uses for the _update function.
+
 From last week, we did something with a ball. It looked a little like this: 
 ```
 -- Where does the ball begin?
