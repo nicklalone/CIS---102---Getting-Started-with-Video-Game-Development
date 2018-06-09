@@ -7,8 +7,8 @@
 1. Use IF statements to make objects react to the edges of the screen.
 
 **Optionally, you could also learn to:**
-1. Install Notepad++ and use it in conjunction with PICO-8.
-1. Install Sublime Text to use in conjunction with PICO-8
+* Install Notepad++ and use it in conjunction with PICO-8.
+* Install Sublime Text to use in conjunction with PICO-8
 
 ***
 # Table of Contents
@@ -29,19 +29,23 @@ There are 3 central concepts this week that will form the basis of the rest of t
 Sounds goofy, right? But think about it for a second. If we're getting started with a game of breakout, then we need to: 
 
 1. Create a ball and paddle.
-1. Do stuff with that ball and paddle.
-1. Do something to the ball and paddle.
+1. Do stuff with that ball and paddle (e.g. Make it Move).
+1. Do something to the ball and paddle (e.g. Make them hit each other).
 
 And so this week, that's what we'll be doing. 
 
-As an aside, you can read about [other fantasy consoles](/course%20documents/asides/other_readings/Fantasy%20Console%20Wars_%20A%20Guide%20to%20The%20Biggest%20Players%20in%20Retrogaming%E2%80%99s%20Newest%20Trend.pdf), but for now, we'll be talking about PICO-8. This console was created to emulate the early days of video games. This means that there are no canned physics engines, there are no packages for you to install. There is just you, your code, and what you see in the game. This is important to do as I think for most of us, video games are these multi-million dollar spectacles that require hundreds of thousands of human hours to complete. This reminds me.
+As an aside, you can read about [other fantasy consoles](/course%20documents/asides/other_readings/Fantasy%20Console%20Wars_%20A%20Guide%20to%20The%20Biggest%20Players%20in%20Retrogaming%E2%80%99s%20Newest%20Trend.pdf). Asides will be those things that you might find interesting given what the current week is meant to teach you but are not essential. You can find all of them in the `Asides` folder in `Course Documents` on the repository. 
+
+As we mentioned last week, PICO-8 was created to emulate the early days of video games. This means that there are no [canned physics engines](), there are no [packages for you to install](). Nothing is done for you. Instead, much like the original game creators, there is just you, your code, and what you see in the game. 
+
+This is important to do as I think for most of us, video games are these multi-million dollar spectacles that require hundreds of thousands of human hours to complete. As a teacher for this course, the hardest thing that I will have to do all semester will be to convince you that the games you play are created the way that they are in this class but at a much larger scale. As a nod to that hurdle, I offer you this tiny essay.
 
 ## Getting Over the AAA Experience
-As a gamer, I have been playing video games (and board games) since the [Magnavox Odyssey](https://gamehistory.org/first-video-game-commercial/). Starting around 1996, my time with games started to get more intimate. I began to try and make my own games, take other games apart. I started doing this by making Quake levels and helping friends make their own little games to send to shareware sites. 
+As a gamer, I have been playing video games (and board games) since the [Magnavox Odyssey](https://gamehistory.org/first-video-game-commercial/). Starting around 1996, my time with games started to get more intimate. I began to try and make my own games, take other games apart. I started doing this by installing custom Doom wads. Eventually, I graduated to making Quake levels, small RPGs in [RPG=Maker]() and eventually helping friends make their own little games to send to shareware sites. 
 
-For many of you who are undergrads now, that space was around before you were even born. So when I say video game, you might conjure up Playstation 3 or XBox 360 as "old." But in order to make games, that history needs to be considered as a starting point. 
+For many of you who are undergrads now, that space was around before you were even born. So when I say video game, you might conjure up Playstation 3 or XBox 360 as "old." Time is of course relative. It moves forward constantly but what you are meant to do as someone interested in making games is get into that history and figure out where you belong. It is helpful to know the history of game making in order to understand making games. In many ways, this will be like pulling back the curtain of fantasy to show you the reality. 
 
-With that in mind, my job as the insructor for this course is to deal with two sepcific things: 
+This requires two sepcific events: 
 
 1. Dispell the expectation that you can re-create the games you've been playing since you were young.
 1. Get you to turn that thing you consume into that thing you are capable of producing.
@@ -61,7 +65,15 @@ If you're interested, these books really get in to that space of creation:
 * [Masters of Doom: How Two Guys Created an Empire and Transformed Pop Culture](https://www.amazon.com/Masters-Doom-Created-Transformed-Culture/dp/0812972155/ref=sr_1_1?ie=UTF8&qid=1525273157&sr=8-1&keywords=masters+of+doom)
 * [The Friendly Orange Glow: The Untold Story of the PLATO System and the Dawn of Cyberculture](https://www.amazon.com/Friendly-Orange-Glow-Untold-Cyberculture/dp/1101871555/ref=sr_1_1?ie=UTF8&qid=1525273782&sr=8-1&keywords=the+friendly+orange+glow)
 
-A lot of what we'll go over here today is also captured on [this wiki page](http://pico-8.wikia.com/wiki/Lua). If you'd like to try and jump ahead you can, but just know that you'll be expected to meet the requirements of your homework each week. This means you'll have to point out things in your code via comments and line numbers.
+### A pointer before we continue.
+___
+A lot of what we'll go over here today is also captured on [this wiki page](http://pico-8.wikia.com/wiki/Lua). 
+
+____
+#### admin note:
+
+*If you'd like to try and jump ahead you can, but just know that you'll be expected to meet the requirements of your homework each week. This means you'll have to point out things in your code via comments and line numbers.*
+____
 
 ## The PICO-8 Development Area
 Looking at PICO-8, you can see that there is a square that everything is drawn on to. Last week when you were playing importing, and manipulating games, you should have noticed that almost all of the games have the same sort of space that things get drawn in. That space looks a little like this: 
@@ -86,12 +98,41 @@ Variables can be named anything and form the basis of your own style as a progra
 For now, the types of variables we will concern ourselves with are integers or numbers. Remember the development area?
 
 ### Available Space
-PICO-8 consists 
+PICO-8 consists 256 locations. In the upper left is location `(0,0)` and in the lower right is location `(127, 127)`. Remember the map from the last section?
 
+![PICO-8 Pixels](/course%20documents/pics/lecture/week2/availablespace.PNG) 
+
+Well, this is the space you can work with. Do you want to have a dot that moves around the screen like a ball? Well, you can use `circfill()` to create a tiny circle but you have to deal with a number of things. 
+1. Where does the ball begin?
+1. How big is the ball?
+1. How fast is the ball?
+1. What happens to the ball if it reaches the edge of the screen?
+1. What color is it?
+1. Does it make a sound?
+
+Using the above collection of x and y coordinates, we can answer a few of those things. 
+1. Where does the ball begin?
+1. How big is the ball?
+1. How fast is the ball?
+
+We know the command `circfill()` can help us a lot. `circfill(x,y,r,[col])` are all of the parameters for us. Let's assign some variables to them: 
+
+1. Where does the ball begin? Let's create 2 variables for the 2 coordinates x and y: `beg_x = 64` and `beg_y = 64`.
+1. How big is the ball? Let's create a variable called `size = 3`. This will be our `radius` or `r`.
+1. How fast is the ball? Let's create a variable called `speed = 0`.
+1. What color is it? Let's create a variable called `col=4`. Remember that these numbers refer directly to one of the available colors.
+
+After all that we have ourselves a game object!
+
+`circfill(beg_x,beg_y,size,col)` 
+
+Now what do we do with it? Inside our PICO-8 program all it does is draw a dot of a particular color and size in a particular location. How do we get it to *do something*. Well, to get it to start moving, we have to use the game loop.
+
+______
 
 ## The Game Loop
 The game loop is the central space of interaction of play. For FPS, this is shooting and being shot at. For platformers, this is jumping and landing. Basically, if I as a gamer push a button, then it's important for you to as a gamer to see something happen. There are endless things that are happening in the background for this to occur: 
-* The game world has to be rendered (drawn).
+* The game world has to be drawn on the screen.
 * The player must be constantly drawn as they move about the screen.
 * The player must be able to press buttons and see a reaction.
 * Buttons must be mapped to actions for an input device.
