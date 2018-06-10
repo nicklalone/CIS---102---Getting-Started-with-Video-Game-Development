@@ -26,17 +26,22 @@ There are 3 central concepts this week that will form the basis of the rest of t
 1. Do stuff with those objects.
 1. Do stuff to those objects.
 
-Sounds goofy, right? But think about it for a second. If we're getting started with a game of breakout, then we need to: 
+Sounds goofy, right? But think about it for a second. If we're getting started with a game of breakout, then pong, and then something unique of our own, then we need to: 
 
 1. Create a ball and paddle.
 1. Do stuff with that ball and paddle (e.g. Make it Move).
 1. Do something to the ball and paddle (e.g. Make them hit each other).
 
-And so this week, that's what we'll be doing. 
+And so this week, we are getting started with the first item: making things move. 
 
-As an aside, you can read about [other fantasy consoles](/course%20documents/asides/other_readings/Fantasy%20Console%20Wars_%20A%20Guide%20to%20The%20Biggest%20Players%20in%20Retrogaming%E2%80%99s%20Newest%20Trend.pdf). Asides will be those things that you might find interesting given what the current week is meant to teach you but are not essential. You can find all of them in the `Asides` folder in `Course Documents` on the repository. 
+---
+Asides will be those things that you might find interesting given what the current week is meant to teach you but are not essential. You can find all of them in the `Asides` folder in `Course Documents` on the repository.
 
-As we mentioned last week, PICO-8 was created to emulate the early days of video games. This means that there are no [canned physics engines](), there are no [packages for you to install](). Nothing is done for you. Instead, much like the original game creators, there is just you, your code, and what you see in the game. 
+--- 
+
+As an aside, you can read about [other fantasy consoles](/course%20documents/asides/other_readings/Fantasy%20Console%20Wars_%20A%20Guide%20to%20The%20Biggest%20Players%20in%20Retrogaming%E2%80%99s%20Newest%20Trend.pdf) after reading this document.  
+
+PICO-8 was created to emulate the early days of video games. This means that there are no [canned physics engines](), there are no [packages for you to install](). Nothing is done for you. Instead, much like the original game creators, there is just you, your code, and what you see in the game. 
 
 This is important to do as I think for most of us, video games are these multi-million dollar spectacles that require hundreds of thousands of human hours to complete. As a teacher for this course, the hardest thing that I will have to do all semester will be to convince you that the games you play are created the way that they are in this class but at a much larger scale. As a nod to that hurdle, I offer you this tiny essay.
 
@@ -269,7 +274,179 @@ But what happens if we instead use the 60 updates per second FUNCTION _UPDATE60(
 
 ![The Game Loop](/course%20documents/pics/lecture/week2/screenfill60.gif)
 
-## IF Statements
+Does it seem twice  as fast? It should because it is. Frame rates also impact other things like variables, IF Statements and Functions. We've covered variables and you know what functions are frome the game loop, but what else can those do? But first, lets actually explore those IF Statements since we had to say, "roll with it" earlier.
 
+## IF Statements
+An IF statement is just how it seems. IF sonething happens, THEN do something else. For example, what is happening here?
+```
+ball_x = 3
+x_speed = 1
+ball_y = 15
+y_speed = 1
+ball_round = 3
+col = 0
+
+function _init()
+cls()
+end
+
+function _update()
+ball_y = ball_y+y_speed
+ball_x = ball_x+x_speed
+col=col+1
+
+if ball_x > 127 
+then x_speed = -1 
+end
+
+if ball_x < 0 
+then x_speed = 1
+end
+
+if ball_y > 127 
+then y_speed = -1 
+end
+
+if ball_y < 0 
+then y_speed = 1
+end
+end
+
+function _draw()
+cls()
+circfill(ball_x,ball_y,ball_round,col)
+end
+```
+So what is happening here? Well, if you plugged this into your PICO-8 code editor you'd see a flashing ball that ends up bouncing around he screen. Why does it do this? Can you work out why?
+
+Thos IF statements tell us a story. As the ball object, that `circfill()` in the `_draw()` function, the values change because of the increments in the `_update()` function. We are adding two values together to adjust the circles `ball_x` and `ball_y` values. 
+
+This means that as the `circfill()` object is drawn, it appears to move. 30 times a second, the value shifts. So in this way, the circle seems to move. 30 pixels per second. So take a look those IF Statements. They ,ight make a bit of logical sense. 
+
+What they say is this: *If the variable that indicates the x or y position of the ball is ever greater (>) than the edge of the screen, then change the speed value to the opposite of what it was.*
+
+This is powerful. It gives our ball the ability to seem like it's bouncing off of the walls. But this is not the only thing you can do with IF statements. We can use them for anything we need to check for. 
+
+This is called a BOOLEAN check. The logic is the same across almost all computer languages. IF Something is TRUE then do something. 
+
+We can also do something tricky with them like set something to False, trigger it to TRUE with another IF Statement and then trigger a third statement. For example: next week you will be making things move. To do this, you will use an IF statement that moves if a button is pressed. 
+
+To smoothe out movement, we can add a variable that is declared as FALSE that is updated every frame. We have an IF Statement that says, IF a button isnt being pressed, reduce the movement of an object. This way if we are moving our paddle and let go, the paddle feels like it has friction.
+
+You can enter this code into PICO-8's code editor and play around with it. What makes sense? What doesn't? This code has examples from the next couple weeks. 
+
+```
+--ball position
+ball_x = 1
+ball_y = 33
+--ball speed
+ball_dx = 2
+ball_dy = 2
+--ball size
+ball_r = 2
+ball_dr = 0.5
+
+--paddle starting position
+pad_x = 52
+pad_y = 120
+--paddle speed
+pad_dx = 0
+--paddle size
+pad_w = 24
+pad_h = 3
+pad_c = 7
+
+--what to do upon running
+function _init()
+cls()
+end
+
+--updating stuff is the heart of the game
+--per frame updates
+function _update()
+	buttpress = false
+	--always resets to false each frame
+	if btn(0) then
+	--left(can do += instead)
+	pad_dx =-5
+	--pad_x = pad_x-5
+	end
+	if btn(1) then
+	--right(can do += instead)
+	pad_dx+=5
+	--pad_x = pad_x+5
+	end
+	--if at the frame update 
+	--a button isn't getting
+	--pressed, slow down
+	if not (buttpress) then
+	pad_dx = pad_dx/1.7 
+	end
+	pad_x+=pad_dx
+	
+	--this is for ball speed
+	ball_y = ball_y+ball_dy
+	ball_x = ball_x+ball_dx
+
+	--these are statements about ball movement.
+	--can also make these 2 if into 1 with "or"
+	if ball_x > 127 
+	then ball_dx = -1
+	sfx(0) 
+	end
+
+	if ball_x < 1 
+	then ball_dx = 1 
+	sfx(0)
+	end
+
+	if ball_y > 127 
+	then ball_dy = -1 
+	sfx(0)
+	end
+
+	if ball_y < 1 
+	then ball_dy = 1
+	sfx(0)
+	end
+
+	--turns the ball back to white after the function that turns it red.
+	pad_c=7
+	--if the ball has hit the paddle, then do something.
+	if ball_hit(pad_x,pad_y,pad_w,pad_h) 
+	then pad_c = 8
+	
+	end
+end
+
+function _draw()
+	--background - ball - paddle
+	rectfill(0,0,127,127,1)
+	circfill(ball_x,ball_y,ball_r,3)
+	rectfill(pad_x, pad_y,pad_x+pad_w,pad_y+pad_h,pad_c)
+end
+
+--function for dealing with the ball hitting the box. 
+--this will return a value
+--can be universal in its instantiation so we can use it in different ways.
+function ball_hit(box_x,box_y,box_w,box_h)
+	if ball_y - ball_r > box_y + box_h 
+	then return false
+	end
+	if ball_y + ball_r < box_y 
+	then return false
+	end
+	if ball_x - ball_r > box_x + box_w
+	then return false
+	end
+	if ball_x + ball_r < box_x 
+	then return false
+	end
+	return true
+end
+```
+
+Now what are Functions?
 
 ## Functions
+Functions are what they seem, groups of commands that produce or return something. 
