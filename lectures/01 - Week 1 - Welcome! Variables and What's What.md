@@ -31,7 +31,7 @@ During this course, you will be working on making your own game for people to pl
 1. [A Cheat Sheet](#a-cheat-sheet)
 
 ## PICO-8
-This is your programming environment for the class and nearly all of your content is going to be run from this little program. According to the manual, which you can find here: [PICO-9 Manual](https://www.lexaloffle.com/pico-8.php?page=manual), PICO-8 is:
+This is your programming environment for the class and nearly all of your content is going to be run from this little program. According to the manual, which you can find here: [PICO-8 Manual](https://www.lexaloffle.com/pico-8.php?page=manual), PICO-8 is:
 
 ```PICO-8 is a fantasy console for making, sharing and playing tiny games and other computer programs. When you turn it on, the machine greets you with a shell for typing in Lua programs and provides simple built-in tools for creating sprites, maps and sound.```
 
@@ -163,10 +163,18 @@ What is the difference between these two? Well:
 `Code` is useful for when you are trying to solve coding problems and want to see how a similar game accomplished a particular issues. Copy is useful for that as well but also includes sprites and sounds in case you want to "borrow" them. (*remember to cite where you get stuff from~*)
 
 ### Installing games via Copy
+To install a game via the copy link from the website, you simply click on the `copy' button and copy the data like normal. Once you have done this, go to PICO-8 and on the command line type, `load @clip`. This will load the game you have just copied, sprites, sounds, and all, into their respective spaces. You can then play the game you want and have all of the assets created for that game. 
 
+This method of loading games is very useful if you want to explore how a particular game managed a particular look and feel. It can also give you some other hints and tricks as you explore the game, the code, and the music of that particular game.  
 
-### Dealing with the game's code
+### Copying and Pasting Code 
+When you copy the code of a game, you will be able to run the game but independent of any sprites or sounds. Some games (like the ones you make for this course) are ok with this. Others will simply draw blank boxes where a sprite should be. 
 
+To install games via copying the code, all you need to do is simply select all the code, copy it and paste it into the `Code Editor` of PICO-8. If the game works perfectly, you can either play it or start customizing it yourself. The cartridge eco-system of PICO-8 reflects the nature of the original video games - open and open sourced. 
 
 ## A Cheat Sheet
+The very last bit to be a part of this week is a cheat sheet. The cheat sheet is very useful if you print it out (in color) and keep it with the machine you use to code with. It will provide an endless array of useful information on which number each color is, the parameters of circles, rectangles, and other shapes. It even provides data on the various types of variables that can be used within programs. 
+
+In addition to this small cheat sheet, there is a much larger one in a github repository. [The In-Depth PICO-8 Cheatsheet](https://neko250.github.io/pico8-api/) is an exhaustive resource you'll need soon.
+
 ![Image of PICO-8 Cheat Sheet](/course%20documents/pics/general/cheat-sheet.png)
