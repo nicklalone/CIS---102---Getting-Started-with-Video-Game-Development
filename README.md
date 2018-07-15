@@ -1,6 +1,6 @@
 # Welcome! 
 
-This course is meant to help you get started in video game development using a limited console that has everything we need to work by ourselves until we're ready to work with others. Remember that video game development (and all of programming) is a collaborative effort. Getting started here means getting started as the member of a new community. It'll be awkard for a while but soon, after some growth, you'll start to contribute to that community. 
+This course is meant to help you get started in video game development using a limited console that has everything we need to work by ourselves until we're ready to work with others. Remember that video game development (and all of programming) is a collaborative effort. Getting started here means getting started as the member of a new community. It'll be awkward for a while but soon, after some growth, you'll start to contribute to that community. 
 
 This course is organized for you to follow in one of two ways. 
 1. Only reading the lecture notes. 
