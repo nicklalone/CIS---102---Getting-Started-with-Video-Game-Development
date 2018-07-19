@@ -1,33 +1,83 @@
-## Part 1 - What will you show us?
+# The Midterm Project
+## Or...show us what you've learned
 
-By now, you have been following along with the programming examples and should have a game that resembles Pong or Breakout depending on if you went with 1 or two player games. This assignment is a chance for you to do a little work on your own. Your assignment this week is to provide a game that shows the following: 
+So you've spent the last few weeks learning about 5 distinct topics: 
+1. Intro and Basics
+1. Functions 
+1. Player Input
+1. Collisions
+1. Game States
 
-1. Movement.
-1. Collisions.
-1. Game States.
+At this point, you now know enough to have a working prototype for classic games like *Pong!*, *Breakout* or something along those lines. 
 
-You will also enclose a narrative file about your work. These will be 500-750 words.
+So this project right now is all about putting all that stuff together. Sure, you have already got this code all 
+in place but is it *YOURS*? Let's see what you can do. 
 
-### Movement
-For movement, players need to be able to push the standard buttons and have something occur. For what we've done so far, this is essentially moving a paddle back and forth but you're welcome to try more if you like. Just remember that all you have is a week! 
+This week, you are showing us what you can do. Here are the parameters of the midterm. You must include adjustments or new code that dictates:  
+1. Movement. (30 points)
+1. Collisions. (30 points)
+1. Game States. (30 points)
+1. 500-750 words about your project (10 points)
 
-### Collisions
-For collision, objects should be running in to each other. In the case of the examples, we have a ball running in to paddles and bricks. What will you do?
+___
 
-### Game States
-For game states, this is a chance to name your game, create your signature style, and provide a little customization. This aspect of the work should include: 
+What the adjustments are is up to you but it must at least look and act differently than the example code at the end of week 5. If you want to add color, adjust width, adjust speed, add balls, add bricks, or other things, do it! Here is a breakdown of each parameter. 
+
+Just remember that all you have is a week! 
+___
+
+### Movement (30 points)
+For movement, players need to be able to push the standard buttons and have something occur. For what we've done so far, you have a rectangle that moves back anf forth across the screen. Now is your chance to adjust those things. 
+
+#### Rubric
+
+1. 
+1. 
+1. 
+
+### Collisions (30 points)
+For collision, objects should be running in to each other. In the case of the examples, we have a ball running in to paddles and bricks. Can something happen to those bricks upon being hit? 
+
+[Breakout Hero](https://www.youtube.com/watch?v=-dElgcbsHdA) can give you a lot of hints!
+
+#### Rubric
+
+1. 
+1. 
+1. 
+
+### Game States (30 points)
+For game states, this is a chance to name your game, create your signature style, and provide a little customization. We covered some of this in class but now this is on you. Your submission should include: 
 
 1. A Title Screen.
 1. A Normal Game State.
 1. An End Game Screen.
+	* The end game screen should allow you to reset the game or if you've instituted lives, the loss of a 1 life.
 
-From end game, you should be able to press a button and start again. 
+#### Rubric
 
-## Part 2 - Submission
+1. 
+1. 
+1. 
 
-You should have 2 files to submit: 
+## Your Post-Mortem or Narrative
+1. 500-700 words.
+	* What did you do?
+	* Why did you do it the way you did?
+	* What did you have trouble with?
+	* Are you happy with the result?
+	* What do you wish you knew going in to the midterm?
+	
+#### Rubric
+
+1. 
+1. 
+1. 
+
+## Reminder: What to Submit!
+
+After working for the week, you should have 2 files to submit: 
 1. The .p8 file.
 2. Your narrative file.
 
-Place them in a compressed folder and submit.
-
+Place them in a compressed folder and submit via Blackboard.
