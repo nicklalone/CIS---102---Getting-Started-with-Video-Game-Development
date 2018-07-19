@@ -1,4 +1,4 @@
-## The Midterm Checkin
+## The Midterm Checkin (30 points)
 The midterm is due in 2 weeks. If you haven't started it yet, go click on that week to see what all you'll be needing to do. The midterm checkin serves as a way for me to make sure that you're doing ok. 
 
 The midterm checkin is pretty straight forward. Each week, you've been asked to do some bit of code that allows you to do a little bit more with PICO-8. At this point, you should have a separate file called, `midterm.p8` that you've been messing with here and there. You're going to submit that with a paragraph that contains the following information: 
@@ -20,7 +20,6 @@ _____
 
 The rubric for this assignment is simple:
 
-1. Have you tried a few things?
-1. Is your narrative complete and free of errors?
-1. Are your questions direct and honest?
-
+1. Have you tried a few things? (10 points)
+1. Is your narrative complete and free of errors? (10 points)
+1. Are your questions direct and honest? (10 points)
