@@ -103,15 +103,15 @@ Perform a review of at least 2 other games (10 points). These should take the fo
 
 >Click around in the discussion forum and check out the links of your fellow students. Look for a game that seems interesting. Play it for "a while." Once you've played it, click on the link above and enter the following: 
 
->**Name of the game and Link**
+>**Name of game and link on the lexaloffle site**
 
->**What made you play it?**
+>**What made you play this game over the others?**
 >(2 sentences that go beyond – “It looked neat.” or "Because I had to finish the assignment.")
 
->**What did you like about it OR what was useful about it?**
+>**What did you like about this game OR what meaningful choices stood out?**
 (2 sentences that go beyond – “It was fun.” Or “It was interested.”)
 
->**What didn’t you like about it?**
+>**What didn’t you like about this game?**
 >(2 sentences that go beyond – “It was fun.” Or “It wasn’t fun.” OR “It wasn’t interesting.”)
 
 >**In addition to your post: **
