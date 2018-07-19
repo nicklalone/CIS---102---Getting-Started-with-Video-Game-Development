@@ -1,4 +1,4 @@
-# The Midterm Project
+# The Midterm Project 
 ## Or...show us what you've learned
 
 So you've spent the last few weeks learning about 5 distinct topics: 
@@ -23,7 +23,7 @@ ___
 
 What the adjustments are is up to you but it must at least look and act differently than the example code at the end of week 5. If you want to add color, adjust width, adjust speed, add balls, add bricks, or other things, do it! Here is a breakdown of each parameter. 
 
-Just remember that all you have is a week! 
+*Just remember one very important thing: you have **one** week to finish this!*
 ___
 
 ### Movement (30 points)
@@ -31,17 +31,20 @@ For movement, players need to be able to push the standard buttons and have some
 
 #### Rubric
 
-
 | Requirement                                     	| 10 points  	| 5 points                   	| 0 points        	|
 |-------------------------------------------------	|------------	|----------------------------	|-----------------	|
 | Player movement is more than just the demo code 	| Full Marks 	| No significant adjustments 	| Nothing Changed 	|
 | Player movement is smooth                       	| Full Marks 	| No significant adjustments 	| Nothing Changed 	|
 | Code for player movement is well-commented      	| Full Marks 	| No significant adjustments 	| Nothing Changed 	|
 
+--- 
 ### Collisions (30 points)
 For collision, objects should be running in to each other. In the case of the examples, we have a ball running in to paddles and bricks. Can something happen to those bricks upon being hit? 
 
 [Breakout Hero](https://www.youtube.com/watch?v=-dElgcbsHdA) can give you a lot of hints!
+[WaffleGnome's Collision Code](https://github.com/WaffleGnome/kescoe-collision) can also help!
+
+What this particular aspect of your midterm is about is if you can do more than just copy and paste this code. Do you understand it? Did you adjust it for how you think the game should look and feel? Is what you've programmed predictible and useable?
 
 #### Rubric
 
@@ -51,6 +54,7 @@ For collision, objects should be running in to each other. In the case of the ex
 | Collisions are predictable and consistent if previous item is changed                       	| Full Marks 	| Some errors in collisions 	| No changes 	|
 | Code collisions is well-commented      	| Full Marks 	| No significant adjustments 	| Nothing Changed 	|
 
+---
 ### Game States (30 points)
 For game states, this is a chance to name your game, create your signature style, and provide a little customization. We covered some of this in class but now this is on you. Your submission should include: 
 
@@ -63,10 +67,11 @@ For game states, this is a chance to name your game, create your signature style
 
 | Requirement                                     	| 10 points  	| 5 points                   	| 0 points        	|
 |-------------------------------------------------	|------------	|----------------------------	|-----------------	|
-| Player movement is more than just the demo code 	| Full Marks 	| No significant adjustments 	| Nothing Changed 	|
-| Player movement is smooth                       	| Full Marks 	| No significant adjustments 	| Nothing Changed 	|
-| Code for player movement is well-commented      	| Full Marks 	| No significant adjustments 	| Nothing Changed 	|
+| Does the player institute an intro screen that they made? 	| Full Marks 	| Copy and pasted 	| No start screen 	|
+| Does the game contain a start, normal, and end-game state?                       	| Full Marks 	| At least 2 states. 	| Only 1 state. 	|
+| Does the game contain an end-game state with ability to restart with button press? | Full Marks 	| End State but no Button Press to Restart 	| No End State 	|
 
+---
 ## Your Post-Mortem or Narrative (10 points)
 1. 500-700 words.
 	* What did you do?
@@ -77,12 +82,13 @@ For game states, this is a chance to name your game, create your signature style
 	
 #### Rubric
 
-| Requirement                                     	| 10 points  	| 5 points                   	| 0 points        	|
+| Requirement                                     	| 5  	| 2 points                   	| 0 points        	|
 |-------------------------------------------------	|------------	|----------------------------	|-----------------	|
-| Player movement is more than just the demo code 	| Full Marks 	| No significant adjustments 	| Nothing Changed 	|
-| Player movement is smooth                       	| Full Marks 	| No significant adjustments 	| Nothing Changed 	|
-| Code for player movement is well-commented      	| Full Marks 	| No significant adjustments 	| Nothing Changed 	|
+| Grammar 	|| Free of Grammatical Errors 	| A few grammar mistakes 	| Significant number of errors 	|
+| Is the post-mortem substantive?          	| Insightful comments 	| Step-by-Step, no insights 	| Comments not substantive 	|
 
+
+---
 ## Reminder: What to Submit!
 
 After working for the week, you should have 2 files to submit: 
