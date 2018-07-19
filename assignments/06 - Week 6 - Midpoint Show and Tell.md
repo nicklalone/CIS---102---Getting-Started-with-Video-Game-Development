@@ -82,7 +82,7 @@ For game states, this is a chance to name your game, create your signature style
 	
 #### Rubric
 
-| Requirement                                     	| 5  	| 2 points                   	| 0 points        	|
+| Requirement                                     	| 5 points 	| 2 points                   	| 0 points        	|
 |-------------------------------------------------	|------------	|----------------------------	|-----------------	|
 | Grammar 	|| Free of Grammatical Errors 	| A few grammar mistakes 	| Significant number of errors 	|
 | Is the post-mortem substantive?          	| Insightful comments 	| Step-by-Step, no insights 	| Comments not substantive 	|
