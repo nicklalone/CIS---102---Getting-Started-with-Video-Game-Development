@@ -45,9 +45,11 @@ For collision, objects should be running in to each other. In the case of the ex
 
 #### Rubric
 
-1. 
-1. 
-1. 
+| Requirement                                     	| 10 points  	| 5 points                   	| 0 points        	|
+|-------------------------------------------------	|------------	|----------------------------	|-----------------	|
+| The code for collisions is more than the demo code 	| Full Marks 	| No significant adjustments 	| Nothing Changed 	|
+| Collisions are predictable and consistent if previous item is changed                       	| Full Marks 	| Some errors in collisions 	| No changes 	|
+| Code collisions is well-commented      	| Full Marks 	| No significant adjustments 	| Nothing Changed 	|
 
 ### Game States (30 points)
 For game states, this is a chance to name your game, create your signature style, and provide a little customization. We covered some of this in class but now this is on you. Your submission should include: 
@@ -59,9 +61,11 @@ For game states, this is a chance to name your game, create your signature style
 
 #### Rubric
 
-1. 
-1. 
-1. 
+| Requirement                                     	| 10 points  	| 5 points                   	| 0 points        	|
+|-------------------------------------------------	|------------	|----------------------------	|-----------------	|
+| Player movement is more than just the demo code 	| Full Marks 	| No significant adjustments 	| Nothing Changed 	|
+| Player movement is smooth                       	| Full Marks 	| No significant adjustments 	| Nothing Changed 	|
+| Code for player movement is well-commented      	| Full Marks 	| No significant adjustments 	| Nothing Changed 	|
 
 ## Your Post-Mortem or Narrative (10 points)
 1. 500-700 words.
@@ -73,9 +77,11 @@ For game states, this is a chance to name your game, create your signature style
 	
 #### Rubric
 
-1. 
-1. 
-1. 
+| Requirement                                     	| 10 points  	| 5 points                   	| 0 points        	|
+|-------------------------------------------------	|------------	|----------------------------	|-----------------	|
+| Player movement is more than just the demo code 	| Full Marks 	| No significant adjustments 	| Nothing Changed 	|
+| Player movement is smooth                       	| Full Marks 	| No significant adjustments 	| Nothing Changed 	|
+| Code for player movement is well-commented      	| Full Marks 	| No significant adjustments 	| Nothing Changed 	|
 
 ## Reminder: What to Submit!
 
