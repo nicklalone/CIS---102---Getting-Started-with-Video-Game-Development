@@ -6,14 +6,14 @@ py = 8
 pspd = 1 
 
 function bump(x,y)
- return fget(mget(flr(x/8),flr(y/8)),0)
-end
+ return fget(mget(flr(x/8),flr(y/8)),0) -- fget gets the value of a sprite (nflr grabs the integer of a float. 
+end -- mget gets the sprite number assigned to a cell on the map so as the sprite moves around, you can check for collisions.
 
-function _update()
+function _update() -- the button (btn) functions are checking against the map which is created in bump(x,y)
  if btn(0) then
   px -= pspd
   if px < 8 then
-   px = 8
+   px = 8 -- left of screen
   end
   if bump(px-1, py) or bump(px,py+7) then
    px += pspd
@@ -23,8 +23,8 @@ function _update()
  if btn(1) then 
   px += pspd
   if px > 112 then
-   px = 112
-  end
+   px = 112 -- right of screen minus sprite size for wall - size of sprite. 128 - 8 (wall) - 8 (character)
+  end -- so if the x value is 112, the x value can only be 112. this makes a collision occur.
   if bump(px+7,py) or bump(px+7, py+7) then
    px -= pspd
   end
@@ -33,7 +33,7 @@ function _update()
  if btn(2) then 
   py -= pspd
   if py < 8 then
-   py = 8
+   py = 8 -- top of screen
   end
   if bump(px,py) or bump(px+7,py) then
    py += pspd
@@ -43,7 +43,7 @@ function _update()
  if btn(3) then 
   py += pspd
   if py > 112 then
-   py = 112
+   py = 112 --bottom of screen
   end
   if bump(px,py+7) or bump(px+7,py+7) then
    py -= pspd
