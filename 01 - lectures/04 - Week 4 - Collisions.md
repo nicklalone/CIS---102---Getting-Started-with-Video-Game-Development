@@ -40,7 +40,7 @@ Example to build on.
 
 check whether any of the four definitely-not-colliding cases is true and then stop.
 
-```
+```lua
 function colliding(a, b)
     if a.x > b.x + b.w - 1 then return false end
     if a.y > b.y + b.h - 1 then return false end
@@ -53,7 +53,7 @@ where x and y are the top left corner of the sprite
 the same coordinates you use to `spr()` it)  and w and h are its width and height 
 if those are always 8 you can hardcode it
 
-```
+```lua
 function colliding(a, b)
     if a.x > b.x + b.w - 1 then return false end
     if a.y > b.y + b.h - 1 then return false end
@@ -64,7 +64,7 @@ end
 ```
 https://www.lexaloffle.com/bbs/?tid=3116
 
-```
+```lua
 function _init()
 	w=128 -- width of the game map
 	h=128 -- height of the game map
