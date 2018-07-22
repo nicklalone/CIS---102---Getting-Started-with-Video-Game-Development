@@ -165,7 +165,7 @@ That is what this week is about - making sense of the game loop. Let's take a li
 
 *Some of the code here might not make sense but it will by the time we are done. The reason we are pasting this in is so we can make sense of what is going on here. This is our structure for coding everything.*
 
-```
+```lua
 -- the first thing we do is initialize the position 
 -- of where we'll be drawing something. 
 -- In this case, it will  to be the center of the screen
@@ -195,7 +195,7 @@ This code should be pretty straight forward. Copy it and paste it into your Code
 
 ## FUNCTION _INIT()
 This function runs as the game begins. It is doing stuff to initialize your game. In this case, notice the code: 
-```
+```lua
 function _init()
   xpos = 64
   ypos = 64
@@ -204,7 +204,7 @@ end
 The first part of that code, function _init() is us creating that function. We are definine that a function called _init. Everything after the () is what that function contains. For now, we won't say more about the () except for the fact that you need them in order for it to work. 
 
 The next part is: 
-```
+```lua
   xpos = 64
   ypos = 64
 ```
@@ -218,7 +218,7 @@ But what? All you really know is that "Something" has been declared for these tw
 
 ## FUNCTION _DRAW()
 The Draw function is the second part of the PICO-8 Loop. It is responsible for what it seems like it would be responsible for - drawing things. Take the example we've been working with. Let's take it apart a little. 
-```
+```lua
 function _draw()
   cls()
   circfill(xpos, ypos, 10, 8)
@@ -229,7 +229,7 @@ What this seems to be doing is *cls* which is `cl`earing the `s`creen and then *
 Check out the [cheet sheet](https://www.lexaloffle.com/bbs/files/16585/PICO-8_CheatSheet_0111Gm_4k.png) for a little bit about this line. Notice that for the *circfill()* it notes that there is an x-coordinate, a y-coordinate, the radius of the circle, and its color. So what that line is stating is that the circle will be located at *xpos, ypos* (remember those variables from the _init()?) and it will be *10 pixels* wide and a color of 8. Note that on the color portion of the cheet that the color 8 is red. 
 
 There are other aspects of the code as well. Specifically that CLS is interesting. What happens if we take out the clear screen?
-```
+```lua
 function _draw()
   circfill(xpos, ypos, 10, 8)
 end
@@ -242,7 +242,7 @@ Let's go to the next part of the loop, _update().
 ## FUNCTION _UPDATE() AND FUNCTION UPDATE60()
 The *_UPDATE* function is just that, it updates the game each frame based on the code within. In this case, this is not a function for drawing things, but for doing stuff. Notice the code from the cart that started this discussion:
 
-```
+```lua
 function _update()
   if (btn(0) and xpos > 0) xpos -= 1
   if (btn(1) and xpos < 127) xpos += 1
@@ -258,7 +258,7 @@ Note the 127 there. If a specific button is pressed, then something is being don
 So, this is a place where we could insert something as we go through this particular code. In the example, everything is located inside of the functions. However, not everything will live in there. This is where we define two kinds of variables: Global and Local.
 
 Let's take another example of that program: 
-```
+```lua
 -- the first thing we do is initialize the position 
 -- of where we'll be drawing something. 
 -- In this case, it will  to be the center of the screen
@@ -284,7 +284,7 @@ end
 
 Let's say we want to make it so that each time the frame updates, it pushes the color of the circle closer to the next color. To deal with this, we have to create a global variable. For the purposes of this example, we'll call it `col = 0`. This makes the little program we're working on look like this: 
 
-```
+```lua
 col = 0
 -- the first thing we do is initialize the position 
 -- of where we'll be drawing something. 
@@ -311,7 +311,7 @@ end
 ```
 So ok, we have a variable called col that exists outside of the game loop and is not part of any other function. This is a GLOBAL variable. We can manipulate it from aby of the 3 parts of the loop. For example, if we want to make it shift colors, we have to manipulate that variable each time the frame updates BUT ALSO use it as a declaration of color in the `circfill()` function. So:
 
-```
+```lua
 col = 0
 -- the first thing we do is initialize the position 
 -- of where we'll be drawing something. 
@@ -338,7 +338,7 @@ end
 ```
 
 NEAT! Notice how it slowly cycles through the colors. Think of the process like this: 
-```
+```lua
 COLOR = 0
 FRAME UPDATE
 COLOR = 0.25
@@ -356,7 +356,7 @@ Next, we need to consider the update function.
 ### FUNCTION _UPDATE60()
 Now, by default, PICO-8 updates 30 times per second. This is 30 frames per second. However, it can also move faster if you like. There are multiple reasons for this, multiple ways that it can work. Maybe you want smoother, maybe you need quicker calculations, maybe your sprites need to animate faster (we'll get to that) but it exists if you need it. To demonstrate it, here's a program I wrote to hopefully make a bit more sense. First, we'll start in 30 frames:
 
-```
+```lua
 posx = 0
 posy = 0
 col = 0
@@ -395,7 +395,7 @@ An IF statement is just how it seems. IF sonething happens, THEN do something el
 We can manipulate this a little bit more to make things look a little more dynamic. Let's synthesize everything we've been doing and try our hand and making a ball.
 
 What is happening here?
-```
+```lua
 ball_x = 44.76
 x_speed = 2
 ball_y = 5.88
@@ -458,7 +458,7 @@ There is a great list of these here: [http://pico-8.wikia.com/wiki/APIReference]
 
 The second type of function are the kinds that we define ourselves. For example, we can add a function called, `runsinit()` that prints a few lines of text. 
 
-```
+```lua
 ball_x = 44.76
 x_speed = 2
 ball_y = 5.88
@@ -519,9 +519,3 @@ That is ok.
 I listen to this video every week or two. It helps when i'm feeling discouraged by the things I have to do. [Ira Glass on Storytelling](https://vimeo.com/24715531).
 
 Replace storytelling with game making. But what about taste? Do you play other games? What sort of taste do you have about games? As an **ASIDE**, consider [this list of games]() that are currently at the forefront of edgy, innovative games. I recommend playing one or two of them a week. What do they share? What sets them apart?
-
-
-
-
-
-
