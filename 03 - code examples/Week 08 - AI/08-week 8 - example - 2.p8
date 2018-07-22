@@ -18,7 +18,7 @@ enemies[2].y = 110
 tilez = {} -- this is setting the bounding boxes for various sprites.
 tilez[1] = {} -- note: these sprites won't be influenced by the bump function.
 tilez[1].x = 40 -- this means that we need to write a similar function but for the tilez.
-tilez[1].y = 48
+tilez[1].y = 48 -- 
 tilez[2] = {}
 tilez[2].x = 48
 tilez[2].y = 48
@@ -39,8 +39,14 @@ tilez[7].x = 24
 tilez[7].y = 48
 
 function bump(x,y)
- return fget(mget(flr(x/8),flr(y/8)),0) -- fget gets the value of a sprite (flr) grabs the integer of a float. 
-end -- mget gets the sprite number assigned to a cell on the map so as the sprite moves around, you can check for collisions.
+
+ local mx=flr(x/8)
+ local my=flr(y/8)
+
+ local tile = mget(mx,my)
+
+ return fget(tile,0) 
+end
 
 function enc0llide(x1,y1,x2,y2) -- detect when the boxes collide with each other. think inversely.
  return (x2 > x1+8 or x2+8 < x1 or y2 > y1+8 or y2+8 < y1) == false -- are all my borders apart or not touching.

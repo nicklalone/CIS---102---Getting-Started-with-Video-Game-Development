@@ -122,3 +122,98 @@ function move(o)
  if(cmap(o)) o.x=lx o.y=ly
 end
 ```
+
+This is where we're starting. Let's walk through this so we can begin. Let's take a walk through these data. 
+
+```lua
+px = 8
+py = 8
+pspd = 1 
+```
+
+This is to establish 3 variables: `player starting position on the x-axis (px)`, `player starting position on the y-axis (py)`, and `the initial speed of the player (pspd)`. Let's check out the next few lines. 
+
+```lua
+function bump(x,y)
+
+ local mx=flr(x/8)
+ local my=flr(y/8)
+
+ local tile = mget(mx,my)
+
+ return fget(tile,0) 
+end
+```
+There's a lot going on here! Let's see if we can take it apart. We'll go in order. 
+* Note the two variables `local mx` and `local my`. Each of these are divided by 8 with the additional command of `flr()`. This is a clever bit of doing. It is divided by `8` so that the 8-pixel width sprite won't look like it's moved until 8-pixels later. This flr returns the `"floor"` of a particular variable (e.g. the `1` in `1.2` or the `9` in `9.7`. 0-0.9 remain as 0. 1-1.9 remain as 1. And so on. This allows us to calculate the relative position of a sprite for collision purposes. 
+
+* `mget()` or "Map Get" searches a particular map and sends it to a particular coordinate on a map. This can be combined with `fget()` to indicate where and when things intersect.
+
+* `fget()` is an API function that gets two arguments `(n,[f])` or "The Sprite Number" and "The flag index." Note if you examine each sprite that there are a number of dots you can click on. Each of these is a flag and with those, you can have them do specific things. The values for these are 0-7 and while we won't be using them in this class, it's a good time to introduce this possibility of development. 
+
+* `return fget(tile,0)` is returning the evaluation of a particular sprite and tile. 
+
+This is why the function is called `bump()`. This is necessary to do a number of things. First, notice that each pixel is divided by 8. This is because each sprite is 8 pixels wide.  
+
+This next set of instructions are about the `_update()` function which you learned about in week 3 and have used in each of your games. Let's take a look at it. 
+
+```lua
+function _update() 
+ if btn(0) then
+  px -= pspd
+  if px < 8 then
+   px = 8 -- left of screen
+  end
+  if bump(px-1, py) or bump(px,py+7) then
+   px += pspd
+  end
+ end
+
+ if btn(1) then 
+  px += pspd
+  if px > 112 then
+   px = 112 -- right of screen 
+  end -- so if the x value is 112, the x value can only be 112. this makes a collision occur.
+  if bump(px+7,py) or bump(px+7, py+7) then
+   px -= pspd
+  end
+ end
+
+ if btn(2) then 
+  py -= pspd
+  if py < 8 then
+   py = 8 -- top of screen
+  end
+  if bump(px,py) or bump(px+7,py) then
+   py += pspd
+  end
+ end
+
+ if btn(3) then 
+  py += pspd
+  if py > 112 then
+   py = 112 --bottom of screen
+  end
+  if bump(px,py) or bump(px+7,py) then
+   py -= pspd
+  end
+ end
+end
+```
+
+So what's happening here? 
+Well, this is checking to see if a particular button is pressed. If a button is pressed, then a certain number of things occur. First, when a button is pressed (directional in this case) the player's x-value (`px`) or y-value (`py`) will increase (`px += pspd`) or decrease (`px -= pspd`). 
+
+So then what? Well, there is an `if` statement here. `if the player's x or y value is greater than or less than the side or top of the screen -16` then set the value of that axis to its maximum value. This is a cheap way to stop player movement over a particular sprite. Because the value is done with the `math-floor` or `flr` function, the value is precise. 
+
+Each button has that value. And this is where we begin. To help, we'll call upon the `_draw()` function to put things in place. I'll place in-line comments to describe each line. 
+```lua
+function _draw()
+ cls()
+ map(0,0,0,0,128,128)
+ spr(3,px,py) -- keep drawing sprite 3 in the position of the two variables px and py.
+ for i in all(enemies) do -- what this is doing is creating a variable called i that is used for that table enemies 
+  spr(6,i.x,i.y) -- so it draws the sprite at the "enemies" table which in turn draws this sprite at each enemy.
+ end -- think of it as a table on a table. the above dictates that everything in the table has this sprite assigned to it.
+end -- and then with each individual enemy we can do something specific with it.
+```

@@ -1,4 +1,4 @@
--- can set up 2 functions and call them by update and draw.
+-- can set up 2 tables and call them by update and draw.
 scrn = {}
 p1 = {}
 
