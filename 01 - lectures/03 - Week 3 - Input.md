@@ -13,8 +13,11 @@
 **Table of Contents**
 1. [Last Week](#last-week)
 1. [Getting Started with Input](#getting-started-with-input)
-1. [Smoothing Movement](#smoothing-movement)
-1. [Friction](#friction)
+1. [Movement](#first---we-figure-out-how-to-move-the-paddle-around.)
+1. [Quickness](#second---next,-we-think-about-how-fast-we-want-the-paddle-to-be.)
+1. [The Sides of the Board](#third---we-figure-out-what-to-do-about-the-sides-of-the-board.)
+1. [Friction and Style](#finally---friction-and-style!)
+1. [Putting it all together](#putting-it-all-together.)
 
 # Week 3 - Making Stuff Move When Players Want It To.
 3 items form the basis of this week's lesson. THey all surround the idea of allowing users to actually interact with your system.
@@ -94,15 +97,6 @@ So now we have a ball, we have the beginnings of a paddle. What next?
 Well, like the ball, we need to make it move around. Only this time, the need to make it move is dependent on those old button press IF Statements from week 2's demonstration of the core loop instead of detecting the pixels. 
 
 To do that, we need to set up a few things. First, we will work on making the paddle move. After that, we will work on the speed and parameters of the paddle itself. Specifically, we'll worry about the size, speed, and behavior of the paddle when it hits the edges. Finally, we will add some style. Specifically, we will add some friction to the paddle to give it a little realism by making it feel heavier. 
-
-This lesson is about a very specific process so we'll provide some links to each of those things like a table of contents: 
-
-**Table of Contents**
-1. [Movement](#first---we-figure-out-how-to-move-the-paddle-around.)
-1. [Quickness](#second---next,-we-think-about-how-fast-we-want-the-paddle-to-be.)
-1. [The Sides of the Board](#third---we-figure-out-what-to-do-about-the-sides-of-the-board.)
-1. [Friction and Style](#finally---friction-and-style!)
-1. [Putting it all together](#putting-it-all-together.)
 
 ### First - We figure out how to move the paddle around. 
 
