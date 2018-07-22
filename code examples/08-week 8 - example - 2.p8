@@ -50,6 +50,16 @@ function distance(x1,y1) -- cartesian distance
  return abs(px - x1) + abs(py-y1) -- manhattan distance
 end
 
+function tilecollide(x1,y1)
+ temp = false
+ for i in all(tilez) do
+  if enc0llide(x1,y1,i.x,i.y) then
+   temp = true
+  end
+ end
+ return temp
+end
+
 function _update() -- the button (btn) functions are checking against the map which is created in bump(x,y)
  if btn(0) then
   px -= pspd
@@ -115,18 +125,26 @@ function _update() -- the button (btn) functions are checking against the map wh
 
  pc = (pc + 1) % 24 -- this is the mod function. 
 
- if distance(enemies[2].x,enemies[2].y) < 30 then -- if the enemy is less than 30 pixels away, do something.
+ if distance(enemies[2].x,enemies[2].y) < 70 then -- if the enemy is less than 30 pixels away, do something.
   if abs(px - enemies[2].x) > abs(py - enemies[2].y) then
    if (px - enemies[2].x < 0 ) then -- where is the player in respect to the enemy?
-    enemies[2].x -=1
+    if tilecollide(enemies[2].x, enemies[2].y) == false then
+     enemies[2].x -=1
+    end
    else 
-    enemies[2].x +=1
+    if tilecollide(enemies[2].x, enemies[2].y) == false then
+     enemies[2].x +=1
+    end
    end
   else 
    if (py - enemies[2].y < 0 ) then -- where is the player in respect to the enemy?
-    enemies[2].y -=1
-   else 
-    enemies[2].y +=1
+    if tilecollide(enemies[2].x, enemies[2].y) == false then
+     enemies[2].y -=1
+    end
+   else
+    if tilecollide(enemies[2].x, enemies[2].y) == false then
+     enemies[2].y +=1
+    end
    end
   end
  end
