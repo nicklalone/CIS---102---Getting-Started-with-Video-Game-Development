@@ -106,119 +106,14 @@ This lesson is about a very specific process so we'll provide some links to each
 
 ### First - We figure out how to move the paddle around. 
 
+We first instantiated the ball in the previous chapter. The principle is the same. We need to account for:
+1. the size of the paddle.
+1. the shape of the paddle.
+1. the position of the paddle.
+1. whatever other parameters we need. 
+So this seems simple enough. It's just a collection of variables! 
 
-### Second - Next, we think about how fast we want the paddle to be.
-
-### Third - We figure out what to do about the sides of the board.
-
-### Finally - Friction and Style!
-
-### Putting it all together.
-
-To add to this code, let's walk through each aspect of the cart in order to consider how to add some depth and feel.
-
-```
---ball position
-ball_x = 1
-ball_y = 33
---ball speed
-ball_dx = 2
-ball_dy = 2
---ball size
-ball_r = 2
-ball_dr = 0.5
-
---paddle starting position
-pad_x = 52
-pad_y = 120
---paddle speed
-pad_dx = 0
---paddle size
-pad_w = 24
-pad_h = 3
-
---what to do upon running
-function _init()
-cls()
-end
-
---updating stuff is the heart of the game
---per frame updates
-function _update()
-buttpress = false
---always resets to false each frame
-if btn(0) then
---left(can do += instead)
-pad_dx =-5
---pad_x = pad_x-5
-end
-if btn(1) then
---right(can do += instead)
-pad_dx+=5
---pad_x = pad_x+5
-end
---if at the frame update 
---a button isn't getting
---pressed, slow down
-if not (buttpress) then
-pad_dx = pad_dx/1.7 
-end
-pad_x+=pad_dx
-
-	--this is for ball speed
-ball_y = ball_y+ball_dy
-ball_x = ball_x+ball_dx
-
---these are statements about ball movement.
---can also make these 2 if into 1 with "or"
-if ball_x > 127 
-then ball_dx = -1
-sfx(0) 
-end
-
-if ball_x < 1 
-then ball_dx = 1 
-sfx(0)
-end
-
-if ball_y > 127 
-then ball_dy = -1 
-sfx(0)
-end
-
-if ball_y < 1 
-then ball_dy = 1
-sfx(0)
-end
-end
-
-function _draw()
---background - ball - paddle
-rectfill(0,0,127,127,1)
-circfill(ball_x,ball_y,ball_r,3)
-rectfill(pad_x, pad_y,pad_x+pad_w,pad_y+pad_h,7)
-end
-```
-
-This is called a BOOLEAN check. The logic is the same across almost all computer languages. IF Something is TRUE then do something. 
-
-We can also do something tricky with them like set something to False, trigger it to TRUE with another IF Statement and then trigger a third statement. For example: next week you will be making things move. To do this, you will use an IF statement that moves if a button is pressed. 
-
-To smoothe out movement, we can add a variable that is declared as FALSE that is updated every frame. We have an IF Statement that says, IF a button isnt being pressed, reduce the movement of an object. This way if we are moving our paddle and let go, the paddle feels like it has friction.
-
-You can enter this code into PICO-8's code editor and play around with it. What makes sense? What doesn't? This code has examples from the next couple weeks. 
-
-```
---ball position
-ball_x = 1
-ball_y = 33
---ball speed
-ball_dx = 2
-ball_dy = 2
---ball size
-ball_r = 2
-ball_dr = 0.5
-
+```lua
 --paddle starting position
 pad_x = 52
 pad_y = 120
@@ -228,11 +123,83 @@ pad_dx = 0
 pad_w = 24
 pad_h = 3
 pad_c = 7
+```
 
---what to do upon running
-function _init()
-cls()
+So here we go. A rectangle's-worth of variables. Starting position in addition to the paddle's width, height, and color. But now, what do we need to do to actually get this object moving? Well, let's take a few stabs at some `if` statements. 
+
+```lua
+function _update()
+	if btn(0) then
+		pad_dx =-5
+	end
+
+	if btn(1) then
+		pad_dx+=5
+	end
+	
+	pad_x+=pad_dx
 end
+```
+
+So if a button is pressed, the pad's x-axis position is moved either +5 or -5  pixels on the x-axis. It does this by constantly looking for a button press AND by constantly re-declaring `pad_x` as `pad_dx`. But what is `pad_dx`? This is the variable that indicates our speed. This is worth considering independently as the speed and physical parameters of your paddle and ball are yours and yours alone.  
+
+### Second - Next, we think about how fast we want the paddle to be.
+
+```lua
+--paddle starting position
+pad_x = 52
+pad_y = 120
+--paddle speed
+pad_dx = 0
+--paddle size
+pad_w = 24
+pad_h = 3
+pad_c = 7
+```
+Originally, we declared the paddle speed to be 0. When the variable is adjusted by a button press, it relocates the x-position of the axis because in the update variable, it is re-declared as the variable that is adjusting the x-position of the paddle. The next part of this paddle business is about the sides of the board and the paddle itself.
+
+### Third - We figure out what to do about the sides of the board.
+
+For now, we will not do anything with the paddle and the edge of the board. As this is a breakout game, we should leave the paddle to go past the sides of the screen. Perhaps this is a way to make the game more difficult. Another way to deal with the sides of the board is to make it less likely that the paddle will head outside the board itself. We can do this by adding "friction" of sorts to the paddle itself.
+
+### Finally - Friction and Style!
+
+The easiest way to add friction is through a type of `BOOLEAN` checks to some sort of IF statement. Let's first add a statement that is always false.
+
+```lua 
+function _update()
+	buttpress = false
+```
+
+This allows us to establish a baseline variable that is set to FALSE. This means if we set it to TRUE then a switch is flipped. Let's add a way to deal with it. 
+
+```lua
+if not (buttpress) then
+	pad_dx = pad_dx/1.7 
+end
+	pad_x+=pad_dx
+```
+
+So this little IF statement is checking the variable `buttpress`. This variable is always set to `false` so each frame, `buttpress` can be nothing but false. This ends up dividing the variable `pad_dx` by 1.7 each frame if the variable is not moving. It does this until it reaches 0. In this way, the paddle will move but the second the button is released, each frame it loses pixel-based movement. 
+
+Play around with it. Change the values, see what makes your game feel the way you want. 
+
+### Putting it all together.
+
+Below is the code that has been outlined above. The techniques and patterns here can be used for any object you'd like to create for players to use. For example, change the paddle to a sprite or some sort of To add to this code, let's walk through each aspect of the cart in order to consider how to add some depth and feel.
+
+You can enter this code into PICO-8's code editor and play around with it. What makes sense? What doesn't? This code has examples from the next couple weeks. Note the very bottom of the code. This is a preview for next week!
+
+```lua
+--paddle starting position
+pad_x = 52
+pad_y = 120
+--paddle speed
+pad_dx = 0
+--paddle size
+pad_w = 24
+pad_h = 3
+pad_c = 7
 
 --updating stuff is the heart of the game
 --per frame updates

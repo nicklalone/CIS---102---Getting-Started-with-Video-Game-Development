@@ -1,9 +1,9 @@
 ## Part 1 - Decompress
-1. Lower the compression of an existing PICO-8 Game by a significant amount. 
+1. Lower the compression of an existing PICO-8 Game. 
 	1. In this case, significant is around 15-20% 
 
 ## Part 2 - Fewer Tokens
-1. Lower the total number of tokens used by an existing PICO 8 game by a significant amount.  
+1. Lower the total number of tokens used by an existing PICO-8 Game.  
 	1. In this case, significant is around 15-20%
 
 ## Part 3 - Submission

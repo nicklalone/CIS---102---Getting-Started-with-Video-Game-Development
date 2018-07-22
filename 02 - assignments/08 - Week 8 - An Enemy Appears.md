@@ -3,7 +3,7 @@
 1. Make that sprite appear in your game. 
 
 ## Part 2 - Enemy Behavior. 
-1. At random intervals, make your sprite attack the enemy somehow.
+1. Make an enemy move in the two ways outlined.
 1. Create consequences based on the enemy's attack.
 
 ## Part 3 - Submission
