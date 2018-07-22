@@ -1,9 +1,11 @@
 pico-8 cartridge // http://www.pico-8.com
 version 14
 __lua__
-px = 8
+px = 8 -- all sprites are 8 pixels in width.
 py = 8
 pspd = 1 
+gameover = false
+pc = 0
 
 enemies = {} -- thjs is a table. this one represents this entire group of enemies of which there are 2.
 enemies[1] = {} -- this is the table for enemy 1
@@ -13,9 +15,40 @@ enemies[2] = {} -- this is the table for enemy 2
 enemies[2].x = 34
 enemies[2].y = 110
 
+tilez = {} -- this is setting the bounding boxes for various sprites.
+tilez[1] = {} -- note: these sprites won't be influenced by the bump function.
+tilez[1].x = 40 -- this means that we need to write a similar function but for the tilez.
+tilez[1].y = 48
+tilez[2] = {}
+tilez[2].x = 48
+tilez[2].y = 48
+tilez[3] = {}
+tilez[3].x = 40
+tilez[3].y = 56
+tilez[4] = {}
+tilez[4].x = 56
+tilez[4].y = 48
+tilez[5] = {}
+tilez[5].x = 64
+tilez[5].y = 48
+tilez[6] = {}
+tilez[6].x = 32
+tilez[6].y = 48
+tilez[7] = {}
+tilez[7].x = 24
+tilez[7].y = 48
+
 function bump(x,y)
  return fget(mget(flr(x/8),flr(y/8)),0) -- fget gets the value of a sprite (flr) grabs the integer of a float. 
 end -- mget gets the sprite number assigned to a cell on the map so as the sprite moves around, you can check for collisions.
+
+function enc0llide(x1,y1,x2,y2) -- detect when the boxes collide with each other. think inversely.
+ return (x2 > x1+8 or x2+8 < x1 or y2 > y1+8 or y2+8 < y1) == false -- are all my borders apart or not touching.
+end -- if any of these are true, then the whole thing cannot be false. this means things are colliding.
+
+function distance(x1,y1) -- cartesian distance
+ return abs(px - x1) + abs(py-y1) -- manhattan distance
+end
 
 function _update() -- the button (btn) functions are checking against the map which is created in bump(x,y)
  if btn(0) then
@@ -23,8 +56,11 @@ function _update() -- the button (btn) functions are checking against the map wh
   if px < 8 then
    px = 8 -- left of screen
   end
-  if bump(px-1, py) or bump(px,py+7) then
-   px += pspd
+  for i in all(tilez) do
+   if enc0llide(px,py,i.x,i.y) then
+    px += pspd
+    break
+   end
   end
  end
 
@@ -33,9 +69,12 @@ function _update() -- the button (btn) functions are checking against the map wh
   if px > 112 then
    px = 112 -- right of screen minus sprite size for wall - size of sprite. 128 - 8 (wall) - 8 (character)
   end -- so if the x value is 112, the x value can only be 112. this makes a collision occur.
-  if bump(px+7,py) or bump(px+7, py+7) then
-   px -= pspd
-  end
+  for i in all(tilez) do
+   if enc0llide(px,py,i.x,i.y) then
+    px -= pspd
+    break
+   end
+  end 
  end
 
  if btn(2) then 
@@ -43,9 +82,12 @@ function _update() -- the button (btn) functions are checking against the map wh
   if py < 8 then
    py = 8 -- top of screen
   end
-  if bump(px,py) or bump(px+7,py) then
-   py += pspd
-  end
+  for i in all(tilez) do
+   if enc0llide(px,py,i.x,i.y) then
+    py += pspd
+    break
+   end
+  end 
  end
 
  if btn(3) then 
@@ -53,20 +95,70 @@ function _update() -- the button (btn) functions are checking against the map wh
   if py > 112 then
    py = 112 --bottom of screen
   end
-  if bump(px,py+7) or bump(px+7,py+7) then
-   py -= pspd
+  for i in all(tilez) do
+   if enc0llide(px,py,i.x,i.y) then
+    py -= pspd
+    break
+   end
   end
  end
+
+ if pc < 12 then -- moving stuff with the pc variable. it's just counting and running this.
+  enemies[1].x +=1  -- this is just a moving guy. a goomba, etc.
+  enemies[1].y -=2
+ end
+
+ if pc >= 12 then
+  enemies[1].x -=1
+  enemies[1].y +=2
+ end
+
+ pc = (pc + 1) % 24 -- this is the mod function. 
+
+ if distance(enemies[2].x,enemies[2].y) < 30 then -- if the enemy is less than 30 pixels away, do something.
+  if abs(px - enemies[2].x) > abs(py - enemies[2].y) then
+   if (px - enemies[2].x < 0 ) then -- where is the player in respect to the enemy?
+    enemies[2].x -=1
+   else 
+    enemies[2].x +=1
+   end
+  else 
+   if (py - enemies[2].y < 0 ) then -- where is the player in respect to the enemy?
+    enemies[2].y -=1
+   else 
+    enemies[2].y +=1
+   end
+  end
+ end
+
+-- can add a check for death here. 
+
+ for i in all(enemies) do
+  if enc0llide(px,py,i.x,i.y) then
+   gameover = true
+  end
+ end
+
 end
 
 
 function _draw()
  cls()
- map(0,0,0,0,128,128)
- spr(3,px,py) -- keep drawing sprite 3 in the position of the two variables px and py.
- for i in all(enemies) do -- what this is doing is creating a variable called i that is used for that table enemies 
-  spr(6,i.x,i.y) -- so it draws the sprite at the "enemies" table which in turn draws this sprite at each enemy.
- end -- think of it as a table on a table. the above dictates that everything in the table has this sprite assigned to it.
+ if gameover == false then
+  map(0,0,0,0,128,128)
+  spr(3,px,py) -- keep drawing sprite 3 in the position of the two variables px and py.
+ 
+  for i in all(tilez) do -- this is creating a bunch of boxes for the 3rd sprite. a tetris shape
+   spr(2,i.x,i.y)
+  end 
+ 
+  for i in all(enemies) do -- what this is doing is creating a variable called i that is used for that table enemies 
+   spr(6,i.x,i.y) -- so it draws the sprite at the "enemies" table which in turn draws this sprite at each enemy.
+  end -- think of it as a table on a table. the above dictates that everything in the table has this sprite assigned to it.
+ 
+ else 
+  print('game over!', 44, 64)
+ end 
 end -- and then with each individual enemy we can do something specific with it.
 
 
