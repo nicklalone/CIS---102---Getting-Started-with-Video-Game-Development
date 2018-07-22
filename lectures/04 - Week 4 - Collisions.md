@@ -10,7 +10,7 @@
 1. Send PICO-8 data to Github.
 
 **Table of Contents**
-1. [What does collision mean?](#what-does-collision-mean?)
+1. [What does collision mean?](#what-does-it-mean?)
 1. [Using IF Statements to Make Things Interact](#using-if-statements-to-make-things-interact)
 1. [Using the Sprite System to Make Thing Interact](#using-the-sprite-system-to-make-things-interact)
 1. [Code Beyond Your Computer](#code-beyond-your-computer)
