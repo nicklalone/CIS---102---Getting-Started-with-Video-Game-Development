@@ -297,7 +297,7 @@ In the above, we're checking for a game over screen.
 
 Now we're set to add some AI!
 
-```
+```lua
 px = 8 -- all sprites are 8 pixels in width.
 py = 8
 pspd = 1 
