@@ -1,18 +1,7 @@
-## Part 1 - What is Moving?
-1. Create an object that can be moved. How it looks is up to you.
-1. Create a number of variables that can change for that object's physical appearance. 
-
-## Part 2 - How well does it move?
-1. Create variables to dictate the movement of the object when a button is pressed.
-1. Create player movement variables and IF Statements. 
-
-## Part 3 - Friction and slow down.
-1. Upon moving, slow the object that is moving down so it doesn't just fly away off the side of the screen.
-1. Smooth the animation by adjusting the friction of the object.
-
-## Part 4 - Submission
-1. Create a .p8 file for this week's work.
-1. Write a 500-750 narrative about this weeks' work. 
-1. Add the files to a compressed folder and submit.  
-
-
+| Item being evaluated                       | 7 points                             | 4 points                                 | 0 points                  |
+|--------------------------------------------|--------------------------------------|------------------------------------------|---------------------------|
+| Does an object that moves exist?           | Object created and moves.            | Object created but movement is glitched. | No object created.        |
+| Object's appearance dictated by variables? | Object can be adjusted by variables. | Works but has a few errors.              | Does not work.            |
+| Object moves by button?                    | Yes.                                 | Works but has a few errors.              | Does not work.            |
+| Narrative File?                            | Well Written, very few errors.       | Posted but contains a number of errors.  | Not Posted or Incomplete. |
+| P8 File?                                   | Yes.                                 |                                          | No.                       |
