@@ -2,7 +2,7 @@
 1. Identify 2 aspects of an existing .p8 file that could be juiced.
 
 ## Part 2 - Adding the Juice
-1. Implement those juiced elements.
+1. Juice it!
 
 ## Part 3 - Submission
 
