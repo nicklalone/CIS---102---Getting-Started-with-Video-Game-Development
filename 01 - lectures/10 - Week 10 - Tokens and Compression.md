@@ -42,6 +42,7 @@ Each of these limitations result in something that - as you expand your game's c
 1. [A TweetJam Summary of Optimization Methods](https://gist.github.com/kometbomb/7ab11b8383d3ac94cbfe1be5fb859785)
 1. [A PICO-8 Space Shooter in 16 GIFS](https://www.lexaloffle.com/bbs/?tid=3948)
 1. [A Post-Mortem on a Game Called Under-Construction](https://eev.ee/release/2016/05/25/under-construction-our-pico-8-game/#the-pico-8s-limits)
+1. [Why token count favors ugly code so much](https://www.lexaloffle.com/bbs/?tid=28177)
 
 
 
