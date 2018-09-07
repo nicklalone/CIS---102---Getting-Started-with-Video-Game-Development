@@ -131,7 +131,7 @@ function _update()
 		pad_dx+=5
 	end
 	
-	pad_x+=pad_dx
+	pad_x+=pad_dx -- This has to do with where your pad is at!
 end
 ```
 
