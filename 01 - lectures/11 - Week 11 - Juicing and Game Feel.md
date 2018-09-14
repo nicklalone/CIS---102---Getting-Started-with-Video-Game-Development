@@ -26,11 +26,11 @@ And that's it. Here's a concept called Juicing. How would you
 Your job this week is to Juice your game. It doesn't matter how. It doesn't matter why. But your game is going to get a little more juicy.
 
 There's a video here about juicing though it's a little difficult to deal with. You can find the video: 
-
 [How To make Something Juicy In Pico-8](https://www.youtube.com/watch?v=Kut0dirprmU)
+
 The above uses these PICO-8 files to show you how it is done: [Files Here](https://www.dropbox.com/s/e240vk3gjyvzzsg/theJuice.zip?dl=0)
 All of Trasevol's games can be found: [Trasevol's Itch.io Page](https://trasevol-dog.itch.io/)
 Also, check out bridgs [Just One Boss](https://www.lexaloffle.com/bbs/?tid=30767)
-
+Making Chess for Pico-8 - #2: Juicyness [Lazydevs Devlog](https://krystman.itch.io/pico-checkmate/devlog/34246/making-chess-for-pico-8-2-juicyness)
 
 

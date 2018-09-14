@@ -1,0 +1,459 @@
+@charset "utf-8";
+/* CSS Document */
+/* Fox Sutton's altered version of Brett Goetz's original CSS creation */
+
+/*==== the following color fixes the full-width banner issue
+note that the color is NOT a BU color! this is due to the banner img itself being off ===*/
+
+.topTabs {
+    background-color:#4e3974!important;
+}
+
+
+.item h3 a span {text-decoration: none!important;}
+
+body {max-width: 1900px;}
+      
+a.scrollup {
+    display: inline-block;
+    margin: 0px auto;
+    padding: 5px 10px;
+	text-align: center;
+    color: #fff;
+    font-weight: bold;
+    background: #85739c;
+    text-decoration: none;
+}
+a.scrollupfixed {
+    display: inline-block;
+    position: fixed;
+    bottom:0;
+    right:12px;
+    padding: 5px 10px;
+    color: #fff;
+    font-size: 16px;
+    background: #85739c;
+    text-decoration: none;
+    z-index: 9999;
+    border: 1px solid #fff;
+}
+
+a.scrollup:hover {
+    background-color: #4F3674;
+}
+a.scrollupfixed:hover {
+    background-color: #2f1a45;
+    box-shadow: 0px 0px 12px 4px #999;
+}
+a.scroller {
+  
+  scroll-snap-type: mandatory;
+
+  /* older spec implementation */
+  scroll-snap-destination: 0% 100%;
+  scroll-snap-points-x: repeat(100%);
+}
+
+
+/*Banners*/
+
+ul#content_listContainer h3 {
+    width: 100%;
+}
+
+div.customBanner {
+    background-color: #939597;
+    margin: -3px;
+}
+
+p.bannerreading {
+    display: block;
+    padding: 15px 10px 15px 60px;
+    text-align: left;
+    font-family: arial;
+    font-size: 24px;
+    font-weight: normal;
+    background: url('https://content.bellevue.edu/bellevue/traffic-sign-images/FoxTitleBanners/book.png') no-repeat #696969 left;
+    color: white;
+    text-decoration: none;
+}
+
+
+p.banneractivity {
+    display: block;
+    padding: 15px 10px 15px 65px;
+    text-align: left;
+    font-family: arial;
+    font-size: 24px;
+    font-weight: normal;
+    background: url('https://content.bellevue.edu/bellevue/traffic-sign-images/center-test-area/cssbbtests/gear-icon.png') no-repeat #696969 left;
+    color: white;
+    text-decoration: none;
+    box-shadow: 5px 5px 5px #888888;
+}
+
+
+p.bannerdiscussion {
+ display: block;
+    padding: 15px 10px 15px 65px;
+    text-align: left;
+    font-family: arial;
+    font-size: 24px;
+    font-weight: normal;
+    background: url('https://content.bellevue.edu/bellevue/traffic-sign-images/FoxTitleBanners/chatbubble.png') no-repeat #696969 left;
+    color: white;
+    text-decoration: none;
+    box-shadow: 5px 5px 5px #888888;
+}
+
+p.bannerdiscussion:hover {
+    background-color: #a5a5a5;
+}
+
+p.bannerquiz {
+ display: block;
+    padding: 15px 10px 15px 65px;
+    text-align: left;
+    font-family: arial;
+    font-size: 24px;
+    font-weight: normal;
+    background: url('https://content.bellevue.edu/bellevue/traffic-sign-images/FoxTitleBanners/QuizIcon.png') no-repeat #696969 left;
+    color: white;
+    text-decoration: none;
+    box-shadow: 5px 5px 5px #888888;
+}
+
+p.bannerquiz:hover {
+    background-color: #a5a5a5;
+}
+
+
+p.bannerassign {
+ display: block;
+    padding: 15px 10px 15px 67px;
+    text-align: left;
+    font-family: arial;
+    font-size: 24px;
+    font-weight: normal;
+    background: url('https://content.bellevue.edu/bellevue/traffic-sign-images/center-test-area/cssbbtests/check-box-icon.png') no-repeat #696969 left;
+    color: white;
+    text-decoration: none;
+    box-shadow: 5px 5px 5px #888888;
+}
+
+p.bannerassign:hover {
+    background-color: #a5a5a5;
+}
+
+p.bannerannounce {
+ display: block;
+    padding: 15px 10px 15px 67px;
+    text-align: left;
+    font-family: arial;
+    font-size: 24px;
+    font-weight: normal;
+    background: url('https://content.bellevue.edu/bellevue/traffic-sign-images/FoxTitleBanners/megaphone.png') no-repeat #696969 left;
+    color: white;
+    text-decoration: none;
+    box-shadow: 5px 5px 5px #888888;
+}
+
+p.bannerannounce:hover {
+    background-color: #a5a5a5;
+}
+
+p.bannerweek {
+    display: block;
+    padding: 15px 10px 15px 60px;
+    text-align: left;
+    font-family: arial;
+    font-size: 40px;
+    font-weight: normal;
+    background: #4F3674;
+    color: white;
+    text-decoration: none;
+    box-shadow: 10px 10px 5px #888888;
+}
+
+/*Submission Box*/
+.s-lib-box {
+	border: 1px solid #cccccc;
+	box-shadow: 0 8px 6px -6px #AAAAAA;
+	border-radius: 4px 4px 4px 4px;
+	background-color: #fff; 
+	width: 65%;
+	position: relative;        
+                    }
+
+.s-lib-box p, ul { 
+	padding: 0 15px 10px 15px;
+}
+
+
+
+.s-lib-box-std .s-lib-box-title {
+	background-color: #f1f1f1;
+	background-image: none;
+	color: #888;
+	padding-left: 10px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #cccccc;
+	                    }
+
+.s-lib-box-title {
+	background-color: #f1f1f1;
+	background-image: none;
+	color: #888;
+	border-bottom: 1px solid #cccccc;
+	border-radius: 3px 3px 0px 0px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-top: 0px;
+                    }
+
+
+/*Submission Box - Negative*/
+.s-lib-box2 {
+	border: 1px solid #cccccc;
+	box-shadow: 0 8px 6px -6px #AAAAAA;
+	border-radius: 4px 4px 4px 4px;
+	background-color: #000; 
+	color: white;
+	width: 65%;
+	position: relative;        
+                    }
+
+.s-lib-box2 p, ul { 
+	padding: 0 15px 10px 15px;
+}
+
+.s-lib-box-std2 .s-lib-box-title2 {
+	background-color: #f1f1f1;
+	background-image: none;
+	color: #888;
+	padding-left: 10px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #cccccc;
+	                    }
+
+.s-lib-box-title2 {
+	background-color: #f1f1f1;
+	background-image: none;
+	color: #888;
+	border-bottom: 1px solid #cccccc;
+	border-radius: 3px 3px 0px 0px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-top: 0px;
+                    }
+
+
+
+
+
+
+/*Tooltip*/
+a.tooltips {outline:none; }
+a.tooltips strong {line-height:30px;}
+a.tooltips:hover {text-decoration:none;} 
+a.tooltips span {
+    z-index:10;display:none; padding:14px 20px;
+    margin-top:-30px; margin-left:28px;
+    width:300px; line-height:16px;
+}
+a.tooltips:hover span{
+    display:inline; position:absolute; color:#111;
+    border:1px solid #DCA; background:#fffAF0;}
+.callout {z-index:20;position:absolute;top:30px;border:0;left:-12px;}
+    
+/*CSS3 extras*/
+a.tooltips span
+{
+    border-radius:4px;
+    box-shadow: 5px 5px 8px #CCC;
+}
+
+/*Print Button*/
+button.prints-button {
+  width: 80px;
+  height: 80px;
+}
+p.prints-icon, p.prints-icon::before, p.prints-icon::after, button.prints-button:hover .prints-icon::after {
+  border: solid 2px #333;
+}
+p.prints-icon::after {
+  border-width: 1px;
+}
+
+button.prints-button {
+  position: relative;
+  padding: 0;
+  border: 0;
+  
+  border: none;
+  background: transparent;
+}
+
+p.prints-icon, p.prints-icon::before, p.prints-icon::after, button.prints-button:hover .prints-icon::after {
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+p.prints-icon {
+  position: relative;
+  display: inline-block;  
+  padding: 0;
+  margin-top: 20%;
+
+  width: 60%;
+  height: 35%;
+  background: #ccc;
+  border-radius: 20% 20% 0 0;
+}
+
+p.prints-icon::before {
+  content: " ";
+  position: absolute;
+  bottom: 100%;
+  left: 12%;
+  right: 12%;
+  height: 110%;
+
+  transition: height .2s .15s;
+}
+
+p.prints-icon::after {
+  content: " ";
+  position: absolute;
+  top: 55%;
+  left: 12%;
+  right: 12%;
+  height: 0%;
+  background: #fff;
+  background-repeat: no-repeat;
+  background-size: 70% 90%;
+  background-position: center;
+  background-image: linear-gradient(
+    to top,
+    #fff 0, #fff 14%,
+    #333 14%, #333 28%,
+    #fff 28%, #fff 42%,
+    #333 42%, #333 56%,
+    #fff 56%, #fff 70%,
+    #333 70%, #333 84%,
+    #fff 84%, #fff 100%
+  );
+
+  transition: height .2s, border-width 0s .2s, width 0s .2s;
+}
+
+button.prints-button:hover {
+  cursor: pointer;
+}
+
+button.prints-button:hover .prints-icon::before {
+  height:0px;
+  transition: height .2s;
+}
+button.prints-button:hover .prints-icon::after {
+  height:120%;
+  transition: height .2s .15s, border-width 0s .16s;
+}
+button:focus {outline:0;}
+
+/* Navigation Menu 
+.navPaletteContent ul li:first-child h4 a, .navPaletteContent ul li:first-child a {
+    border-top: 0;
+}
+.listCm .courseMenu a, .buttonCm .courseMenu a {
+    margin: 0 18px 0 0;
+    padding: 6px 0 6px 30px;
+    border: 0;
+    background: #4f3674;
+    word-break: normal;
+    overflow-x: hidden;
+    width: 86%;
+}
+
+.courseMenu a:hover{
+	background-color: #85739c;
+}
+.navPaletteContent a {
+    margin: 0;
+    padding: 3px 9px 3px 24px;
+    font-weight: bold;
+    font-family: arial;
+    text-decoration: none;
+    display: block;
+    word-break: normal;
+    overflow-x: hidden;
+}
+
+.navPaletteContent a:hover {
+    color: #000;
+}
+*/
+
+/*Switch*/
+.flipped .flashcard, .back{
+  transform: rotateX(180deg);
+}
+.front{
+  background: #eeefbc;
+}
+.back{
+  background: #4e869f;
+}
+.front, .back, .flashcard{
+  width: 100%;
+  height: 10em;
+}
+.front p{
+  padding-top: 25px;
+  padding-left: 25px;
+}
+.front h1{
+  color: #686868;
+  padding-left: 25px;
+}
+.back p{
+  padding-top: 25px;
+  padding-left: 25px;
+}
+.back h1{
+  color: #fff;
+  font-size: 25px;
+  padding-left: 25px;
+}
+.front, .back{
+  backface-visibility:hidden;
+  position:absolute;
+}
+.flashcard{
+  transition: 1s;
+  transform-style: preserve-3d;
+  border-radius: 8px 8px 8px 8px;
+  width: 98%;
+}
+
+/*Glossary*/
+a.glossary {
+    display: block;
+    width: 200px;
+    font-size: 24px;
+    text-align: center;
+    color: #999;
+    text-decoration: none;
+    margin-left: 10px;
+    padding: 10px 0px 10px 25px;
+    background: url('https://content.bellevue.edu/cas/emgt/300/id/images/glossary-icon.png') no-repeat #333 left;
+    box-shadow: 0px 0px 4px 4px #85739c;
+    transition: all .2s;
+    -webkit-transition: all .2s;
+
+}
+a.glossary:hover {
+    box-shadow: 0px 0px 4px 4px #2f1a45;
+    color: #fff;
+}
+.scrollupfixed {display:none;}
