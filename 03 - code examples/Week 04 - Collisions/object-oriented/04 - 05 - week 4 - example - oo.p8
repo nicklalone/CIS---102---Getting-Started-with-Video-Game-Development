@@ -59,22 +59,11 @@ function _update()
   else
    ball_dy = -ball_dy
   end
-  sfx(1)
-  points+=1
  end
  
  ball_x=nextx
  ball_y=nexty
  
- if nexty > 127 then
-  sfx(2)
-  lives-=1
-  if lives<0 then
-   gameover()
-  else
-   serveball()
-  end
- end
 end
  
  
