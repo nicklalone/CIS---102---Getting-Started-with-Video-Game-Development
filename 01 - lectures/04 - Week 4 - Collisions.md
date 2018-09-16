@@ -16,22 +16,64 @@
 1. [Code Beyond Your Computer](#code-beyond-your-computer)
 
 # Week 4 - Making Stuff Collide with Things
-3 items form the basis of this week's lesson. THey all surround the idea of making things hit each other. 
+3 items form the basis of this week's lesson. They all surround the idea of making things hit each other. 
 1. Using IF Statements in more creative ways.
 1. Make pre-defined objects interact with each other in predictible ways.
 1. Optionally Using the Sprite Editor
 
-This week's lesson might be the most difficult of the semester. Do not worry, you will have enough examples to pull from should you need them. There are also numerous code examples to pull ideas from. As always, should you pull from these, remember to mark in comments that you used ideas from the code examples. In particular, note which ones you did use. 
+I will tell you now that this week's lesson might be the most difficult of the semester. It is difficult _because_ what we're going to cover this week has been completely encapsulated by black boxes. This means that in products like Unity or Unreal Engine 4, you click a button that makes a particular object "RIGID" or "Have mass". You can also click on buttons that call particular objects a "ball" or something like it. 
+
+In PICO-8, none of these pre-packaged entities exist so all that you are left with is you, yourself, and your code. However, while it is difficult, if you can get this, you're well on your way to understanding the _super important_ relationship between code and game. 
+
+As always, you will have examples to pull from should you need them. Since this topic is so rough, there are also numerous code examples to pull ideas from. It is this concept that gets poached _the most_ by new programmers. As always, should you pull from these, remember to mark in comments that you used ideas from the code examples. In particular, note which ones you did use. 
 
 ---
 
 # What does it mean 
 
+In your game examples for week 3, you might have noticed that nothing really happens when the ball and the paddle touch one another. Additionally, you might have also noticed in week 2 that your ball couldn't detect the side of the screen unless you specifically told it to. 
 
-https://developer.mozilla.org/en-US/docs/Games/Techniques/2D_collision_detection
+For what we're doing today, I want you to consider this example. Don't worry about the code itself or what language it is, just look at it generically. 
 
+[The example is here \(click on this\)](https://developer.mozilla.org/en-US/docs/Games/Techniques/2D_collision_detection)
 
-Example to build on. 
+What did you notice? How did it work? Everything you need is located: 
+
+```javascript 
+if (rect1.x < rect2.x + rect2.w &&
+        rect1.x + rect1.w > rect2.x &&
+        rect1.y < rect2.y + rect2.h &&
+        rect1.h + rect1.y > rect2.y)
+```
+
+What does this say, exactly? Read it from left to right: 
+
+```
+If rectangle 1's x-axis value is less than rectangle 2's x-axis value + the width of rectangle 2, 
+OR If rectangle 1's x-axis value plus rectangle 1's width is greater than rectangle 2's x-axis value, 
+OR if rectangle 1's y-axis value is less than rectangle 2's y-axis value + rectangle 2's height, 
+OR if rectangle 1's height plus rectangle 1's y-axis value is greater than rectangle 2's y-axis value, 
+
+THEN it is a collision. 
+```
+
+That's a lot but think about it individually. Really it's saying if any part of rectangle 1 overlaps with any part of rectangle 2, that is a collision and something should happen. What should happen? `this.color("green");` or Turn Rectangle 1 green. 
+
+You're going to work on your paddle and ball combination the same way. Let me recommend a few things: 
+
+1. Start early.
+1. Take it slow.
+1. No really, take it slow.
+1. Write it all out on paper first.
+1. Type it out in "pseudo-code" (like my example above with the 4 sentences)
+1. Incrementally add to your code.
+1. If you get frustrated, walk away for a while.
+
+# Using IF Statements to Make Things Interact
+
+So we're going to be building on our breakout example because it allows us to contextualize what we're doing, you can find a ton of other examples, and it should end up standardizing those of you looking for help. 
+
+Let's start with a "pseudo-code" example to build on. 
 
 * If you have two boxes A and B: 
 * if the right side of A is to the left of the left side of B, they can't possibly be colliding. 
@@ -49,6 +91,7 @@ function colliding(a, b)
     return true
 end
 ```
+
 where x and y are the top left corner of the sprite 
 the same coordinates you use to `spr()` it)  and w and h are its width and height 
 if those are always 8 you can hardcode it
