@@ -71,6 +71,15 @@ ball_x = ball_x+x_speed
 	then y_speed = 3
 	sfx(0)
 	end
+
+pad_c = 7
+y = 'not a hit...'
+
+if ball_hit(pad_x,pad_y,pad_w,pad_h)
+then pad_c = 8
+y = 'its a hit!!!!!!!!!!'
+end
+
 end
 
 function _draw()
@@ -86,9 +95,42 @@ function _draw()
  print(ball_y, 35,24,14)
  print('x_speed = ',1,31 ,14)
  print(x_speed, 40,31,14)
- print('y_speed = ',1,31 ,14)
- print(y_speed, 40,31,14)
+ print('y_speed = ',1,38 ,14)
+ print(y_speed, 40,38,14)
+ print('x = ',1,45 ,14)
+ print(x, 15,45,14)
+ print('y = ',1,52 ,14)
+ print(y, 15,52,14)
 	circfill(ball_x,ball_y,ball_size,3)
 	rectfill(pad_x, pad_y,pad_x+pad_w,pad_y+pad_h,pad_c)
 end
 
+function ball_hit(box_x,box_y,box_w,box_h)
+
+if ball_y - ball_size > box_y + box_h
+then
+x = 'y-r > box_y + box_h'
+return false
+end
+
+if ball_y + ball_size < box_y
+then
+x = 'y+r < box_y'
+return false
+end
+
+if ball_x - ball_size > box_x + box_w
+then
+x = 'x-r > box_x+box_w'
+return false
+end
+
+if ball_x + ball_size < box_x
+then
+x = 'x+r < box_x'
+return false
+end
+
+return true
+
+end
