@@ -184,6 +184,3 @@ end
 
 return true
 end
-
-function brick_hit(box_x,box_y,box_w,box_h)
-end
