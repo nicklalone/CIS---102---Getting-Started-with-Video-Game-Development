@@ -4,6 +4,8 @@
 1. Create rows of bricks.
 1. Write some code that will allow your ball to hit the bricks and have them disappear.
 
+### Getting Started
+
 So last week we wrote a function that allowed us to figure out when the ball wasn't intersecting with the paddle. When the paddle did hit the ball, then the paddle turned red. The function looked like this: 
 
 ```lua
@@ -36,6 +38,7 @@ end
 return true
 end
 ```
+### What's that do?
 
 So what's happening inside that function is a lot of `false` statements. We're measuring the ball's location on the `x` and `y` axis against whatever boxes we've created.
 
@@ -44,6 +47,8 @@ In the first day of collisions, we created this function that allowed us to pass
 This allows us to do something when that true comes in. It's momentary but since it appears in memory, we can use that. 
 
 In day 1, when the hit statement is `True` we turn the paddle red. That is the statement `then pad_c = 8`. Since we haven't done sounds yet, this works as a way to indicate that something has happened.
+
+### Hitting the paddle
 
 We can actually make the ball react to the paddle with just one line of code. Let's add to this: `y_speed = -y_speed` to the place where we turn the paddle red. 
 
