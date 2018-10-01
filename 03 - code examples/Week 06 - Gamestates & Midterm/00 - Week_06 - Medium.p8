@@ -35,16 +35,32 @@ end
 
 function game_over()
 cls()
-print('you messed up',35,40,5)
-print('press ❎ to try again!',20,80,4)
-if btn(5) then
-game_done = false
-go_game = true
-ball_y = 100
-ball_x = 50
-pad_x = 52
-pad_y = 120
-
+if life == 0 then
+print('you messed up too many times',35,40,5)
+print('press ❎ to return to title!',20,80,4)
+ life = 3
+ game_done = false
+ go_game = false
+ ball_y = 100
+ ball_x = 50
+ pad_x = 52
+ pad_y = 120
+ x_speed = 2 
+ show_menu()
+end
+end
+else 
+ life -=1
+ print('press ❎ to try again!',20,80,4)
+ if btn(5) then
+ game_done = false
+ go_game = true
+ ball_y = 100
+ ball_x = 50
+ pad_x = 52
+ pad_y = 120
+ x_speed = 2
+ end
 end
 end
 
@@ -77,6 +93,8 @@ brick_h=4
 -- set the start of game to false so the menu shows.
 go_game = false
 game_done = false
+-- set number of lives
+life = 3
 -- then we go to the show_menu function.
 show_menu()
 end
@@ -141,7 +159,7 @@ ball_x = ball_x+x_speed
  end
 
  if ball_y < 6 
- then y_speed = -2
+ then y_speed = 2
  sfx(0)
  end
 
