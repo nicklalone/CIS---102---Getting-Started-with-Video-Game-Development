@@ -23,92 +23,91 @@ function buildbricks()
 end
 
 function show_menu()
-cls()
-spr(0,0,0,20,20)
-print('press ❎ to begin!',35,80)
-if btn(5) then
-go_game = true
-buildbricks()
-run_game()
-end
+ cls()
+ spr(0,0,0,20,20)
+ print('press ❎ to begin!',35,80)
+  if btn(5) then
+  go_game = true
+  buildbricks()
+  run_game()
+  life = 3
+  end
 end
 
 function game_over()
 cls()
-if life == 0 then
-print('you messed up too many times',35,40,5)
-print('press ❎ to return to title!',20,80,4)
- life = 3
- game_done = false
- go_game = false
+ print('you messed up too many times',15,40,5)
+ print('press z to return to title!',17,80,4)
  ball_y = 100
  ball_x = 50
  pad_x = 52
  pad_y = 120
  x_speed = 2 
- show_menu()
-end
-end
-else 
- life -=1
- print('press ❎ to try again!',20,80,4)
- if btn(5) then
+ if btn(4) then
+ cls()
+ go_game = false
  game_done = false
- go_game = true
+ life = 3
+ end
+end
+
+function keep_going()
+ cls()
+ print('noooo! you let the ball escape!!',0,60,4)
+ --print('you have ' + life + ' lives remaining',0,70,4)
+ print('press ❎ to try again!',20,80,4)
  ball_y = 100
  ball_x = 50
  pad_x = 52
  pad_y = 120
  x_speed = 2
+ if btn(5) then
+ cls()
+ go_game = true
+ game_done = false
  end
-end
 end
 
 
 -- we start the game here.
 function _init()
--- first, we clear the screen
-cls()
--- this will load the global variables.
-ball_x = 50
-x_speed = 2
-ball_y = 100
-y_speed = 2
-ball_size = 3
-col = 0
+ -- first, we clear the screen
+ cls()
+ -- this will load the global variables.
+ ball_x = 50
+ x_speed = 2
+ ball_y = 100
+ y_speed = 2
+ ball_size = 3
+ col = 0
 
--- where does the pad begin?
-pad_x = 52
-pad_y = 120
---paddle speed
-pad_speed = 0
---paddle size
-pad_w = 24
-pad_h = 3
-pad_c = 7
+ -- where does the pad begin?
+ pad_x = 52
+ pad_y = 120
+ --paddle speed
+ pad_speed = 0
+ --paddle size
+ pad_w = 24
+ pad_h = 3
+ pad_c = 7
 
--- brick size
-brick_w=10
-brick_h=4
--- set the start of game to false so the menu shows.
-go_game = false
-game_done = false
--- set number of lives
-life = 3
--- then we go to the show_menu function.
-show_menu()
+ -- brick size
+ brick_w=10
+ brick_h=4
+ -- set the start of game to false so the menu shows.
+ go_game = false
+ game_done = false
+ -- then we go to the show_menu function.
+ show_menu()
 end
 
 function _update()
 -- if the go_game variable is set to true, it will run the game via run_game()
-if go_game == false and game_done == false then show_menu()
-end
-if go_game == true and game_done == false then run_game()
--- if not, it'll keep showing the menu
-end
-if go_game == false and game_done == true then game_over()
-end
-
+ if go_game == false and game_done == false then show_menu() end
+ if go_game == true and game_done == false then run_game() end
+ -- if not, it'll keep showing the menu
+ if go_game == false and game_done == true and life > 0 then keep_going() end
+ if life == 0 then game_over() end
 end
 
 function run_game()
@@ -155,6 +154,7 @@ ball_x = ball_x+x_speed
  if ball_y > 127 then
  game_done = true
  go_game = false
+ life = life - 1
  sfx(0)
  end
 
@@ -190,6 +190,7 @@ function _draw()
 if go_game == true and game_done == false then
  --background - ball - paddle
  cls()
+ print(life,0,0,4)
  -- print('buttpress =', 1, 3, 12)
  -- print(buttpress, 50, 3, 12)
  -- print('pad_x = ', 1, 10, 14)
