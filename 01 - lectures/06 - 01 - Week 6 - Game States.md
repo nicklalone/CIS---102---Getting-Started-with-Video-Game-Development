@@ -216,9 +216,9 @@ And so we need to think about them a little. Let's make a table:
 |function|go_game|game_done|additional|
 |--------|-------|---------|----------|
 |show_menu()|false|false| none|
-|go_game()|true|false| none
+|run_game()|true|false| none
 |keep_going()|false|true| life > 0|
-|gmae_over()|none|none|if life == 0|
+|game_over()|none|none|if life == 0|
 
 So these are the coditions for our 4 functions to fire.
 
