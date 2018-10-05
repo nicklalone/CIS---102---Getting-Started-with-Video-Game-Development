@@ -6,7 +6,7 @@ This course is organized for you to follow in one of two ways.
 1. Only reading the lecture notes. 
 1. Following along with the lecture notes with my videos. 
 
-The videoes can be found on Youtube at: TBD
+The videoes can be found on Youtube at: https://www.youtube.com/playlist?list=PLBel-rdFQ3V6dXc4Amd21viQPD2UfFC4x
 
 I will leave this up here for you to work on by yourselves but this course will also be offered at [Bellevue University](http://www.bellevue.edu/) as a general education course. 
 
