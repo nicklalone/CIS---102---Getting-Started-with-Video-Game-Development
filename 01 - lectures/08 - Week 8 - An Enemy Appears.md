@@ -1,4 +1,10 @@
-This is where we're starting. Let's walk through this so we can begin. Let's take a walk through these data. 
+This week, i'll introduce you to a different sort of tutorial for PICO-8. This one is from Alan Jamieson from St. Mary's College of Maryland. It is a great tutorial and it also introduces a number of new patterns and sequences that some of you are already experimenting with inside of your final projects.
+
+The video can be found here: https://www.youtube.com/watch?v=xAEoSuYVEmE
+
+and below is the bulk of the code from the tutorial. I'll walk through chunks of it to explain a little about it. 
+
+We'll start here: 
 
 ```lua
 px = 8
@@ -20,6 +26,7 @@ function bump(x,y)
 end
 ```
 There's a lot going on here! Let's see if we can take it apart. We'll go in order. 
+
 * Note the two variables `local mx` and `local my`. Each of these are divided by 8 with the additional command of `flr()`. This is a clever bit of doing. It is divided by `8` so that the 8-pixel width sprite won't look like it's moved until 8-pixels later. This flr returns the `"floor"` of a particular variable (e.g. the `1` in `1.2` or the `9` in `9.7`. 0-0.9 remain as 0. 1-1.9 remain as 1. And so on. This allows us to calculate the relative position of a sprite for collision purposes. 
 
 * `mget()` or "Map Get" searches a particular map and sends it to a particular coordinate on a map. This can be combined with `fget()` to indicate where and when things intersect.
@@ -149,6 +156,7 @@ end
 
 are all my borders apart or not touching. These two are for left and right. These two are checking the top and bottom. if any of these are true, then the whole thing cannot be false. This means things are colliding.
 
+```lua
 function _update() -- the button (btn) functions are checking against the map which is created in bump(x,y)
  if btn(0) then
   px -= pspd
@@ -190,6 +198,8 @@ function _update() -- the button (btn) functions are checking against the map wh
   end
  end
 end
+```
+
 
 ```lua
 for i in all(tilez) do 
