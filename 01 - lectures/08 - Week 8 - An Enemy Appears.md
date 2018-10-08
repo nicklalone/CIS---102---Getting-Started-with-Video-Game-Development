@@ -1,4 +1,4 @@
-This week, i'll introduce you to a different sort of tutorial for PICO-8. This one is from Alan Jamieson from St. Mary's College of Maryland. It is a great tutorial and it also introduces a number of new patterns and sequences that some of you are already experimenting with inside of your final projects.
+This week, i'll introduce you to a different sort of tutorial for PICO-8. This one is from [Alan Jamieson](http://www.smcm.edu/directory/faculty-profile/alan-c-jamieson/) from St. Mary's College of Maryland. It is a great tutorial and it also introduces a number of new patterns and sequences that some of you are already experimenting with inside of your final projects.
 
 The video can be found here: https://www.youtube.com/watch?v=xAEoSuYVEmE
 
