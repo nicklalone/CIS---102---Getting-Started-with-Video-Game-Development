@@ -199,7 +199,7 @@ function _update() -- the button (btn) functions are checking against the map wh
  end
 end
 ```
-
+The above is about movement and the tops and bottoms of the screen. Pay special attention to the way that it checks for the intersection. All it's really doing is reversing the direction of the player's direction but it's effective. We've done this in the breakout space as well.
 
 ```lua
 for i in all(tilez) do 
@@ -208,7 +208,7 @@ end
 ```
 
 -- this is creating a bunch of boxes for the 3rd sprite. a tetris shape
- for i in all(enemies) do -- what this is doing is creating a variable called i that is used for that table enemies 
+ for i in all(tilez) do -- what this is doing is creating a variable called i that is used for the tilez. It also uses sprite 2 at a number of x/y  enemies 
  
 Now we need to set up and see what sorts of collisions are occuring with the player sprite. This will occur as the player pushes buttons.
 
