@@ -2,6 +2,19 @@ This week, i'll introduce you to a different sort of tutorial for PICO-8. This o
 
 The video can be found here: https://www.youtube.com/watch?v=xAEoSuYVEmE
 
+### Before getting started...
+
+### Optional material
+
+We haven't touched on the map editor. This editor allows us to create rooms and areas that players can explore. While it might not be something that you're required to know, it's good to get some exposure to the possibilities it contains.  To get started, check out these readings: 
+
+* [Luke Merrett's PICO-8 Intro](https://lukemerrett.com/getting-started-with-pico-8/)
+* [Uncle Matt's Background and Map Tutorial](https://www.youtube.com/watch?v=lWoeBr_FQ3Y&index=3&list=PL_T5GuTZSAoC63B8nVmstVNJA5odk-ViH) - This whole tutorial is fantastic.
+
+By the end of this week, my hope is that you have a lot more familiarity with how the map editor works in PICO-8. It is a fantastic tool that can really help to expand your game.
+
+---
+
 and below is the bulk of the code from the tutorial. I'll walk through chunks of it to explain a little about it. 
 
 We'll start here: 
