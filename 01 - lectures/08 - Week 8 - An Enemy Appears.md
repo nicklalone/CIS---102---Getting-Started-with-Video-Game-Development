@@ -4,8 +4,6 @@ The video can be found here: https://www.youtube.com/watch?v=xAEoSuYVEmE
 
 ### Before getting started...
 
-### Optional material
-
 We haven't touched on the map editor. This editor allows us to create rooms and areas that players can explore. While it might not be something that you're required to know, it's good to get some exposure to the possibilities it contains.  To get started, check out these readings: 
 
 * [Luke Merrett's PICO-8 Intro](https://lukemerrett.com/getting-started-with-pico-8/)
