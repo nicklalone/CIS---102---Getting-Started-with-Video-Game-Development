@@ -1,5 +1,5 @@
 pico-8 cartridge // http://www.pico-8.com
-version 14
+version 16
 __lua__
 px = 8 -- all sprites are 8 pixels in width.
 py = 8
