@@ -1,6 +1,6 @@
 ## Part 1 - Level Creation
-1. Create a map for your game that consists of multiple spaces. 
-1. Create a way to identify those game states.
+1. Create a way for levels to appear in your game. 
+1. Adjust the bricks for each level.
 
 ## Part 2 - Goals and Level Switching
 1. Create end goals for each level.
