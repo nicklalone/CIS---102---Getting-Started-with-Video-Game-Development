@@ -4,46 +4,22 @@ __lua__
 
 -- create the bricks.
 -- the {} indicates a table. 
-function buildbricks(lvl)
- local i,j,o,chr,last
+function buildbricks()
+ local i
  brick_x={}
  -- table for x values of bricks.
  brick_y={}
  -- table for y values of bricks.
  brick_v={}
  -- table for visibility of bricks.
- j = 0
- for i=1,#lvl do
-  j+=1
-  chr = sub(lvl,i,i)
-  if chr =="b" then
-  last = "b"
-  add(brick_x,4+((j-1)%11)*(brick_w+2))
+ for i=1,60 do
+ -- for every value between 1 and 66 do something.
+  add(brick_x,4+((i-1)%10)*(brick_w+2))
  -- add bricks.
-  add(brick_y,20+flr((j-1)/11)*(brick_h+2))
+  add(brick_y,20+flr((i-1)/10)*(brick_h+2))
   -- add bricks 20 pixels apart.
   add(brick_v,true)
   -- create a variable for visibility of bricks.
-  elseif chr=="x" then
-   last="x"
-  elseif chr=="/" then
-   j = (flr((j-1)/11)+1)*11
-  elseif chr>="1" and chr<="9" then
-   for o=1, chr+0 do
-    if last=="b" then
-    add(brick_x,4+((j-1)%11)*(brick_w+2))
-    -- add bricks.
-    add(brick_y,20+flr((j-1)/11)*(brick_h+2))
-    -- add bricks 20 pixels apart.
-    add(brick_v,true)
-    -- create a variable for visibility of bricks.
-    elseif last=="x" then
-    -- nothing
-    end
-    j+=1
-   end
-  j+=1
-  end
  end
 end
 
@@ -54,7 +30,7 @@ function show_menu()
   if btn(5) then
   go_game = true
   -- then we initiate the building of bricks.
-  buildbricks(level)
+  buildbricks()
   -- the game begins.
   run_game()
   life = 3
@@ -148,12 +124,6 @@ brick_h=4
 go_game = false
 game_done = false
 -- function ends.
-
--- start creating levels. 
-level = "bxbxbxbxbxbxbx/xbxbxbxbx/bbxxbbxxbbxx"
--- b indicate a brick exists. x is going to indicate a space. / is going to indicate a row 0-9 indicate how many bricks.
-
-
 end
 
 function _update()
