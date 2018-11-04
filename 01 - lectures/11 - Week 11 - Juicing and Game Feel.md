@@ -32,10 +32,11 @@ Your job this week is to Juice your game. It doesn't matter how. It doesn't matt
 There's a video here about juicing for PICO-8 that is pretty fantastic. You can find the video: 
 [How To make Something Juicy In Pico-8](https://www.youtube.com/watch?v=Kut0dirprmU)
 
-The above uses these PICO-8 files to show you how it is done: [Files Here](https://www.dropbox.com/s/e240vk3gjyvzzsg/theJuice.zip?dl=0)
-All of Trasevol's games can be found: [Trasevol's Itch.io Page](https://trasevol-dog.itch.io/)
-Also, check out bridgs [Just One Boss](https://www.lexaloffle.com/bbs/?tid=30767)
-Making Chess for Pico-8 - #2: Juicyness [Lazydevs Devlog](https://krystman.itch.io/pico-checkmate/devlog/34246/making-chess-for-pico-8-2-juicyness)
-Also, The [_Let's Make Breakout in PICO-8_](https://www.youtube.com/watch?v=YQzwVDMIfyU&list=PLea8cjCua_P0qjjiG8G5FBgqwpqMU7rBk) playlist videos 30 to around 44 will give you some tangible ideas for how to juice up your Breakout games. 
+The above uses these PICO-8 files to show you how it is done: 
+* [Files Here](https://www.dropbox.com/s/e240vk3gjyvzzsg/theJuice.zip?dl=0)
+* All of Trasevol's games can be found: [Trasevol's Itch.io Page](https://trasevol-dog.itch.io/)
+* Also, check out bridgs [Just One Boss](https://www.lexaloffle.com/bbs/?tid=30767)
+* Making Chess for Pico-8 - #2: Juicyness [Lazydevs Devlog](https://krystman.itch.io/pico-checkmate/devlog/34246/making-chess-for-pico-8-2-juicyness)
+* Also, The [_Let's Make Breakout in PICO-8_](https://www.youtube.com/watch?v=YQzwVDMIfyU&list=PLea8cjCua_P0qjjiG8G5FBgqwpqMU7rBk) playlist videos 30 to around 44 will give you some tangible ideas for how to juice up your Breakout games. 
 
 
