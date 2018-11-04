@@ -33,7 +33,7 @@ There's a video here about juicing for PICO-8 that is pretty fantastic. You can 
 [How To make Something Juicy In Pico-8](https://www.youtube.com/watch?v=Kut0dirprmU)
 
 The above uses these PICO-8 files to show you how it is done: 
-* [Files Here](https://www.dropbox.com/s/e240vk3gjyvzzsg/theJuice.zip?dl=0)
+* From the above video, you can find the [Files here](https://www.dropbox.com/s/e240vk3gjyvzzsg/theJuice.zip?dl=0) on juicing.
 * All of Trasevol's games can be found: [Trasevol's Itch.io Page](https://trasevol-dog.itch.io/)
 * Check out bridgs [Just One Boss](https://www.lexaloffle.com/bbs/?tid=30767)
 * Making Chess for Pico-8 - #2: Juicyness [Lazydevs Devlog](https://krystman.itch.io/pico-checkmate/devlog/34246/making-chess-for-pico-8-2-juicyness)
