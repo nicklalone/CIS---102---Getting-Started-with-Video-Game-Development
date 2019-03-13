@@ -2,7 +2,8 @@ This first homework assignment is about getting familiar with the various aspect
 
 1. Create a GIF of you loading any game from the PICO-8 carts website. 
  
-     ![Example](/course%20documents/pics/hw/hw1/loadclip.gif) \\
+     ![Example](/course%20documents/pics/hw/hw1/loadclip.gif)
+     
      The above example is rarer these days as the PICO-8 platform has shifted away from the above method.
 
 2. Create a GIF of you pasting code from a PICO-8 game into the programming interface and running it.
