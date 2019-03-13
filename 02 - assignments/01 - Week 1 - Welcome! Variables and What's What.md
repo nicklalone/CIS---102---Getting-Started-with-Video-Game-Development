@@ -4,7 +4,7 @@ This first homework assignment is about getting familiar with the various aspect
  
      ![Example](/course%20documents/pics/hw/hw1/loadclip.gif)
      
-     The above example is rarer these days as the PICO-8 platform has shifted away from the above method.
+     The above example is rarer these days as the PICO-8 platform has shifted away from the above method. There is a list of ways to load games via the [wiki](https://pico-8.fandom.com/wiki/Load).
 
 2. Create a GIF of you pasting code from a PICO-8 game into the programming interface and running it.
     1. Note that this will require you to find a game that runs without using sprites (This means it does not have anything in the sprite screen but what is there by default. See below.). 
