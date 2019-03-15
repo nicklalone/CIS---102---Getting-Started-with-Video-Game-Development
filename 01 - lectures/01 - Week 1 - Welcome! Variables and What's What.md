@@ -152,13 +152,13 @@ If you head to [The PICO-8 Carts Page](https://www.lexaloffle.com/bbs/?cat=7#sub
 
 ``` Cart [the cart number] | Copy | Code | The Date of upload | Link ```
 
-	Note that `copy` is not always available. This is due to the ways that the BBC changes.
+	Note that `copy` is not always available. This is due to the ways that licensing has been evolving.
 
 The Cart Number is the number assigned to the cart the time it was first uploaded. This number will not change as it is updated. While this number is not exactly the most exciting, knowing the number can help you on occasion. 
 
 `copy` and `code` are the two clickable items that are super important. The first item allows you to import the entirity of the game into PICO-8 whereas the second allows you to import just the code. 
 
-	Note that `copy` is not always available. This is due to the ways that the BBC changes.
+	Note that `copy` is not always available. This is due to the ways that licensing has been evolving.
 
 What is the difference between these two? Well: 
 * `Copy` will include things like graphics and sound. This is the complete game.
